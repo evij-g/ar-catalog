@@ -2,9 +2,12 @@
 
 ## Description
 
-Describe your project in one/two lines.
+This project is about an easy to use experiment for true scaled images in augmented reality. The goal is to create an easy to use self hosted catalog.
+
  
 ## User Stories
+
+- **backend** - As a user/admin I want to add/edit/delete a new image to the catalog
 
 - **404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault 
 - **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault
