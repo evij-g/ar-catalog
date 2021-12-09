@@ -1,0 +1,28 @@
+<h1>upload element</h1>
+
+<form action="/create" method="POST" enctype="multipart/form-data">
+  <label for="image"></label>
+  <input type="file" name="image" />
+  <label for="title">title</label>
+  <input type="text" name="title" id="element-title" required />
+  <label for="width">width</label>
+  <input type="number" name="width" id="element-width" required />
+  <label for="width">height</label>
+  <input type="number" name="height" id="element-height" required />
+  <label for="material">material</label>
+  <input type="text" name="material" id="element-material" />
+  <button type="submit">upload</button>
+</form>
+
+{{#each allElements}}
+  <div class="ctn-element">
+    <p>title: {{title}}</p>
+    <img src="{{imageUrl}}" alt=`picture of {{title}}` />
+    <p>height: {{height}}</p>
+    <p>width: {{width}}</p>
+    <p>material: {{material}}</p>
+    <br />
+  </div>
+{{/each}}
+
+<a href="/">anon</a>

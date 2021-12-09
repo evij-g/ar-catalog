@@ -1,0 +1,12 @@
+<h1>login</h1>
+<form action="/login" method="POST">
+  <label for="email">email</label>
+  <input type="email" name="email" />
+  <label for="password">password</label>
+  <input type="password" name="password" autocomplete='on' />
+  <button type="submit">login</button>
+</form>
+
+{{#if message}}
+  <p>{{message}}</p>
+{{/if}}
