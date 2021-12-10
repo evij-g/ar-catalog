@@ -7,7 +7,6 @@ const mongoose = require('mongoose')
 async function getHome(req, res) {
   try {
     const { ...allElements } = await Element.find();
-    console.log(allElements);
     res.render("index", { allElements });
   } catch (error) {
     console.error(error);
@@ -25,7 +24,6 @@ function getSignup(req, res) {
 async function getPrivate(req, res) {
   try {
     const { ...allElements } = await Element.find();
-    console.log(allElements);
     res.render("private", { allElements });
   } catch (error) {
     console.error(error);
@@ -35,7 +33,6 @@ async function getPrivate(req, res) {
 async function signup(req, res, next) {
   try {
     const { email, password } = req.body;
-    console.log(email, password)
     const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
     if (!regex.test(password)) {
     
@@ -49,7 +46,6 @@ const saltRounds = 10;
 const salt = await bcrypt.genSalt(saltRounds)
 
 const hashedPassword = await bcrypt.hash(password, salt);
-console.log('hash', hashedPassword)
 await User.create({
     email, passwordHash: hashedPassword
 })
@@ -82,7 +78,7 @@ async function login(req, res) {
           res.render('login', { errorMessage: 'Email is not registered. Try with other email.' });
           return;
         } else if (bcrypt.compareSync(password, user.passwordHash)) {
-          res.render('private');
+          res.redirect('private');
         } else {
           res.render('login', { errorMessage: 'Incorrect password.' });
         }

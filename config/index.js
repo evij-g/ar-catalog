@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path')
+const hbs = require('hbs')
+
 
 function config(app){
     app.use(express.json());
@@ -8,6 +10,7 @@ function config(app){
 
     app.set('view engine', 'hbs');
     app.set('views', path.join(__dirname, '..', 'views'))
+    hbs.registerPartials(path.join(__dirname, '..','views', 'partials'))
 }
 
 

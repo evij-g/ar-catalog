@@ -15,14 +15,7 @@
 </form>
 
 {{#each allElements}}
-  <div class="ctn-element">
-    <p>title: {{title}}</p>
-    <img src="{{imageUrl}}" alt=`picture of {{title}}` />
-    <p>height: {{height}}</p>
-    <p>width: {{width}}</p>
-    <p>material: {{material}}</p>
-    <br />
-  </div>
+  {{> element }}
 {{/each}}
 
-<a href="/">anon</a>
+<a href="/">logout</a>

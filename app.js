@@ -1,7 +1,7 @@
 const app = require('express')()
 require('dotenv').config();
-require('./config/session.config')(app)
 require('./config').config(app)
+require('./config/session.config').sessionInit(app);
 require('./db').connectDB();
 
 
