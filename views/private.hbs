@@ -1,3 +1,6 @@
+<form action="/logout" method='post'>
+<button>logout</button>
+</form>
 <h1>upload element</h1>
 
 <form action="/create" method="POST" enctype="multipart/form-data">
@@ -14,8 +17,24 @@
   <button type="submit">upload</button>
 </form>
 
+{{#if isAdmin}}
+<form action="/signup" >
+<button>create new user</button>
+</form>
+<hr>
+<div class='ctn-allUsers'>
+<h2>all users</h2>
+<ul>
+  {{#each allUsers}}
+<li>
+  <p>email: {{email}}</p>
+  <form action="/delete-user{{_id}}" method="post"><button>delete</button></form>
+</li>
+{{/each}}
+</ul>
+</div>
+{{/if}}
+
 {{#each allElements}}
   {{> element }}
 {{/each}}
-
-<a href="/">logout</a>

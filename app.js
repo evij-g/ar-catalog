@@ -1,8 +1,8 @@
 const app = require('express')()
 require('dotenv').config();
 require('./config').config(app)
-require('./config/session.config').sessionInit(app);
 require('./db').connectDB();
+require('./config/session.config').sessionInit(app);
 
 
 const indexRoutes = require('./routes');

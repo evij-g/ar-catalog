@@ -3,10 +3,12 @@
   <label for="email">email</label>
   <input type="email" name="email" />
   <label for="password">password</label>
-  <input type="password" name="password" autocomplete='on' />
+  <input type="password" name="password" autocomplete="on" />
   <button type="submit">login</button>
 </form>
 
-{{#if message}}
-  <p>{{message}}</p>
+{{#if errorMessage}}
+  <p class="error">
+    {{errorMessage}}
+  </p>
 {{/if}}
