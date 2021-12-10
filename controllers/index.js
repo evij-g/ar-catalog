@@ -82,8 +82,6 @@ async function login(req, res) {
     );
     if (isVerifiedUser) {
       req.session.currentUser = email;
-
-      console.log(req.session);
       res.redirect("/private");
     } else {
       res.render("login", { errorMessage: "Login failed. Try again." });

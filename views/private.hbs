@@ -35,6 +35,14 @@
 </div>
 {{/if}}
 
+{{#if isAdmin}}
+{{#each allElements}}
+
+{{> elementAdmin}}
+{{/each}}
+
+{{else}}
 {{#each allElements}}
   {{> element }}
-{{/each}}
+  {{/each}}
+   {{/if}}
