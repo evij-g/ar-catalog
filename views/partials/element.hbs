@@ -1,8 +1,12 @@
-  <div class="ctn-element">
-    <p>title: {{title}}</p>
-    <img src="{{imageUrl}}" alt=`picture of {{title}}` />
-    <p>height: {{height}}</p>
-    <p>width: {{width}}</p>
-    <p>material: {{material}}</p>
-    <br />
-  </div>
+<div class="ctn-element">
+  <p>title: {{title}}</p>
+  <img src="{{imageUrl}}" alt="`picture" of {{title}} ` />
+  <p>height: {{height}}</p>
+  <p>width: {{width}}</p>
+  <p>material: {{material}}</p>
+  <br />
+  <form action="/delete-element{{id}}" method="post">
+    <button>delete</button></form>
+  <form action="/edit-element{{id}}" method="get">
+    <button>edit</button></form>
+</div>

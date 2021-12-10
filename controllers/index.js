@@ -22,7 +22,7 @@ function getSignup(req, res) {
 
 async function getPrivate(req, res) {
   try {
-    const admin = 'info@evij.de'
+    const admin = "info@evij.de";
     const isAdmin = req.session.currentUser === admin;
     const { ...allElements } = await Element.find();
     const { ...allUsers } = await User.find();
@@ -76,11 +76,14 @@ async function login(req, res) {
       return;
     }
     const foundUser = await User.findOne({ email });
-    const isVerifiedUser = await bcrypt.compare(password, foundUser.passwordHash);
+    const isVerifiedUser = await bcrypt.compare(
+      password,
+      foundUser.passwordHash
+    );
     if (isVerifiedUser) {
       req.session.currentUser = email;
 
-      console.log(req.session)
+      console.log(req.session);
       res.redirect("/private");
     } else {
       res.render("login", { errorMessage: "Login failed. Try again." });
@@ -127,12 +130,44 @@ async function logout(req, res) {
 
 async function deleteUser(req, res) {
   try {
-    const userId = req.params.id
+    const userId = req.params.id;
     await User.findByIdAndRemove(userId);
-    res.redirect('/private')
+    res.redirect("/private");
   } catch (error) {
     console.error(`An Error occured while trying to delete user:  ${error}`);
+  }
+}
 
+async function getEditElement(req, res) {
+  const elementId = req.params.id;
+  const element = await Element.findById(elementId);
+  res.render("edit-element", { element });
+}
+
+async function editElement(req, res) {
+  try {
+    const elementId = req.params.id;
+    const { title, height, width, material } = req.body;
+    await Element.findByIdAndUpdate(elementId, {
+      title: title,
+      height: height,
+      width: width,
+      material: material,
+      imageUrl: req.file.path,
+    });
+    res.redirect("/private");
+  } catch (error) {
+    console.error(`An error occured while trying to edit element: ${error}`);
+  }
+}
+
+async function deleteElement(req, res) {
+  try {
+    const elementId = req.params.id;
+    await Element.findByIdAndDelete(elementId);
+    res.redirect("/private");
+  } catch (error) {
+    console.error(`An error occured while trying to delete element: ${error}`);
   }
 }
 
@@ -146,5 +181,8 @@ module.exports = {
   private,
   createElement,
   logout,
-  deleteUser
+  deleteUser,
+  getEditElement,
+  editElement,
+  deleteElement,
 };

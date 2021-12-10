@@ -1,0 +1,17 @@
+
+
+  <img src="{{element.imageUrl}}" alt="">
+<form action="/edit-element{{element._id}}" method="POST" enctype="multipart/form-data">
+    <label for="image"></label>
+    <input type="file" name="image" />
+    <label for="title">title</label>
+    <input type="text" name="title" id="element-title" value='{{element.title}}' required />
+    <label for="width">width</label>
+    <input type="number" name="width" id="element-width" value="{{element.width}}" required />
+    <label for="width">height</label>
+    <input type="number" name="height" id="element-height" value="{{element.height}}" required />
+    <label for="material">material</label>
+    <input type="text" name="material" id="element-material" value="{{element.material}}" />
+    <button type="submit">update information</button>
+  </form>
+</div>

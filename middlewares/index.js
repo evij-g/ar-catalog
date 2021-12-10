@@ -10,7 +10,8 @@ function isAnon(req, res, next){
     if(!req.session.currentUser){
        return next();
     } 
-     return res.redirect('/')
+    return res.redirect('/private')
+
     }
 
 
