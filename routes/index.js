@@ -13,6 +13,7 @@ const {
   getEditElement,
   editElement,
   deleteElement,
+  editImage
 } = require("../controllers");
 
 const fileUploader = require("../config/cloudinary.config");
@@ -26,12 +27,13 @@ router
   .get("/signup", isAdmin, getSignup)
   .get("/edit-element:id", isAdmin, getEditElement)
 
-  .post("/edit-element:id", isAdmin, fileUploader.single("image"), editElement)
+  .post("/edit-element:id", isAdmin, editElement)
+  .post("/edit-image:id", isAdmin, fileUploader.single('imageUrl'), editImage)
   .post("/delete-element:id", isAdmin, deleteElement)
   .post("/login", isAnon, login)
   .post("/signup", isAdmin, signup)
   .post("/private", isLoggedIn, private)
-  .post("/create", isLoggedIn, fileUploader.single("image"), createElement)
+  .post("/create", isLoggedIn, fileUploader.single("imageUrl"), createElement)
   .post("/logout", isLoggedIn, logout)
   .post("/delete-user:id", isAdmin, deleteUser);
 

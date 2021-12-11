@@ -2,6 +2,7 @@ const Element = require("../models/element.model");
 const User = require("../models/user.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
+const fileUploader = require("../config/cloudinary.config");
 
 async function getHome(req, res) {
   try {
@@ -103,6 +104,7 @@ async function private(req, res) {
 async function createElement(req, res) {
   try {
     const { title, width, height, material } = req.body;
+
     await Element.create({
       title,
       width,
@@ -110,6 +112,7 @@ async function createElement(req, res) {
       material,
       imageUrl: req.file.path,
     });
+
     res.redirect("/private");
   } catch (error) {
     console.error(`An error occured while adding element to DB ${error}`);
@@ -146,16 +149,30 @@ async function editElement(req, res) {
   try {
     const elementId = req.params.id;
     const { title, height, width, material } = req.body;
+
     await Element.findByIdAndUpdate(elementId, {
       title: title,
       height: height,
       width: width,
       material: material,
-      imageUrl: req.file.path,
     });
+
     res.redirect("/private");
   } catch (error) {
     console.error(`An error occured while trying to edit element: ${error}`);
+  }
+}
+
+async function editImage(req, res) {
+  try {
+    const imageId = req.params.id;
+
+    await Element.findByIdAndUpdate(imageId, {
+      imageUrl: req.file.path,
+    });
+    res.redirect('/private')
+  } catch (error) {
+    console.error(`An error occured while trying to edit image: ${error}`);
   }
 }
 
@@ -183,4 +200,5 @@ module.exports = {
   getEditElement,
   editElement,
   deleteElement,
+  editImage,
 };
