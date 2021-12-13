@@ -1,6 +1,7 @@
 <form action="/logout" method='post'>
 <button>logout</button>
 </form>
+<section class="section">
 <h1>upload element</h1>
 
 <form action="/create" method="POST" enctype="multipart/form-data">
@@ -17,24 +18,29 @@
   <button type="submit">upload</button>
 </form>
 
+</section>
+
 {{#if isAdmin}}
 <form action="/signup" >
 <button>create new user</button>
 </form>
 <hr>
-<div class='ctn-allUsers'>
+<section class="section">
 <h2>all users</h2>
 <ul>
   {{#each allUsers}}
+  
 <li>
   <p>email: {{email}}</p>
-  <form action="/delete-user{{_id}}" method="post"><button>delete</button></form>
+  <form action="/delete-user{{_id}}" method="post" class="form">
+    <button class="button">delete</button>
+  </form>
 </li>
 {{/each}}
 </ul>
-</div>
+</section>
 {{/if}}
-
+<section class="section">
 {{#if isAdmin}}
 {{#each allElements}}
 
@@ -46,3 +52,4 @@
   {{> element }}
   {{/each}}
    {{/if}}
+</section>

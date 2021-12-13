@@ -31,5 +31,13 @@
     "multer": "^1.4.3",
     "multer-storage-cloudinary": "^4.0.0",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.0"
   }
 }
+
+
+
+  
