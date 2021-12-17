@@ -1,8 +1,11 @@
-const { Schema, marker } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const markerSchema = new Schema({
     marker:{
       type:Number,
-    }
+    },
+    link:{
+        type:String,
+    },
   });
-  module.exports = marker("Marker", markerSchema);
+  module.exports = model("Marker", markerSchema);
