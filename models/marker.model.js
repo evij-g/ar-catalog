@@ -5,5 +5,4 @@ const markerSchema = new Schema({
       type:Number,
     }
   });
-
   module.exports = marker("Marker", markerSchema);
