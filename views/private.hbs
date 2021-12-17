@@ -1,55 +1,54 @@
-<form action="/logout" method='post'>
-<button>logout</button>
 </form>
 <section class="section">
 <h1>upload element</h1>
 
 <form action="/create" method="POST" enctype="multipart/form-data">
-  <label for="image"></label>
-  <input type="file" name="image" />
-  <label for="title">title</label>
-  <input type="text" name="title" id="element-title" required />
-  <label for="width">width</label>
-  <input type="number" name="width" id="element-width" required />
-  <label for="width">height</label>
-  <input type="number" name="height" id="element-height" required />
-  <label for="material">material</label>
-  <input type="text" name="material" id="element-material" />
-  <button type="submit">upload</button>
+    <label for="image"></label>
+    <input type="file" name="image"/>
+    <label for="title">title</label>
+    <input type="text" name="title" id="element-title" required="required"/>
+    <label for="width">width</label>
+    <input type="number" name="width" id="element-width" required="required"/>
+    <label for="width">height</label>
+    <input type="number" name="height" id="element-height" required="required"/>
+    <label for="material">material</label>
+    <input type="text" name="material" id="element-material"/>
+    <button type="submit">upload</button>
 </form>
 
 </section>
 
 {{#if isAdmin}}
-<form action="/signup" >
-<button>create new user</button>
+<form action="/signup">
+    <button>create new user</button>
 </form>
 <hr>
 <section class="section">
-<h2>all users</h2>
-<ul>
-  {{#each allUsers}}
-  
-<li>
-  <p>email: {{email}}</p>
-  <form action="/delete-user{{_id}}" method="post" class="form">
-    <button class="button">delete</button>
-  </form>
-</li>
-{{/each}}
-</ul>
+    <h2>all users</h2>
+    <ul>
+        {{#each allUsers}}
+
+            <li>
+                <p>email:
+                    {{email}}</p>
+                <form action="/delete-user{{_id}}" method="post" class="form">
+                    <button class="button">delete</button>
+                </form>
+            </li>
+        {{/each}}
+    </ul>
 </section>
 {{/if}}
 <section class="section">
 {{#if isAdmin}}
-{{#each allElements}}
+    {{#each allElements}}
 
-{{> elementAdmin}}
-{{/each}}
+        {{> elementAdmin}}
+    {{/each}}
 
 {{else}}
-{{#each allElements}}
-  {{> element }}
-  {{/each}}
-   {{/if}}
+    {{#each allElements}}
+        {{> element }}
+    {{/each}}
+{{/if}}
 </section>
