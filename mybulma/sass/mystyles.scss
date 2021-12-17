@@ -1,2 +1,134 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+@import "../bulma/sass/utilities/initial-variables.sass";
+
+
+$title: "Poller One", sans-serif;
+$family-sans-serif: "Nunito", sans-serif;
+$family-monospace: 'Nunito', sans-serif;
+$family-serif: "Nunito", serif;
+$family-primary: $family-serif;
+
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
+$grey-light:  hsl(0, 0%, 71%) ;
+$hero-minheight: 180px;
+
+// Update Bulma's global variables
+//$family-sans-serif: "Syncopate", sans-serif;
+//$family-serif: "Syncopate", sans-serif;
+//$primary: $red;
+//$link: $pink;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+//$body-background-color: linear$black-bis;
+$control-border-width: 1px;
+$input-border-color: $grey-light;
+$input-shadow: true;
+
+
+
+$table-cell-padding: 1em 1em 0em 0em;
+$table-cell-border: 2px 3px 0px;
+$table-cell-border-width: 0 0 0px;
+
+
+
+
+
+// Import only what you need from Bulma
+@import "../bulma/sass/utilities/_all.sass";
+@import "../bulma/sass/base/_all.sass";
+@import "../bulma/sass/elements/button.sass";
+@import "../bulma/sass/elements/container.sass";
+@import "../bulma/sass/elements/table.sass";
+@import "../bulma/sass/elements/title.sass";
+@import "../bulma/sass/elements/icon.sass";
+@import "../bulma/sass/form/_all.sass";
+@import "../bulma/sass/components/navbar.sass";
+@import "../bulma/sass/components/card.sass";
+@import "../bulma/sass/layout/hero.sass";
+@import "../bulma/sass/layout/section.sass";
+@import "../bulma/sass/grid/tiles.sass";
+@import "../bulma/sass/helpers/typography.sass";
+
+
+
+
+//custom css styles by evij
+.title, .navbar-item > h1{
+    font-family: $title;
+}
+
+
+
+.hero {
+    min-height:$hero-minheight;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    //background-color:$black-bis;
+    background-color:$pink;
+    color:$white;
+    z-index: 2;
+}
+
+.hero *{
+   color:$white;
+}
+
+.catalog, section.content{
+    margin-top:calc(3rem + #{$hero-minheight});
+
+}
+.tile.is-ancestor {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.card{
+    max-width: 800px;
+    height: fit-content;
+}
+
+#img-preview {
+    background-color:#d1d1d1;
+    height:100px;
+}
+
+.admin button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.catalog.content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.catalog.content > section{
+    width: 500px;
+}

@@ -8,7 +8,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
@@ -16,10 +16,10 @@
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.5em - 1px);
-  padding-left: calc(0.75em - 1px);
-  padding-right: calc(0.75em - 1px);
-  padding-top: calc(0.5em - 1px);
+  padding-bottom: calc(0.5em - 2px);
+  padding-left: calc(0.75em - 2px);
+  padding-right: calc(0.75em - 2px);
+  padding-top: calc(0.5em - 2px);
   position: relative;
   vertical-align: top;
 }
@@ -338,14 +338,14 @@ table th {
 .button {
   background-color: white;
   border-color: #dbdbdb;
-  border-width: 1px;
+  border-width: 2px;
   color: #363636;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: calc(0.5em - 1px);
+  padding-bottom: calc(0.5em - 2px);
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: calc(0.5em - 1px);
+  padding-top: calc(0.5em - 2px);
   text-align: center;
   white-space: nowrap;
 }
@@ -360,18 +360,18 @@ table th {
 }
 
 .button .icon:first-child:not(:last-child) {
-  margin-left: calc(-0.5em - 1px);
+  margin-left: calc(-0.5em - 2px);
   margin-right: 0.25em;
 }
 
 .button .icon:last-child:not(:first-child) {
   margin-left: 0.25em;
-  margin-right: calc(-0.5em - 1px);
+  margin-right: calc(-0.5em - 2px);
 }
 
 .button .icon:first-child:last-child {
-  margin-left: calc(-0.5em - 1px);
-  margin-right: calc(-0.5em - 1px);
+  margin-left: calc(-0.5em - 2px);
+  margin-right: calc(-0.5em - 2px);
 }
 
 .button:hover, .button.is-hovered {
@@ -2340,8 +2340,8 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 
 .input.is-rounded {
   border-radius: 9999px;
-  padding-left: calc(calc(0.75em - 1px) + 0.375em);
-  padding-right: calc(calc(0.75em - 1px) + 0.375em);
+  padding-left: calc(calc(0.75em - 2px) + 0.375em);
+  padding-right: calc(calc(0.75em - 2px) + 0.375em);
 }
 
 .input.is-static {
@@ -2356,7 +2356,7 @@ fieldset[disabled] .select select:-ms-input-placeholder,
   display: block;
   max-width: 100%;
   min-width: 100%;
-  padding: calc(0.75em - 1px);
+  padding: calc(0.75em - 2px);
   resize: vertical;
 }
 
@@ -6103,7 +6103,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   top: 0;
   left: 0;
   right: 0;
-  background-color: #FA7C91;
+  background-color: #123456;
   color: white;
   z-index: 2;
 }
@@ -6152,4 +6152,4 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   width: 500px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
