@@ -1,6 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const elementSchema = new Schema({
+ marker:{
+   type:Number,
+ },
+
   title: {
     type: String,
     required: true,

@@ -132,7 +132,10 @@ async function private(req, res) {
 async function createElement(req, res) {
     try {
         const {title, width, height, material} = req.body;
-        await Element.create({title, width, height, material, imageUrl: req.file.path});
+        const elementCounter = db.collection.count();
+        const marker = elementCounter + 1;
+        console.log(elementCounter);
+        await Element.create({marker,title, width, height, material, imageUrl: req.file.path});
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while adding element to DB ${error}`);
@@ -167,6 +170,8 @@ async function getEditElement(req, res) {
     res.render("edit-element", {element});
 }
 
+
+
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
@@ -193,6 +198,9 @@ async function deleteElement(req, res) {
         console.error(`An error occured while trying to delete element: ${error}`);
     }
 }
+
+
+
 
 module.exports = {
     getHome,

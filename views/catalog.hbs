@@ -1,7 +1,7 @@
 <div class="catalog content">
     {{#if isAdmin}}
         {{#each allElements}}
-            <section class="section ">
+            <section class="section" marker="{{marker}}">
                 <div class="card">
                     {{> element }}
                     {{> elementAdmin}}
@@ -11,7 +11,7 @@
 
     {{else}}
         {{#each allElements}}
-            <section class="section">
+            <section class="section" marker="{{marker}}">
                 <div class="card">
                     {{> element }}
                 </div>
