@@ -24,6 +24,19 @@
                     <td>MATERIAL:</td>
                     <td>{{material}}</td>
                 </tr>
+                
+                {{#if @root.isAdmin}}
+                {{log @root.isAdmin}}
+                
+                    <tr>
+                        <td>markerid:</td>
+                        <td>{{markerId}}</td>
+                    </tr>
+                    <tr>
+                        <td>markerimage:</td>
+                        <td><img src="{{markerLink}}?raw=true"/></td>
+                    </tr>
+                {{/if}}
             </table>
         </div>
     </div>

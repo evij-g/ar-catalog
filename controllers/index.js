@@ -1,5 +1,6 @@
 const Element = require("../models/element.model");
 const User = require("../models/user.model");
+const Marker = require("../models/markers.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 
@@ -23,14 +24,14 @@ function getSignup(req, res) {
 }
 
 function getCreateForm(req, res) {
-  try {
-    const admin = "info@evij.de";
-    const isAdmin = req.session.currentUser === admin;
-    
-    res.render("upload", {isAdmin});
-} catch (error) {
-    console.error(error);
-}
+    try {
+        const admin = "info@evij.de";
+        const isAdmin = req.session.currentUser === admin;
+
+        res.render("upload", {isAdmin});
+    } catch (error) {
+        console.error(error);
+    }
 }
 async function getAllUsers(req, res) {
     try {
@@ -129,13 +130,39 @@ async function private(req, res) {
     }
 }
 
-async function createElement(req, res) {
+async function getMarker(){
+    try {
+
+        const markerElement = await Marker.findOneAndUpdate({
+            inUse: "false"
+        }, {inUse: "true"});
+        const markerId = markerElement.markerId;
+        console.log("markerid: " + markerId);
+
+        const markerLink = markerElement.markerLink;
+        console.log("markerlink: " + markerLink);
+
+        return markerElement;
+    } catch (error) {
+        console.error(`An error occured while getting element from DB ${error}`);
+    }
+}
+
+async function createElement(req, res, ) {
     try {
         const {title, width, height, material} = req.body;
-        const elementCounter = db.collection.count();
-        const marker = elementCounter + 1;
-        console.log(elementCounter);
-        await Element.create({marker,title, width, height, material, imageUrl: req.file.path});
+
+        const markerElement = await getMarker();
+
+        await Element.create({
+            markerId: markerElement.markerId,
+            markerLink: markerElement.markerLink,
+            title,
+            width,
+            height,
+            material,
+            imageUrl: req.file.path
+        });
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while adding element to DB ${error}`);
@@ -170,8 +197,6 @@ async function getEditElement(req, res) {
     res.render("edit-element", {element});
 }
 
-
-
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
@@ -189,18 +214,33 @@ async function editElement(req, res) {
     }
 }
 
+async function resetMarker(markerId){
+    try {
+
+        const markerElement = await Marker.findOneAndUpdate({
+            markerId: markerId,
+        }, {inUse: "false"});
+        
+        console.log("markerElement updated" + markerElement);
+        
+    } catch (error) {
+        console.error(`An error occured while getting element from DB ${error}`);
+    }
+
+}
+
 async function deleteElement(req, res) {
     try {
         const elementId = req.params.id;
-        await Element.findByIdAndDelete(elementId);
+        
+        const foundElement = await Element.findByIdAndDelete(elementId);
+        console.log(foundElement);
+        resetMarker(foundElement.markerId);
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while trying to delete element: ${error}`);
     }
 }
-
-
-
 
 module.exports = {
     getHome,
