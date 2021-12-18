@@ -2,55 +2,65 @@
     <section class="section" marker="{{element.markerId}}">
         <div class="card">
             <div class="card-image">
-    <figure class="image is-4by3">
-        <img src="{{element.imageUrl}}" alt="picture of={{element.title}}"/>
-    </figure>
-</div>
-<div class="card-content">
-    <div class="media">
-        <div class="media-content">
-            <p class="title is-4"><a href="/single-element{{element.id}}">{{element.title}}</a></p>
-        </div>
-    </div>
-    <div class="content">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>HEIGHT:</td>
-                    <td>{{element.height}}</td>
-                </tr>
-                <tr>
-                    <td>WIDTH:</td>
-                    <td>{{element.width}}</td>
-                </tr>
-                <tr>
-                    <td>MATERIAL:</td>
-                    <td>{{element.material}}</td>
-                </tr>
+                <figure class="image is-4by3">
+                    <img src="{{element.imageUrl}}" alt="picture of={{element.title}}"/>
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">
+                            <a href="/single-element{{element.id}}">{{element.title}}</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>HEIGHT:</td>
+                                <td>{{element.height}}</td>
+                            </tr>
+                            <tr>
+                                <td>WIDTH:</td>
+                                <td>{{element.width}}</td>
+                            </tr>
+                            <tr>
+                                <td>MATERIAL:</td>
+                                <td>{{element.material}}</td>
+                            </tr>
 
-             
-                
-                {{#if isAdmin}}
-                
+                            {{#if isAdmin}}
 
-              
-                
-                    <tr>
-                        <td>markerid:</td>
-                        <td>{{element.markerId}}</td>
-                    </tr>
-                    <tr>
-                        <td>markerimage:</td>
-                        <td><img src="{{element.markerLink}}?raw=true"/></td>
-                    </tr>
-                    
-            </table>
+                                <tr>
+                                    <td>markerid:</td>
+                                    <td>{{element.markerId}}</td>
+                                </tr>
+                                <tr>
+                                    <td>markerimage:</td>
+                                    <td><img src="{{element.markerLink}}?raw=true"/></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    {{> elementAdmin element}}
+                </div>
+            </section>
+
         </div>
-    </div>
-    {{> elementAdmin element}}
-        </div>
+
+    {{/if}}
+
+    <section class="section">
+
+        <a href="/catalog">
+            <button class="button is-primary">
+                <span class="icon is-small">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span>back to catalog</span>
+            </button>
+        </a>
+
     </section>
-    
-</div>
-
-                {{/if}}
