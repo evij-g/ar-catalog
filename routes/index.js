@@ -5,6 +5,7 @@ const {
   getSignup,
   getAllUsers,
   getCatalogElements,
+  getSingleElement,
   login,
   signup,
   getCreateForm,
@@ -28,6 +29,7 @@ router
   .get("/signup", isAdmin, getSignup)
   .get("/edit-element:id", isAdmin, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
+  .get("/single-element:id", isAdmin, getSingleElement)
 
   
 
@@ -40,6 +42,7 @@ router
   .post("/catalog", isLoggedIn, getCatalogElements)
   .post("/create", isLoggedIn, fileUploader.single("image"), createElement)
   .post("/logout", isLoggedIn, logout)
-  .post("/delete-user:id", isAdmin, deleteUser);
+  .post("/delete-user:id", isAdmin, deleteUser)
+  .post("/single-element:id", isAdmin, getSingleElement)
 
 module.exports = router;

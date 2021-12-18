@@ -6,7 +6,7 @@
 <div class="card-content">
     <div class="media">
         <div class="media-content">
-            <p class="title is-4">{{title}}</p>
+            <p class="title is-4"><a href="/single-element{{id}}">{{title}}</a></p>
         </div>
     </div>
     <div class="content">
@@ -24,6 +24,8 @@
                     <td>MATERIAL:</td>
                     <td>{{material}}</td>
                 </tr>
+
+                
                 
                 {{#if @root.isAdmin}}
                 {{log @root.isAdmin}}

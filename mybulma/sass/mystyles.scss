@@ -30,16 +30,28 @@ $hero-minheight: 180px;
 // Update Bulma's global variables
 //$family-sans-serif: "Syncopate", sans-serif;
 //$family-serif: "Syncopate", sans-serif;
-//$primary: $red;
+$primary: #D1C4E9;
+$secondary: #9ea7aa;
 //$link: $pink;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
 // Update some of Bulma's component variables
-//$body-background-color: linear$black-bis;
+$body-background-color: #EEEEEE;
 $control-border-width: 1px;
 $input-border-color: $grey-light;
 $input-shadow: true;
+
+$navbar-background-color:$primary;
+
+
+/*.upload .card-content{
+    position:relative;
+    margin:1.5rem;
+    background-color: $grey-light;
+    border-radius: 0.25rem;
+}*/
+
 
 .file-name{
     background-color: $white;
@@ -70,6 +82,7 @@ $table-cell-border-width: 0 0 0px;
 @import "../bulma/sass/layout/section.sass";
 @import "../bulma/sass/grid/tiles.sass";
 @import "../bulma/sass/helpers/typography.sass";
+@import "../bulma/sass/helpers/float.sass";
 
 
 
@@ -88,13 +101,13 @@ $table-cell-border-width: 0 0 0px;
     left: 0;
     right:0;
     //background-color:$black-bis;
-    background-color:$pink;
-    color:$white;
+    background-color:$primary;
+    
     z-index: 2;
 }
 
 .hero *{
-   color:$white;
+    color:$black-ter;
 }
 
 .catalog, section.content{
@@ -112,8 +125,9 @@ $table-cell-border-width: 0 0 0px;
 }
 
 #img-preview {
-    background-color:#d1d1d1;
-    height:100px;
+    background-color:$secondary;
+    min-height:100px;
+    line-height: 0;
 }
 
 .admin button{

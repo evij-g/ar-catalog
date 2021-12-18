@@ -148,7 +148,7 @@ async function getMarker(){
     }
 }
 
-async function createElement(req, res, ) {
+async function createElement(req, res) {
     try {
         const {title, width, height, material} = req.body;
 
@@ -242,6 +242,34 @@ async function deleteElement(req, res) {
     }
 }
 
+async function getCatalogElements(req, res) {
+    try {
+        const admin = "info@evij.de";
+        const isAdmin = req.session.currentUser === admin;
+        const {
+            ...allElements
+        } = await Element.find();
+        res.render("catalog", {allElements, isAdmin});
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+async function getSingleElement(req, res) {
+    try {
+        const admin = "info@evij.de";
+        const isAdmin = req.session.currentUser === admin;
+    const elementId = req.params.id;
+    const element = await Element.findById(elementId);
+    
+    res.render("single-element", {element, isAdmin});
+    }
+    catch (error) {
+        console.error(`An error occured while trying to get element: ${error}`);
+    }
+}
+
 module.exports = {
     getHome,
     getLogin,
@@ -249,6 +277,7 @@ module.exports = {
     getCatalogElements,
     getAllUsers,
     getCreateForm,
+    getSingleElement,
     login,
     signup,
     //private,
