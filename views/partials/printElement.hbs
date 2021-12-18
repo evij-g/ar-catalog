@@ -1,0 +1,58 @@
+<div id="singleElementPrint" class="">
+    <section class="section" marker="{{element.markerId}}">
+        <div class="">
+            <div class="">
+                <figure class="image">
+                    <img src="{{element.markerLink}}?raw=true" class="ar-marker"/>
+                </figure>
+            </div>
+            <div class="print-info">
+                <div class="">
+                    <div class="">
+                        <p class="title is-4">
+                            <a href="/single-element{{element.id}}">{{element.title}}</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <table class="table">
+                        <tbody>
+                            <tr style="display:flex 1;">
+                                <td>
+                                    <img src="{{element.imageUrl}}" alt="picture of={{element.title}}" class="preview-img"  />
+
+                                </td>
+                                
+                                
+
+                            
+                            <td>
+                                    <table class="table">
+                                    <tr>
+                                        <td>HEIGHT:</td>
+                                        <td>{{element.height}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WIDTH:</td>
+                                        <td>{{element.width}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MATERIAL:</td>
+                                        <td>{{element.material}}</td>
+                                    </tr></table>
+                                </td>
+
+                                <td id="qrCodePrintContainer">
+                                    <img src="" id="qrcode-print" />
+
+                                    </td>
+                                </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -6176,4 +6176,48 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   width: 500px;
 }
 
+#canvas {
+  width: 100%;
+  background-color: #9ea7aa;
+}
+
+/* style sheet for "A4" printing */
+/*
+
+3cm frame = margin
+=> 21cm - 6cm = 15cm 
+
+Size of AR-Marker = 15cm
+
+*/
+#singleElementPrint {
+  display: block;
+}
+
+.ar-marker {
+  width: 100%;
+}
+
+.preview-img {
+  max-height: 200px;
+  width: 100%;
+}
+
+@media print {
+  #singleElement, .navbar, .hero, #backbutton {
+    display: none;
+  }
+  .section {
+    padding-bottom: 0px;
+  }
+}
+
+@media print and (width: 21cm) and (height: 29.7cm) {
+  @page {
+    margin: 3cm;
+    margin-bottom: 0cm;
+    /* hide regular layout and display print layout */
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

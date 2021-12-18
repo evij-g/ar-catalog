@@ -1,4 +1,4 @@
-<div class="catalog content">
+<div id="singleElement" class="catalog content">
     <section class="section" marker="{{element.markerId}}">
         <div class="card">
             <div class="card-image">
@@ -41,6 +41,14 @@
                                     <td><img src="{{element.markerLink}}?raw=true"/></td>
                                 </tr>
 
+                                <tr>
+                                    <td>qr-code:</td>
+
+                                    <td>
+                                        <a href="" id="qrcode-link"><img src="" id="qrcode-image"/></a>
+                                    </td>
+                                </tr>
+
                             </table>
                         </div>
                     </div>
@@ -52,7 +60,7 @@
 
     {{/if}}
 
-    <section class="section">
+    <section id="backbutton" class="section">
 
         <a href="/catalog">
             <button class="button is-primary">
@@ -64,3 +72,41 @@
         </a>
 
     </section>
+
+    {{> printElement}}
+
+    <script src="/scripts/qrcode.js"></script>
+    <script>
+        /*
+  QRCode.toCanvas(document.getElementById('canvas'), {margin: 0}, window.location.href, function (error) {
+    if (error) console.error(error)
+    console.log('success!');
+  });
+
+*/
+
+        var opts = {
+            errorCorrectionLevel: 'H',
+            type: 'image/jpeg',
+            quality: 0.3,
+            margin: 0,
+            color: {
+                dark: "#010599FF",
+                light: "#FFBF60FF"
+            }
+        }
+
+        QRCode.toDataURL(window.location.href, opts, function (err, url) {
+            if (err) 
+                throw err
+
+            var img = document.getElementById('qrcode-image')
+            var imgPrint = document.getElementById('qrcode-print')
+            img.src = url
+            imgPrint.src=url
+        })
+         
+
+        var a = document.getElementById('qrcode-link');
+        a.href = window.location.href;
+    </script>

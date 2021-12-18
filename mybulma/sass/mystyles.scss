@@ -150,3 +150,57 @@ $table-cell-border-width: 0 0 0px;
 .catalog.content > section{
     width: 500px;
 }
+
+#canvas{
+    width:100%;
+    background-color: $secondary;
+}
+
+
+/* style sheet for "A4" printing */
+/*
+
+3cm frame = margin
+=> 21cm - 6cm = 15cm 
+
+Size of AR-Marker = 15cm
+
+*/
+
+#singleElementPrint {
+    display:block;
+}
+#qrCodePrintContainer{
+    
+}
+#qrcode-print{
+    
+}
+.ar-marker{
+    width:100%;
+}
+.preview-img{
+    max-height:200px;
+    width:100%;
+}
+.print-info{
+    
+}
+@media print{
+    #singleElement, .navbar, .hero, #backbutton{
+        display:none;
+    }
+    .section{
+        padding-bottom:0px;
+    }
+}
+@media print and (width: 21cm) and (height: 29.7cm) {
+
+    @page {
+       margin: 3cm;
+    margin-bottom:0cm;
+       /* hide regular layout and display print layout */
+       
+    }
+    
+   }
