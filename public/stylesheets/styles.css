@@ -6194,6 +6194,10 @@ Size of AR-Marker = 15cm
   display: block;
 }
 
+#qrcode-image {
+  width: 100%;
+}
+
 .ar-marker {
   width: 100%;
 }
