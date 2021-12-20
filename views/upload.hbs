@@ -2,12 +2,22 @@
     <h2 class="title">
         ADD NEW ELEMENT TO CATALOG
     </h2>
-    <form action="/create" method="POST" class="upload" enctype="multipart/form-data">
+    <form
+        action="/create"
+        method="POST"
+        class="upload"
+        enctype="multipart/form-data">
 
         <div class="card">
             <div class="card-image">
                 <figure class="image is-4by3" id="img-preview">
                     <img src="">
+                    
+                </figure>
+                <figure>
+                    <img src="{{markerElement.markerLink}}?raw=true" id="markerImage" />
+                    <canvas id="canvas"></canvas>
+                    
                 </figure>
 
             </div>
@@ -19,6 +29,7 @@
                             <div class="file has-name is-fullwidth">
                                 <label class="file-label">
                                     <input class="file-input" type="file" name="image">
+                                    <input class="file-input" type="file" name="markerPattern">
                                     <span class="file-cta">
                                         <span class="file-icon">
                                             <i class="fas fa-upload"></i>
@@ -72,6 +83,9 @@
                             <button class="button is-primary" type="submit">upload</button>
                         </div>
 
+                        <div class="control">
+                            <button class="button is-primary" type="button" onclick="createMarkerPattern()">create marker</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +98,97 @@
     {{/each}}
 
 </section>
+
+<script>
+    const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+const image = new Image(); // Using optional size for image
+image.onload = drawImageActualSize; // Draw when image has loaded
+
+// Load an image of intrinsic size 300x227 in CSS pixels
+image.src = document.getElementById('markerImage').src();
+console.log(image.src);
+
+function drawImageActualSize() {
+  // Use the intrinsic size of image in CSS pixels for the canvas element
+  canvas.width = this.naturalWidth;
+  canvas.height = this.naturalHeight;
+
+  // Will draw the image as 300x227, ignoring the custom size of 60x45
+  // given in the constructor
+  ctx.drawImage(this, 0, 0);
+
+  // To use the custom size we'll have to specify the scale parameters
+  // using the element's width and height properties - lets draw one
+  // on top in the corner:
+  ctx.drawImage(this, 0, 0, this.width, this.height);
+}
+
+</script>
+<script>
+
+ console.log("------------------createMarkerPattern--------------");
+   // ARjsStudioBackend = import ("../public/scripts/arjs-studio-backend.min.js");
+    const {MarkerModule, MATRIX_3X3_HAMMING_63} = ARjsStudioBackend;
+    //const MarkerModule;
+    //const MATRIX_4x4_BCH_13_9_3;
+    /* // generate an SVG data URI for the value '7'
+const barcodeMarkerSVG =
+* MarkerModule.getBarcodeMarkerSVGDataURI(MATRIX_3X3_HAMMING_63, 7);
+
+const
+* barcodeImage = new Image();
+barcodeImage.src = barcodeMarkerSVG; // use the
+* image 'load' event to know when image is ready
+*/
+    // ----
+
+    // draw the image on an off-screen canvas and use `.toDataURL()` to get a data
+    // URI
+    console.log("getMarker: " + getMarker());
+    const markerElement = getMarker();
+    console.log(markerElement);
+    const imageDataURI = markerElement
+        .markerlink
+        .toDataURL();
+    console.log(imageDataURI);
+
+    const fullMarker = await MarkerModule.getFullMarkerImage(
+        imageDataURI,
+        1.0,
+        100,
+        'black'
+    );
+    const pattFile = await MarkerModule.getMarkerPattern(imageDataURI);
+
+    const patternImage = new Image();
+    patternImage.src = fullMarker;
+    // use the image 'load' event to know when image is ready
+    patternImage.addEventListener('load', () => {
+
+        document.body.appendChild(patternImage);
+
+    })
+    /* die "marker.patt"-Datei sollte generiert werden und dann zu cloudinary
+* hochgeladen werden.
+Der Link zur Datei wird dem Marker in der Datenbank
+* zugeordnet.
+
+pattFileDownload.href =
+* `data:text/plain;charset=utf-8,${pattFile}`;
+pattFileDownload.download =
+* 'marker.patt'; // filename
+*/
+    const pattFileDownload = document.createElement('a');
+    pattFileDownload.href = `data:text/plain;charset=utf-8,${pattFile}`;
+    pattFileDownload.download = 'marker.patt'; // filename
+    pattFileDownload.click(); // trigger download
+
+    console.log("------------------createMarkerPattern--------------");
+    
+    </script>
+
 
 <script>
     const fileInput = document.querySelector('.file input[type=file]');
@@ -112,3 +217,5 @@
         }
     }
 </script>
+
+<script src="/scripts/arjs-studio-backend.min.js"></script>

@@ -29,7 +29,7 @@ router
   .get("/signup", isAdmin, getSignup)
   .get("/edit-element:id", isAdmin, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
-  .get("/single-element:id", isAdmin, getSingleElement)
+  .get("/single-element:id", getSingleElement)
 
   
 

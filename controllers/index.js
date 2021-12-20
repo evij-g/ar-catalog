@@ -23,12 +23,14 @@ function getSignup(req, res) {
     res.render("signup");
 }
 
-function getCreateForm(req, res) {
+async function getCreateForm(req, res) {
     try {
         const admin = "info@evij.de";
         const isAdmin = req.session.currentUser === admin;
+        const markerElement = await setMarker(false);
+        console.log("markerElement:", markerElement);
 
-        res.render("upload", {isAdmin});
+        res.render("upload", {isAdmin, markerElement});
     } catch (error) {
         console.error(error);
     }
@@ -130,29 +132,46 @@ async function private(req, res) {
     }
 }
 
-async function getMarker(){
-    try {
 
-        const markerElement = await Marker.findOneAndUpdate({
+
+async function setMarker(update){
+    let markerElement ="";
+    try {
+        console.log("------------------setMarker--------------");
+        if(update){
+        markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true"});
+    }else{
+        markerElement = await Marker.findOne({
+            inUse: "false"
+        });
+    }
         const markerId = markerElement.markerId;
         console.log("markerid: " + markerId);
 
         const markerLink = markerElement.markerLink;
         console.log("markerlink: " + markerLink);
 
+        console.log("------------------setMarker--------------");
+
         return markerElement;
+
+        
     } catch (error) {
-        console.error(`An error occured while getting element from DB ${error}`);
+        console.error(`An error occured while getting Marker from DB ${error}`);
     }
 }
+
+
 
 async function createElement(req, res) {
     try {
         const {title, width, height, material} = req.body;
 
-        const markerElement = await getMarker();
+        const markerElement = await setMarker(false);
+        //const markerPattern = await createMarkerPattern();
+        console.log(markerElement);
 
         await Element.create({
             markerId: markerElement.markerId,
@@ -228,6 +247,7 @@ async function resetMarker(markerId){
     }
 
 }
+
 
 async function deleteElement(req, res) {
     try {

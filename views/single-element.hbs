@@ -1,3 +1,5 @@
+
+
 <div id="singleElement" class="catalog content">
     <section class="section" marker="{{element.markerId}}">
         <div class="card">
@@ -30,7 +32,7 @@
                                 <td>{{element.material}}</td>
                             </tr>
 
-                            {{#if isAdmin}}
+    {{#if isAdmin}}
 
                                 <tr>
                                     <td>markerid:</td>
@@ -53,28 +55,33 @@
                         </div>
                     </div>
                     {{> elementAdmin element}}
+                    
+                    {{else}}
+                    </table>
+                        </div>
+                    </div>
+                    {{/if}}
                 </div>
             </section>
 
         </div>
 
-    {{/if}}
-
     <section id="backbutton" class="section">
 
-        <a href="/catalog">
-            <button class="button is-primary">
-                <span class="icon is-small">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span>back to catalog</span>
-            </button>
-        </a>
+    <a href="/catalog">
+        <button class="button is-primary">
+            <span class="icon is-small">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span>back to catalog</span>
+        </button>
+    </a>
 
-    </section>
+</section>
 
-    {{> printElement}}
-
+    {{#if isAdmin}}
+        {{> printElement}}
+    {{/if}}
     <script src="/scripts/qrcode.js"></script>
     <script>
         /*
@@ -103,9 +110,8 @@
             var img = document.getElementById('qrcode-image')
             var imgPrint = document.getElementById('qrcode-print')
             img.src = url
-            imgPrint.src=url
+            imgPrint.src = url
         })
-         
 
         var a = document.getElementById('qrcode-link');
         a.href = window.location.href;
