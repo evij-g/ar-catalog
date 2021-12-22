@@ -12,14 +12,11 @@
             <div class="card-image">
                 <figure class="image is-4by3" id="img-preview">
                     <img src="">
-                    
+
                 </figure>
                 <figure>
-                    <img src="{{markerElement.markerLink}}?raw=true" id="markerImage" />
-                    <canvas id="canvas"></canvas>
-                    
-                </figure>
-
+                    <img src="{{markerElement.markerLink}}" id="markerImage"/>
+                    </figure>
             </div>
 
             <div class="card-content">
@@ -28,8 +25,8 @@
                         <div class="field">
                             <div class="file has-name is-fullwidth">
                                 <label class="file-label">
-                                    <input class="file-input" type="file" name="image">
-                                    <input class="file-input" type="file" name="markerPattern">
+                                    <!-- <input class="file-input" type="file" name="file"> -->
+                                    <input name="image" type="file" class="file-input cloudinary-fileupload" multiple="multiple" />
                                     <span class="file-cta">
                                         <span class="file-icon">
                                             <i class="fas fa-upload"></i>
@@ -42,6 +39,7 @@
                                 </label>
                             </div>
                         </div>
+                        
 
                         <div class="field">
                             <input
@@ -79,13 +77,22 @@
                                 id="element-material"/>
                         </div>
 
+                        <div class="field">
+                            <input
+                                class="input"
+                                placeholder="material"
+                                type="text"
+                                name="markerPatternBase64"
+                                id="markerPatternBase64"/>
+                        </div>
+<div class="control">
+                            <a href="" id="markerPatternFile">create marker</a>
+                        </div>
                         <div class="control">
                             <button class="button is-primary" type="submit">upload</button>
                         </div>
 
-                        <div class="control">
-                            <button class="button is-primary" type="button" onclick="createMarkerPattern()">create marker</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -99,102 +106,13 @@
 
 </section>
 
-<script>
-    const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
-const image = new Image(); // Using optional size for image
-image.onload = drawImageActualSize; // Draw when image has loaded
-
-// Load an image of intrinsic size 300x227 in CSS pixels
-image.src = document.getElementById('markerImage').src();
-console.log(image.src);
-
-function drawImageActualSize() {
-  // Use the intrinsic size of image in CSS pixels for the canvas element
-  canvas.width = this.naturalWidth;
-  canvas.height = this.naturalHeight;
-
-  // Will draw the image as 300x227, ignoring the custom size of 60x45
-  // given in the constructor
-  ctx.drawImage(this, 0, 0);
-
-  // To use the custom size we'll have to specify the scale parameters
-  // using the element's width and height properties - lets draw one
-  // on top in the corner:
-  ctx.drawImage(this, 0, 0, this.width, this.height);
-}
-
-</script>
-<script>
-
- console.log("------------------createMarkerPattern--------------");
-   // ARjsStudioBackend = import ("../public/scripts/arjs-studio-backend.min.js");
-    const {MarkerModule, MATRIX_3X3_HAMMING_63} = ARjsStudioBackend;
-    //const MarkerModule;
-    //const MATRIX_4x4_BCH_13_9_3;
-    /* // generate an SVG data URI for the value '7'
-const barcodeMarkerSVG =
-* MarkerModule.getBarcodeMarkerSVGDataURI(MATRIX_3X3_HAMMING_63, 7);
-
-const
-* barcodeImage = new Image();
-barcodeImage.src = barcodeMarkerSVG; // use the
-* image 'load' event to know when image is ready
-*/
-    // ----
-
-    // draw the image on an off-screen canvas and use `.toDataURL()` to get a data
-    // URI
-    console.log("getMarker: " + getMarker());
-    const markerElement = getMarker();
-    console.log(markerElement);
-    const imageDataURI = markerElement
-        .markerlink
-        .toDataURL();
-    console.log(imageDataURI);
-
-    const fullMarker = await MarkerModule.getFullMarkerImage(
-        imageDataURI,
-        1.0,
-        100,
-        'black'
-    );
-    const pattFile = await MarkerModule.getMarkerPattern(imageDataURI);
-
-    const patternImage = new Image();
-    patternImage.src = fullMarker;
-    // use the image 'load' event to know when image is ready
-    patternImage.addEventListener('load', () => {
-
-        document.body.appendChild(patternImage);
-
-    })
-    /* die "marker.patt"-Datei sollte generiert werden und dann zu cloudinary
-* hochgeladen werden.
-Der Link zur Datei wird dem Marker in der Datenbank
-* zugeordnet.
-
-pattFileDownload.href =
-* `data:text/plain;charset=utf-8,${pattFile}`;
-pattFileDownload.download =
-* 'marker.patt'; // filename
-*/
-    const pattFileDownload = document.createElement('a');
-    pattFileDownload.href = `data:text/plain;charset=utf-8,${pattFile}`;
-    pattFileDownload.download = 'marker.patt'; // filename
-    pattFileDownload.click(); // trigger download
-
-    console.log("------------------createMarkerPattern--------------");
-    
-    </script>
 
 
 <script>
     const fileInput = document.querySelector('.file input[type=file]');
     //const chooseFile = document.getElementById("choose-file");
     const imgPreview = document.getElementById("img-preview");
-    console.log(fileInput);
+    //console.log(fileInput);
     fileInput.onchange = () => {
         if (fileInput.files.length > 0) {
             getImgData();
@@ -218,4 +136,110 @@ pattFileDownload.download =
     }
 </script>
 
-<script src="/scripts/arjs-studio-backend.min.js"></script>
+<!-- <script src="/scripts/arjs-studio-backend.min.js"></script> -->
+
+<script>
+
+    const image = new Image(); // Using optional size for image
+
+    image.src = document
+        .getElementById('markerImage')
+        .src;
+ 
+
+    var link = image.src;
+    
+
+      function toDataURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+          var reader = new FileReader();
+          reader.onloadend = function () {
+            callback(reader.result);
+            createMarker(reader.result);
+            
+
+          };
+          reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+      }
+     
+     const base64 = toDataURL(link, function (dataUrl) {
+        //console.log('RESULT:', dataUrl.replace("data:image/png;base64,", "")) // Clean up data tag);
+      });
+      
+</script>
+<script src="scripts/arjs-studio-backend.min.js"></script>
+<script>
+
+
+  async function createMarker(base64){
+        
+
+    const {MarkerModule, MATRIX_4x4_BCH_13_9_3} = ARjsStudioBackend;
+    /* //const MarkerModule; const MATRIX_4x4_BCH_13_9_3; / generate an SVG data URI
+    MarkerModule.getBarcodeMarkerSVGDataURI(MATRIX_3X3_HAMMING_63, 7)
+ 
+ */
+
+    // ----
+
+    // draw the image on an off-screen canvas and use `.toDataURL()` to get a data
+    // URI console.log("getMarker: " + setMarker(false)); const markerElement =
+    // setMarker(false); console.log(markerElement);
+
+    // use the image 'load' event to know when image is ready
+
+   
+
+    //console.log("makePattern base64",base64);
+    const imageDataURI = base64;
+
+    const getfullMarker = MarkerModule.getFullMarkerImage(
+        imageDataURI,
+        1.0,
+        100,
+        'black'
+    );
+
+    const getpattFile = await MarkerModule.getMarkerPattern(imageDataURI);
+
+    const patternImage = new Image();
+    patternImage.src = getfullMarker;
+    
+
+    //const pattFileDownload = document.createElement('a');
+    const pattFileDownload = document.getElementById('markerPatternFile');
+
+
+            pattFileDownload.href = `data:text/plain;charset=utf-8,${getpattFile}`;
+            pattFileDownload.download = 'marker.patt'; 
+            
+            
+            var str = `data:text/plain;charset=utf-8,${getpattFile}`;
+            str = `${getpattFile}`;
+           console.log(str);
+           
+            var value = "data:text/plain;charset=UTF-8;base64," + btoa(unescape(encodeURIComponent(str)));
+            //value= btoa(unescape(encodeURIComponent(str)));
+            console.log(value);
+
+            
+            const pattFileInput = document.getElementById('markerPatternBase64');    
+            pattFileInput.setAttribute("value", value);
+            
+
+  //  console.log("------------------/createMarkerPattern--------------");
+
+
+
+  }
+</script>
+
+
+
+
+

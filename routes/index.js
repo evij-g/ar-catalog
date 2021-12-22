@@ -1,4 +1,6 @@
 const router = require("express").Router();
+
+
 const {
   getHome,
   getLogin,
@@ -15,6 +17,7 @@ const {
   getEditElement,
   editElement,
   deleteElement,
+  getARSingleElement
 } = require("../controllers");
 
 const fileUploader = require("../config/cloudinary.config");
@@ -30,6 +33,7 @@ router
   .get("/edit-element:id", isAdmin, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
   .get("/single-element:id", getSingleElement)
+  .get("/ar-view:id", getARSingleElement)
 
   
 

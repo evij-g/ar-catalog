@@ -8,6 +8,9 @@ const elementSchema = new Schema({
         type: String,
         required: true
     },
+    patternLink:{
+        type:String
+    },
     title: {
         type: String,
         required: true
@@ -24,7 +27,7 @@ const elementSchema = new Schema({
         type: String,
         required: true
     },
-    material: String
+    material: {type: String}
 });
 
 module.exports = model("Element", elementSchema);

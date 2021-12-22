@@ -11,6 +11,14 @@ const markerSchema = new Schema({
     },
     inUse: {
         type: Boolean,
+    },
+    patternFileLink:{
+        type:String
     }
 });
+
+
+
+
+
 module.exports = model("Marker", markerSchema);

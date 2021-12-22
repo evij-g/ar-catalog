@@ -1,0 +1,67 @@
+<style>
+    .hero{
+        
+        min-height: auto;
+    }
+    .hero-body{
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+    }
+    .hero-body > h1.title{
+        margin-bottom: 0;
+    }
+    .subtitle{
+        display:none;
+    }
+    body{
+        style="margin: 0; overflow: hidden;
+    }
+</style>
+<img id="link" src="{{element.imageUrl}}"/>
+    
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        
+        
+
+<div class="controls" style="z-index: 999; position:absolute; right: 10px; top:15px">
+            <button id="button">Get camera</button>
+            <select id="select">
+              <option></option>
+            </select>
+        </div>
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+        >
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="{{marker.patternFileLink}}"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+                smooth="true"
+            >
+                <a-image
+                    src="{{element.imageUrl}}"
+                    scale="1.475 2.005 1"
+                    class="clickable"
+                    rotation="-90 0 0"
+                    
+                ></a-image>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+        </a-scene>
+        <script src="scripts/arjs-camera-select.js"></script>
+        <script>
+            console.log(document.getElementById('link'));
+        </script>

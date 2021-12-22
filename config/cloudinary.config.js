@@ -12,10 +12,12 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
     cloudinary,
     params: {
-        allowed_formats: ['jpg', 'png'],
+        allowed_formats: ['jpg', 'png', 'patt'],
         folder: 'ar-catalog',
-        // resource_type: 'raw'
+        resource_type: 'raw'
     }
 })
 
-module.exports = multer({ storage })
+
+
+module.exports = multer({ storage });

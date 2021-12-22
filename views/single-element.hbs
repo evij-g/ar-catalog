@@ -40,7 +40,7 @@
                                 </tr>
                                 <tr>
                                     <td>markerimage:</td>
-                                    <td><img src="{{element.markerLink}}?raw=true"/></td>
+                                    <td><img src="{{element.markerLink}}"/></td>
                                 </tr>
 
                                 <tr>
@@ -103,7 +103,10 @@
             }
         }
 
-        QRCode.toDataURL(window.location.href, opts, function (err, url) {
+const arLink = window.location.href.replace("single-element","ar-view");
+console.log("arlink",arLink);
+
+        QRCode.toDataURL(arLink, opts, function (err, url) {
             if (err) 
                 throw err
 
@@ -114,5 +117,5 @@
         })
 
         var a = document.getElementById('qrcode-link');
-        a.href = window.location.href;
+        a.href = arLink;
     </script>

@@ -4,6 +4,8 @@ const Marker = require("../models/markers.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 
+const Cloud = require('cloudinary').v2;
+
 async function getHome(req, res) {
     try {
         const {
@@ -23,18 +25,7 @@ function getSignup(req, res) {
     res.render("signup");
 }
 
-async function getCreateForm(req, res) {
-    try {
-        const admin = "info@evij.de";
-        const isAdmin = req.session.currentUser === admin;
-        const markerElement = await setMarker(false);
-        console.log("markerElement:", markerElement);
 
-        res.render("upload", {isAdmin, markerElement});
-    } catch (error) {
-        console.error(error);
-    }
-}
 async function getAllUsers(req, res) {
     try {
         const admin = "info@evij.de";
@@ -134,59 +125,10 @@ async function private(req, res) {
 
 
 
-async function setMarker(update){
-    let markerElement ="";
-    try {
-        console.log("------------------setMarker--------------");
-        if(update){
-        markerElement = await Marker.findOneAndUpdate({
-            inUse: "false"
-        }, {inUse: "true"});
-    }else{
-        markerElement = await Marker.findOne({
-            inUse: "false"
-        });
-    }
-        const markerId = markerElement.markerId;
-        console.log("markerid: " + markerId);
-
-        const markerLink = markerElement.markerLink;
-        console.log("markerlink: " + markerLink);
-
-        console.log("------------------setMarker--------------");
-
-        return markerElement;
-
-        
-    } catch (error) {
-        console.error(`An error occured while getting Marker from DB ${error}`);
-    }
-}
 
 
 
-async function createElement(req, res) {
-    try {
-        const {title, width, height, material} = req.body;
 
-        const markerElement = await setMarker(false);
-        //const markerPattern = await createMarkerPattern();
-        console.log(markerElement);
-
-        await Element.create({
-            markerId: markerElement.markerId,
-            markerLink: markerElement.markerLink,
-            title,
-            width,
-            height,
-            material,
-            imageUrl: req.file.path
-        });
-        res.redirect("/catalog");
-    } catch (error) {
-        console.error(`An error occured while adding element to DB ${error}`);
-    }
-}
 
 async function logout(req, res) {
     try {
@@ -282,11 +224,129 @@ async function getSingleElement(req, res) {
         const isAdmin = req.session.currentUser === admin;
     const elementId = req.params.id;
     const element = await Element.findById(elementId);
-    
+   
     res.render("single-element", {element, isAdmin});
     }
     catch (error) {
         console.error(`An error occured while trying to get element: ${error}`);
+    }
+}
+
+async function getARSingleElement(req, res) {
+    try {
+        //const admin = "info@evij.de";
+        //const isAdmin = req.session.currentUser === admin;
+    const elementId = req.params.id;
+    const element = await Element.findById(elementId);
+    const marker = await Marker.find({markerId: element.markerId});
+    
+    res.render("ar-view", {element, marker});
+    }
+    catch (error) {
+        console.error(`An error occured while trying to get element: ${error}`);
+    }
+}
+
+async function setMarker(update, patternFileLink){
+    //console.log("setMarker -> patternFileLink", patternFileLink);
+    let markerElement ="";
+    try {
+     
+        if(update){
+
+            
+        markerElement = await Marker.findOneAndUpdate({
+            inUse: "false"
+        }, {inUse: "true", 
+        patternFileLink: patternFileLink
+       });
+    }else{
+      
+        markerElement = await Marker.findOne({
+            inUse: "false"
+        });
+        
+    }
+
+        
+        //const markerId = markerElement.markerId;
+        //const markerLink = markerElement.markerLink;
+        
+        //const markerElement = Marker.patternLink;
+        
+       
+
+        return markerElement;
+
+        
+    } catch (error) {
+        console.error(`An error occured while getting Marker from DB ${error}`);
+    }
+}
+
+async function uploadMarkerPattern(base64){
+    try {
+        const str =base64;
+         //console.log("fileStr", fileStr);
+        const uploadResponse = await Cloud.uploader.upload(str, {resource_type: "raw",format:"patt"});
+        console.log(uploadResponse.url);
+        return uploadResponse.url;
+        //res.json({ msg: 'yaya' });
+    } catch (err) {
+
+        console.error("uploadMarkerPattern",err);
+        //res.status(500).json({ err: 'Something went wrong' });
+    }
+}
+
+
+ 
+  
+
+async function createElement(req, res) {
+
+    try {
+        //console.log('reg.file.path', req.file.path);
+        const {title, width, height, material,markerPatternBase64} = req.body;
+        //console.log(req.body);
+        
+       
+       // console.log('markerelement', markerElement);
+
+       const markerPatternEncoded = markerPatternBase64;
+    // 
+       const patternFileLink = await uploadMarkerPattern(markerPatternEncoded);
+       console.log("patternFileLink", patternFileLink);
+       const markerElement = await setMarker(true,patternFileLink);
+
+        await Element.create({
+            markerId: markerElement.markerId,
+            markerLink: markerElement.markerLink,
+            patternLink: markerElement.patternLink,
+            title,
+            width,
+            height,
+            material,
+            imageUrl: req.file.path,
+            // markerUrl: req.file.path,
+        });
+        res.redirect("/catalog");
+    } catch (error) {
+        console.error(`An error occured while adding element to DB ${error}`);
+    }
+}
+
+
+async function getCreateForm(req, res) {
+    try {
+        const admin = "info@evij.de";
+        const isAdmin = req.session.currentUser === admin;
+        const markerElement = await setMarker(false);
+        //console.log("markerElement:", markerElement);
+
+        res.render("upload", {isAdmin, markerElement});
+    } catch (error) {
+        console.error(error);
     }
 }
 
@@ -298,6 +358,7 @@ module.exports = {
     getAllUsers,
     getCreateForm,
     getSingleElement,
+    getARSingleElement,
     login,
     signup,
     //private,
