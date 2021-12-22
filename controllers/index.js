@@ -244,7 +244,7 @@ async function getARSingleElement(req, res) {
     console.log("marker", marker);
     console.log(marker.inUse);
     
-    res.render("ar-view", {element, marker});
+    res.render("ar-view", {element, marker, layout: false});
     }
     catch (error) {
         console.error(`An error occured while trying to get element: ${error}`);
