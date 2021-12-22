@@ -14,7 +14,7 @@ const storage = new CloudinaryStorage({
     params: {
         allowed_formats: ['jpg', 'png', 'patt'],
         folder: 'ar-catalog',
-        resource_type: 'raw'
+       
     }
 })
 

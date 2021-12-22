@@ -239,6 +239,7 @@ async function getARSingleElement(req, res) {
     const elementId = req.params.id;
     const element = await Element.findById(elementId);
     const marker = await Marker.find({markerId: element.markerId});
+    console.log(marker);
     
     res.render("ar-view", {element, marker});
     }
