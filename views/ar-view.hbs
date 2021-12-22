@@ -6,12 +6,8 @@
 <html><head>
 
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-
-<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-
-
-
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
 
 <style>
@@ -37,13 +33,13 @@
         
 </head>
 <body style="margin : 0px; overflow: hidden;" id="scene">
-
+<!-- 
 <div class="controls" style="z-index: 999; position:absolute; right: 10px; top:15px">
             <button id="button">Get camera</button>
             <select id="select">
               <option></option>
             </select>
-        </div>
+        </div> -->
        
       
          <a-scene embedded arjs light="defaultLightsEnabled: false" renderer="logarithmicDepthBuffer: false; antialias: true; physicallyCorrectLights: true;precision:high;" shadow="autoUpdate: true; type:pcf;">
@@ -56,6 +52,10 @@
             <!-- <a-asset-item id="sky2" src="assets/sky.jpg"></a-asset-item> 
             
             <a-image src="{{element.imageUrl}}" scale="1.475 2.005 1" rotation="-90 0 0" ></a-image>
+
+            http://res.cloudinary.com/drjenyidb/raw/upload/v1640204236/en10ttmjwfbdehzhh7w4.patt
+
+            <a-marker type='pattern' url="{{marker.patternFileLink}}" smoothTolerance="0.05" smoothThreshold="3.64" smooth="true">
             -->
             
             <img id="image" crossorigin="anonymous" src="{{element.imageUrl}}">
@@ -63,7 +63,7 @@
         
 
         <a-marker type='pattern' url="{{marker.patternFileLink}}" smoothTolerance="0.05" smoothThreshold="3.64" smooth="true">
-              <a-marker type='pattern' url="{{marker.patternFileLink}}" smoothTolerance="0.05" smoothThreshold="3.64" smooth="true">
+            
                 
                 <a-image src="#image" scale="1.475 2.005 1" rotation="-90 0 0"></a-image>
                
@@ -72,8 +72,8 @@
         <a-entity camera near="0.001"></a-entity>
     </a-scene>
     
-
-<script src="scripts/arjs-camera-select.js"></script>
+ 
+<script src="scripts/arjs-camera-select.js"></script> 
         
         </body>
 
