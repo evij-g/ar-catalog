@@ -29,8 +29,8 @@
               <option></option>
             </select>
         </div>
-        <p>{{marker.patternFileLink}}</p>
-        <p>{{element.imageUrl}}</p>
+        <!-- <p>{{marker.patternFileLink}}</p>
+        <p>{{element.imageUrl}}</p> -->
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -43,7 +43,7 @@
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="http://res.cloudinary.com/drjenyidb/raw/upload/v1640190432/zfolwrqtmmugtvy14toq.patt"
+                url="{{marker.patternFileLink}}"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
