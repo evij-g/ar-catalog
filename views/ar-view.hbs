@@ -30,6 +30,7 @@
               <option></option>
             </select>
         </div>
+        <section>
       
          <a-scene embedded arjs light="defaultLightsEnabled: false" renderer="logarithmicDepthBuffer: false; antialias: true; physicallyCorrectLights: true;precision:high;" shadow="autoUpdate: true; type:pcf;">
 
@@ -45,10 +46,10 @@
             </a-marker>
         <a-entity camera near="0.001"></a-entity>
     </a-scene>
+    </section>
 
 
         <script src="scripts/arjs-camera-select.js"></script>
         <script>
-            console.log(document.getElementById('link'));
-            console.log({{marker.patternFileLink}});
+            
         </script>
