@@ -238,8 +238,11 @@ async function getARSingleElement(req, res) {
         //const isAdmin = req.session.currentUser === admin;
     const elementId = req.params.id;
     const element = await Element.findById(elementId);
-    const marker = await Marker.find({markerId: element.markerId});
-    console.log(marker);
+    console.log("element markerID",element.markerId);
+    const foundMarker = element.markerId;
+    const marker = await Marker.findOne({markerId: foundMarker});
+    console.log("marker", marker);
+    console.log(marker.inUse);
     
     res.render("ar-view", {element, marker});
     }
@@ -259,12 +262,12 @@ async function setMarker(update, patternFileLink){
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
-        patternFileLink: patternFileLink
+        patternFileLink: patternFileLink,
        });
     }else{
       
         markerElement = await Marker.findOne({
-            inUse: "false"
+            inUse: "false",
         });
         
     }
@@ -323,7 +326,7 @@ async function createElement(req, res) {
         await Element.create({
             markerId: markerElement.markerId,
             markerLink: markerElement.markerLink,
-            patternLink: markerElement.patternLink,
+            //patternLink: markerElement.patternLink,
             title,
             width,
             height,
@@ -342,8 +345,9 @@ async function getCreateForm(req, res) {
     try {
         const admin = "info@evij.de";
         const isAdmin = req.session.currentUser === admin;
+
         const markerElement = await setMarker(false);
-        //console.log("markerElement:", markerElement);
+        
 
         res.render("upload", {isAdmin, markerElement});
     } catch (error) {
