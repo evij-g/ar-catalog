@@ -293,8 +293,8 @@ async function uploadMarkerPattern(base64){
         const str =base64;
          //console.log("fileStr", fileStr);
         const uploadResponse = await Cloud.uploader.upload(str, {resource_type: "raw",format:"patt"});
-        console.log(uploadResponse.url);
-        return uploadResponse.url;
+        console.log(uploadResponse);
+        return uploadResponse.secure_url;
         //res.json({ msg: 'yaya' });
     } catch (err) {
 
