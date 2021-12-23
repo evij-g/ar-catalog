@@ -24,7 +24,7 @@
                             <div class="file has-name is-fullwidth">
                                 <label class="file-label">
                                     <!-- <input class="file-input" type="file" name="file"> -->
-                                    <input name="image" type="file" class="file-input cloudinary-fileupload" multiple="multiple" />
+                                    <input name="image" type="file" class="file-input cloudinary-fileupload"/>
                                     <span class="file-cta">
                                         <span class="file-icon">
                                             <i class="fas fa-upload"></i>
@@ -91,8 +91,8 @@
                                 <button class="button is-primary" type="submit">upload</button>
                             </div>
                             <figure>
-
-                                <img id="markerImage" src="{{markerElement.markerLink}}" crossOrigin="anonymous" />
+                                <img id="markerImage" src="{{markerElement.markerLink}}" crossOrigin="anonymous" />     
+                                <!-- <img id="markerImage" src="{{markerElement.markerLink}}" crossOrigin="anonymous" /> -->
                             </figure>
 
                         </div>
@@ -144,8 +144,6 @@
 
 <script src="scripts/arjs-studio-backend.min.js"></script>
 <script>
-  
-// Select the image
 
    
 
@@ -170,7 +168,7 @@
 // set the composite operation
 ctx.globalCompositeOperation='difference';
 ctx.fillStyle = "white";
-ctx.globalAlpha = 1;  // alpha 0 = no effect 1 = full effect
+ctx.globalAlpha = 0;  // alpha 0 = no effect 1 = full effect
 ctx.fillRect(0, 0, img.naturalWidth, img.naturalHeight);
 
 
@@ -179,6 +177,7 @@ ctx.fillRect(0, 0, img.naturalWidth, img.naturalHeight);
 // Select the image
 
 const img = document.getElementById('markerImage');
+
 img.addEventListener('load', function (event) {
    const dataUrl = getDataUrl(event.currentTarget);
    console.log("dataURLfromCANVAS",dataUrl);
@@ -196,12 +195,17 @@ img.addEventListener('load', function (event) {
   //this is the new Marker
   async function patternAndImageGenerator(dataUrl){  
 
-    const {MarkerModule, MATRIX_4x4_BCH_13_9_3} = ARjsStudioBackend;  
+    const {MarkerModule, MATRIX_4X4_BCH_1393} = ARjsStudioBackend;  
+
+    // generate an SVG data URI for the value '7'
+    let markerId = "{{markerElement.markerId}}";
+    
+
     const getNewMarkerImage = await MarkerModule.getFullMarkerImage(
         dataUrl,
-        1,
+        1.0,
         944,
-        'red'
+        'black'
     );
 
     const getpattFile = await MarkerModule.getMarkerPattern(dataUrl);
@@ -214,7 +218,9 @@ img.addEventListener('load', function (event) {
     patternImage.addEventListener('load', () => {
         console.log("patternImage loaded", patternImage);
         document.body.appendChild(patternImage);
+        
         img.src = patternImage;
+        img.replaceWith(patternImage);
         
     });
     
@@ -225,11 +231,13 @@ img.addEventListener('load', function (event) {
             pattFileDownload.download = 'marker.patt'; 
             
             
+            // plain text of pattern = 0 0 0 0 0 0 0 255 255 255 0 0 0 0 0 0 
             var str = `data:text/plain;charset=utf-8,${getpattFile}`;
             str = `${getpattFile}`;
-           console.log(str);
+            console.log(str); 
            
             var value = "data:text/plain;charset=UTF-8;base64," + btoa(unescape(encodeURIComponent(str)));
+            value = "data:text/plain;charset=UTF-8;base64," + btoa(str);
             //value= btoa(unescape(encodeURIComponent(str)));
             console.log(value);
 

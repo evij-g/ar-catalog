@@ -6149,6 +6149,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   height: fit-content;
 }
 
+.card img {
+  width: 100%;
+}
+
 #img-preview {
   background-color: #9ea7aa;
   min-height: 100px;
@@ -6211,12 +6215,26 @@ Size of AR-Marker = 15cm
   width: 100%;
 }
 
+.markerImage, .ar-marker {
+  border: 80px black solid;
+}
+
+.ar-marker {
+  border-color: white;
+}
+
 @media print {
   #singleElement, .navbar, .hero, #backbutton {
     display: none;
   }
   .section {
     padding-bottom: 0px;
+  }
+  .markerImage, .ar-marker {
+    border: 80px black solid;
+  }
+  .ar-marker {
+    border-color: white;
   }
 }
 

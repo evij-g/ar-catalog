@@ -124,6 +124,10 @@ $table-cell-border-width: 0 0 0px;
     height: fit-content;
 }
 
+.card img{
+    width:100%;
+}
+
 #img-preview {
     background-color:$secondary;
     min-height:100px;
@@ -190,6 +194,13 @@ Size of AR-Marker = 15cm
 .print-info{
     
 }
+
+.markerImage, .ar-marker{
+    border: 80px black solid;
+}
+.ar-marker{
+    border-color: white;
+}
 @media print{
     #singleElement, .navbar, .hero, #backbutton{
         display:none;
@@ -197,14 +208,22 @@ Size of AR-Marker = 15cm
     .section{
         padding-bottom:0px;
     }
+
+    .markerImage, .ar-marker{
+        border: 80px black solid;
+    }
+    .ar-marker{
+        border-color: white;
+    }
 }
 @media print and (width: 21cm) and (height: 29.7cm) {
 
     @page {
        margin: 3cm;
-    margin-bottom:0cm;
+        margin-bottom:0cm;
        /* hide regular layout and display print layout */
        
     }
+    
     
    }
