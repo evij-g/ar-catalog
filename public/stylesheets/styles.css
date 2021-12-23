@@ -6128,7 +6128,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   left: 0;
   right: 0;
   background-color: #D1C4E9;
-  z-index: 2;
+  z-index: -1;
 }
 
 .hero * {
@@ -6215,6 +6215,14 @@ Size of AR-Marker = 15cm
   width: 100%;
 }
 
+.print-info {
+  padding-top: 10px;
+}
+
+.hero-print {
+  display: none;
+}
+
 .markerImage, .ar-marker {
   border: 80px black solid;
 }
@@ -6223,9 +6231,21 @@ Size of AR-Marker = 15cm
   border-color: white;
 }
 
+#singleElementPrint > section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @media print {
+  body {
+    padding-bottom: 0 !important;
+  }
   #singleElement, .navbar, .hero, #backbutton {
     display: none;
+  }
+  .hero-print {
+    display: block;
+    padding-left: 20px;
   }
   .section {
     padding-bottom: 0px;
