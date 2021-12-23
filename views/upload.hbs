@@ -187,13 +187,13 @@ img.addEventListener('load', function (event) {
     var data = dataUrl.replace(/^data:image\/\w+;base64,/, "");
     console.log("data",data);
 
-    await patternAndImageGenerator(dataUrl);
+    patternAndImageGenerator(dataUrl);
 
 });
 
 
   //this is the new Marker
-  async function patternAndImageGenerator(dataUrl){  
+  function patternAndImageGenerator(dataUrl){  
 
     const {MarkerModule, MATRIX_4X4_BCH_1393} = ARjsStudioBackend;  
 
