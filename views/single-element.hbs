@@ -1,12 +1,18 @@
-
-
+<style>
+    .hero{
+        display:none;
+    }
+    #singleElement{
+        margin-top:0;
+    }
+</style>
 <div id="singleElement" class="catalog content">
     <section class="section" marker="{{element.markerId}}">
         <div class="card">
             <div class="card-image">
-                <figure class="image">
+                <a href="/single-element{{element.id}}"></a><figure class="image">
                     <img src="{{element.imageUrl}}" alt="picture of={{element.title}}"/>
-                </figure>
+                </figure></a>
             </div>
             <div class="card-content">
                 <div class="media">
@@ -60,6 +66,24 @@
                     {{> elementAdmin element}}
                     
                     {{else}}
+                    
+                                <tr>
+                                    <td>markerimage:</td>
+                                    <td><img src="{{element.markerLink}}"/></td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td>qr-code:</td>
+
+                                    <td>
+                                        <a href="/ar-view{{element.id}}" id="qrcode-link"><img src="" id="qrcode-image"/></a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
                     </table>
                         </div>
                     </div>

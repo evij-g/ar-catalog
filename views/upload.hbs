@@ -187,7 +187,7 @@ img.addEventListener('load', function (event) {
     var data = dataUrl.replace(/^data:image\/\w+;base64,/, "");
     console.log("data",data);
 
-    patternAndImageGenerator(dataUrl);
+    await patternAndImageGenerator(dataUrl);
 
 });
 
