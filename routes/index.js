@@ -29,7 +29,7 @@ router
   .get("/login", isAnon, getLogin)
   .get("/catalog", isLoggedIn, getCatalogElements)
   .get("/userlist", isAdmin, getAllUsers)
-  .get("/signup", isAnon, getSignup)
+  .get("/signup", isAdmin, getSignup)
   .get("/edit-element:id", isAdmin, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
   .get("/single-element:id", getSingleElement)

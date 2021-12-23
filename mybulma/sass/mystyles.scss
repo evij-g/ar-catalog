@@ -130,6 +130,10 @@ $table-cell-border-width: 0 0 0px;
     line-height: 0;
 }
 
+#img-preview img {
+	width: 100%;
+}
+
 .admin button{
     background: none;
 	color: inherit;

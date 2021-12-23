@@ -10,7 +10,7 @@
 
         <div class="card">
             <div class="card-image">
-                <figure class="image is-4by3" id="img-preview">
+                <figure class="image" id="img-preview">
                     <img src="">
 
                 </figure>
@@ -112,7 +112,31 @@
 
 
 <script>
-   
+    const fileInput = document.querySelector('.file input[type=file]');
+    //const chooseFile = document.getElementById("choose-file");
+    const imgPreview = document.getElementById("img-preview");
+    //console.log(fileInput);
+    fileInput.onchange = () => {
+        if (fileInput.files.length > 0) {
+            getImgData();
+            const fileName = document.querySelector('.file .file-name');
+            fileName.textContent = fileInput
+                .files[0]
+                .name;
+        }
+    }
+
+    function getImgData() {
+        const files = fileInput.files[0];
+        if (files) {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(files);
+            fileReader.addEventListener("load", function () {
+                imgPreview.style.display = "block";
+                imgPreview.innerHTML = '<img src="' + this.result + '" />';
+            });
+        }
+    }
 </script>
 
 <!-- <script src="/scripts/arjs-studio-backend.min.js"></script> -->

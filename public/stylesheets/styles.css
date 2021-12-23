@@ -6155,6 +6155,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   line-height: 0;
 }
 
+#img-preview img {
+  width: 100%;
+}
+
 .admin button {
   background: none;
   color: inherit;

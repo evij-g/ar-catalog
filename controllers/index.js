@@ -224,8 +224,10 @@ async function getSingleElement(req, res) {
         const isAdmin = req.session.currentUser === admin;
     const elementId = req.params.id;
     const element = await Element.findById(elementId);
+    const foundMarker = element.markerId;
+    const marker = await Marker.findOne({markerId: foundMarker});
    
-    res.render("single-element", {element, isAdmin});
+    res.render("single-element", {element, marker, isAdmin});
     }
     catch (error) {
         console.error(`An error occured while trying to get element: ${error}`);
