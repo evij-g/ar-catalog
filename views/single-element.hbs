@@ -119,6 +119,8 @@
 
 */
 
+//options for qr-code generation
+
         var opts = {
             errorCorrectionLevel: 'H',
             type: 'image/jpeg',
@@ -130,17 +132,21 @@
             }
         }
 
+
+//get the current location and manipulate the url that it would forward to a different page = ar-view
 const arLink = window.location.href.replace("single-element","ar-view");
 console.log("arlink",arLink);
+
+//generate from this new URL a QR-Code
 
         QRCode.toDataURL(arLink, opts, function (err, url) {
             if (err) 
                 throw err
 
             var img = document.getElementById('qrcode-image')
-            var imgPrint = document.getElementById('qrcode-print')
+           // var imgPrint = document.getElementById('qrcode-print')
             img.src = url
-            imgPrint.src = url
+            //imgPrint.src = url
         })
 
         var a = document.getElementById('qrcode-link');
