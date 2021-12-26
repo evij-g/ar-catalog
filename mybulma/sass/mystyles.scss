@@ -115,7 +115,7 @@ $table-cell-border-width: 0 0 0px;
 
 }
 
-.content .title {
+.card > .title {
 	background-color: $secondary;
 	padding-left: 1.5rem;
 	margin-bottom: 0;
@@ -192,7 +192,7 @@ Size of AR-Marker = 15cm
 */
 
 #singleElementPrint {
-    display:block;
+    display:none;
 }
 #qrCodePrintContainer{
     
@@ -233,6 +233,8 @@ Size of AR-Marker = 15cm
     #singleElement, .navbar, .hero, #backbutton{
         display:none;
     }
+
+    #singleElementPrint{display: block;}
 
     .hero-print{
         display: block;
