@@ -6461,7 +6461,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: calc(3rem + 180px);
 }
 
-.content .title {
+.card > .title {
   background-color: #9ea7aa;
   padding-left: 1.5rem;
   margin-bottom: 0;
@@ -6535,7 +6535,7 @@ Size of AR-Marker = 15cm
 
 */
 #singleElementPrint {
-  display: block;
+  display: none;
 }
 
 #qrcode-image {
@@ -6570,6 +6570,9 @@ Size of AR-Marker = 15cm
   }
   #singleElement, .navbar, .hero, #backbutton {
     display: none;
+  }
+  #singleElementPrint {
+    display: block;
   }
   .hero-print {
     display: block;
