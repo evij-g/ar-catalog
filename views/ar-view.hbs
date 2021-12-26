@@ -13,8 +13,7 @@
     ></script>
     <script>
       AFRAME.registerComponent('markerhandler', { init: function () {
-      this.el.sceneEl.addEventListener('markerFound', () => { // redirect to
-      custom URL e.g. google.com //window.location = 'https://www.google.com/';
+      this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
       console.log("marker found!"); }) } });
     </script>
 
@@ -33,11 +32,13 @@
               <option></option>
             </select>
         </div> 
-
-    <a-scene embedded arjs='matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix;'>
+<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix;" light="defaultLightsEnabled: false" renderer="logarithmicDepthBuffer: false; antialias: true; physicallyCorrectLights: true;precision:high;" shadow="autoUpdate: true; type:pcf;" >
+ 
       <a-assets>
         <img id='image' crossorigin='anonymous' src='{{element.imageUrl}}' />
       </a-assets>
+    
+   
 
       <a-marker markerhandler type='barcode' value='{{marker.markerId}}'>
 

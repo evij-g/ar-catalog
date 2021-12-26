@@ -91,8 +91,10 @@
                                 <button class="button is-primary" type="submit">upload</button>
                             </div>
                             <figure>
-                                <img id="markerImage" src="{{markerElement.markerLink}}" crossOrigin="anonymous" />     
+                                <image id="markerImage">
+                                <svg  src="{{markerElement.markerLink}}">   </svg>  
                                 <!-- <img id="markerImage" src="{{markerElement.markerLink}}" crossOrigin="anonymous" /> -->
+                                </image>
                             </figure>
 
                         </div>
@@ -145,7 +147,25 @@
 <script src="scripts/arjs-studio-backend.min.js"></script>
 <script>
 
+   // Generate BARCODE-MARKER
+
+    const markerId = parseInt("{{markerElement.markerId}}");
+   const svg = patternAndImageGenerator(markerId);
+
+   //const testImage = new Image();
+   //testImage.src = svg;
    
+   console.log("svg",svg);
+
+   // get svg data
+//var xml = new XMLSerializer().serializeToString(svg);
+//console.log("xml",xml);
+
+
+
+const imgPNGbase64 = getDataUrl(svg);
+console.log("imgPNGbase64",imgPNGbase64);
+
 
     function getDataUrl(img) {
    // Create canvas
@@ -176,7 +196,7 @@ ctx.fillRect(0, 0, img.naturalWidth, img.naturalHeight);
 }
 // Select the image
 
-const img = document.getElementById('markerImage');
+/*const img = document.getElementById('markerImage');
 
 img.addEventListener('load', function (event) {
    const dataUrl = getDataUrl(event.currentTarget);
@@ -184,66 +204,99 @@ img.addEventListener('load', function (event) {
 
    // strip off the data: url prefix to get just the base64-encoded bytes
    
-    var data = dataUrl.replace(/^data:image\/\w+;base64,/, "");
-    console.log("data",data);
+    //var data = dataUrl.replace(/^data:image\/\w+;base64,/, "");
+    //console.log("data",data);
 
-    patternAndImageGenerator(dataUrl);
+    //patternAndImageGenerator(dataUrl);
 
 });
 
-
+*/
   //this is the new Marker
-  async function patternAndImageGenerator(dataUrl){  
+  async function patternAndImageGenerator(markerId){  
+
+      
+      
 
     const {MarkerModule, MATRIX_4X4_BCH_1393} = ARjsStudioBackend;  
 
-    // generate an SVG data URI for the value '7'
-    let markerId = "{{markerElement.markerId}}";
+    
     
 
-    const getNewMarkerImage = await MarkerModule.getFullMarkerImage(
+    const matrixTypeId = "4x4_bch_13_9_3"
+    
+
+    /*const getNewMarkerImage = await MarkerModule.getFullMarkerImage(
         dataUrl,
         1.0,
         944,
         'black'
     );
 
-    const getpattFile = await MarkerModule.getMarkerPattern(dataUrl);
+    const getpattFile = await MarkerModule.getMarkerPattern(dataUrl);*/
+
+    //v2 with barcode-generator
+    // generate an SVG data URI for the value of markerId
+    const getNewMarkerImage = MarkerModule.getBarcodeMarkerSVGDataURI(matrixTypeId, markerId);
 
     //convert getNewMarkerImage to a new image    
     console.log("getNewMarkerImage",getNewMarkerImage);
     const patternImage = new Image();
     patternImage.src = getNewMarkerImage;
+    patternImage.id="markerSVG";
     // use the image 'load' event to know when image is ready
     patternImage.addEventListener('load', () => {
         console.log("patternImage loaded", patternImage);
         document.body.appendChild(patternImage);
         
-        img.src = patternImage;
-        img.replaceWith(patternImage);
+       // img.src = patternImage;
+       // img.replaceWith(patternImage);
         
     });
+
     
-            const pattFileDownload = document.getElementById('markerPatternFile');
+    
+    //v2 patternfile muss nicht erzeugt werden, da ar.js eine barcode dekodierung durchführen kann. 
+    //Es wird in dem Fall einfach nur die markerId = value übergeben. 
+    //Das Markerbild wird zu cloudinary hochgeladen, so muss das Bild nicht jedes mal aufs neue generiert werden;
 
+            const pattFileDownload = document.getElementById('markerSVG');
 
-            pattFileDownload.href = `data:text/plain;charset=utf-8,${getpattFile}`;
+/*
+            pattFileDownload.href = `data:image/png;charset=utf-8,${patternImage}`;
             pattFileDownload.download = 'marker.patt'; 
             
-            
+            console.log("pattFileDownload",pattFileDownload);
             // plain text of pattern = 0 0 0 0 0 0 0 255 255 255 0 0 0 0 0 0 
-            var str = `data:text/plain;charset=utf-8,${getpattFile}`;
-            str = `${getpattFile}`;
+            var str = `data:text/plain;charset=utf-8,${patternImage}`;
+            str = `${patternImage}`;
             console.log(str); 
            
             var value = "data:text/plain;charset=UTF-8;base64," + btoa(unescape(encodeURIComponent(str)));
             value = "data:text/plain;charset=UTF-8;base64," + btoa(str);
             //value= btoa(unescape(encodeURIComponent(str)));
             console.log(value);
-
+*/
             
             const pattFileInput = document.getElementById('markerPatternBase64');    
-            pattFileInput.setAttribute("value", value);
+            pattFileInput.setAttribute("pattFileDownload", pattFileDownload);
+
+
+            console.log(patternImage.src);
+            const decoded = decodeURIComponent(patternImage.src).replace("data:image/svg+xml,","");
+            var test = window.btoa(decoded);
+            console.log(test);
+
+            //var s = new XMLSerializer().serializeToString(document.getElementById("markerSVG"));
+
+            
+
+            // make it base64
+            var svg64 = btoa(decoded);
+            var b64Start = 'data:image/svg+xml;base64,';
+            
+
+            return test;
   }
 
     

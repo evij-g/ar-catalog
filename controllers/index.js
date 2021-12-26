@@ -264,7 +264,7 @@ async function setMarker(update, patternFileLink){
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
-        patternFileLink: patternFileLink,
+        markerLink: patternFileLink,
        });
     }else{
       
@@ -290,17 +290,18 @@ async function setMarker(update, patternFileLink){
     }
 }
 
-async function uploadMarkerPattern(base64){
+
+async function uploadMarkerImage(base64){
     try {
         const str =base64;
          //console.log("fileStr", fileStr);
-        const uploadResponse = await Cloud.uploader.upload(str, {resource_type: "raw",format:"patt"});
+        const uploadResponse = await Cloud.uploader.upload(str, {resource_type: "image",format:"png"});
         console.log(uploadResponse);
         return uploadResponse.secure_url;
         //res.json({ msg: 'yaya' });
     } catch (err) {
 
-        console.error("uploadMarkerPattern",err);
+        console.error("uploadMarkerImage",err);
         //res.status(500).json({ err: 'Something went wrong' });
     }
 }
@@ -321,7 +322,7 @@ async function createElement(req, res) {
 
        const markerPatternEncoded = markerPatternBase64;
     // 
-       const patternFileLink = await uploadMarkerPattern(markerPatternEncoded);
+       const patternFileLink = await uploadMarkerImage(markerPatternEncoded);
        console.log("patternFileLink", patternFileLink);
        const markerElement = await setMarker(true,patternFileLink);
 
