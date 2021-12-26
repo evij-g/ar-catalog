@@ -253,7 +253,7 @@ async function getARSingleElement(req, res) {
     }
 }
 
-async function setMarker(update, patternFileLink){
+async function setMarker(update){
     //console.log("setMarker -> patternFileLink", patternFileLink);
     let markerElement ="";
     try {
@@ -264,7 +264,7 @@ async function setMarker(update, patternFileLink){
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
-        markerLink: patternFileLink,
+        //markerLink: patternFileLink,
        });
     }else{
       
@@ -314,17 +314,18 @@ async function createElement(req, res) {
 
     try {
         //console.log('reg.file.path', req.file.path);
-        const {title, width, height, material,markerPatternBase64} = req.body;
+        const {title, width, height, material} = req.body;
         //console.log(req.body);
         
        
        // console.log('markerelement', markerElement);
 
-       const markerPatternEncoded = markerPatternBase64;
+      // const markerPatternEncoded = markerPatternBase64;
     // 
-       const patternFileLink = await uploadMarkerImage(markerPatternEncoded);
-       console.log("patternFileLink", patternFileLink);
-       const markerElement = await setMarker(true,patternFileLink);
+      // const patternFileLink = await uploadMarkerImage(markerPatternEncoded);
+     //  console.log("patternFileLink", patternFileLink);
+       //const markerElement = await setMarker(true,patternFileLink);
+       const markerElement = await setMarker(true);
 
         await Element.create({
             markerId: markerElement.markerId,

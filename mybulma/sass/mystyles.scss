@@ -82,7 +82,7 @@ $table-cell-border-width: 0 0 0px;
 @import "../bulma/sass/layout/section.sass";
 @import "../bulma/sass/grid/tiles.sass";
 @import "../bulma/sass/helpers/typography.sass";
-@import "../bulma/sass/helpers/float.sass";
+@import "../bulma/sass/helpers/color.sass";
 
 
 
@@ -114,6 +114,17 @@ $table-cell-border-width: 0 0 0px;
     margin-top:calc(3rem + #{$hero-minheight});
 
 }
+
+.content .title {
+	background-color: $secondary;
+	padding-left: 1.5rem;
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
 .tile.is-ancestor {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -127,6 +138,10 @@ $table-cell-border-width: 0 0 0px;
 
 .card img{
     width:100%;
+}
+
+#markerImage{
+    max-width: 100px;
 }
 
 #img-preview {
@@ -201,10 +216,10 @@ Size of AR-Marker = 15cm
 }
 
 .markerImage, .ar-marker{
-    border: 80px black solid;
+   // border: 80px black solid;
 }
 .ar-marker{
-    border-color: white;
+  //  border-color: white;
 }
 #singleElementPrint > section{
     padding-top:0;
@@ -230,10 +245,10 @@ Size of AR-Marker = 15cm
     }
 
     .markerImage, .ar-marker{
-        border: 80px black solid;
+       // border: 80px black solid;
     }
     .ar-marker{
-        border-color: white;
+     //   border-color: white;
     }
 }
 @media print and (width: 21cm) and (height: 29.7cm) {
