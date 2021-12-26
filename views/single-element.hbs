@@ -84,9 +84,11 @@
                             </table>
                         </div>
                     </div>
-                    </table>
+                    </table>{{> singleElementFooter element}}
                         </div>
+                        
                     </div>
+                    
                     {{/if}}
                 </div>
             </section>
@@ -105,9 +107,9 @@
     </a>
 
 </section>
-
+{{> printElement}}
     {{#if isAdmin}}
-        {{> printElement}}
+        
     {{/if}}
     <script src="/scripts/qrcode.js"></script>
     <script>
@@ -144,9 +146,9 @@ console.log("arlink",arLink);
                 throw err
 
             var img = document.getElementById('qrcode-image')
-           // var imgPrint = document.getElementById('qrcode-print')
+            var imgPrint = document.getElementById('qrcode-print')
             img.src = url
-            //imgPrint.src = url
+            imgPrint.src = url
         })
 
         var a = document.getElementById('qrcode-link');
