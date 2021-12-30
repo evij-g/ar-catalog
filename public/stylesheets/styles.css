@@ -6507,6 +6507,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  width: 100%;
+}
+
+.card-footer-item:hover {
+  background-color: #f3f0f9;
 }
 
 .catalog.content {

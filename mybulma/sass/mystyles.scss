@@ -162,6 +162,11 @@ $table-cell-border-width: 0 0 0px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    width:100%;
+}
+
+.card-footer-item:hover{
+    background-color: $primary-light;
 }
 
 .catalog.content {
