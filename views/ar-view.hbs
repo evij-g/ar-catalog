@@ -2,29 +2,42 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html><head>
 
-    <script src='https://aframe.io/releases/1.2.0/aframe.min.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+    <script src='scripts/aframe.min.js'></script>
     <script
-      src='https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'
+      src='scripts/aframe-extras.loaders.min.js'
     ></script>
     <script
-      src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'
+      src='scripts/aframe-ar.js'
     ></script>
-    <script>
-      AFRAME.registerComponent('markerhandler', { init: function () {
-      this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
-      console.log("marker found!"); }) } });
-    </script>
+    
 
-  </head>
-  <body style='margin : 0px; overflow: hidden;' id='scene'>
 
-    <style>
+
+<script defer="defer" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<link rel="stylesheet" href="stylesheets/navbar.css">
+{{!-- <link rel="stylesheet" href="stylesheets/navbar-ar-styles.css"> --}}
+<script src="scripts/navbar-burger.js"></script>
+
+<style type="text/css">
+
       .hero{ min-height: auto; } .hero-body{ padding-top:0.5rem;
       padding-bottom:0.5rem; } .hero-body > h1.title{ margin-bottom: 0; }
       .subtitle{ display:none; } body{ style="margin: 0; overflow: hidden; }
-    </style>
+
+</style>
+
+
+  </head>
+  <body class="has-navbar-fixed-bottom" style='margin : 0px; overflow: hidden;' id='scene'>
+
+    
 
     <div class="controls" style="z-index: 999; position:absolute; right: 10px; top:15px">
             <button id="button">Get camera</button>
@@ -53,7 +66,21 @@
       <a-entity camera near='0.001'></a-entity>
     </a-scene>
 
-    <script src='scripts/arjs-camera-select.js'></script>
+    
+
+    
+
+ 
+
+  {{> navbar }}
+
+
+
+  <script>
+      AFRAME.registerComponent('markerhandler', { init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
+      console.log("marker found!"); }) } });
+    </script>
 
   <script>
     const markerWidth = 172; //in mm
@@ -62,6 +89,44 @@
     const arElement = document.getElementsByTagName("a-image");
     arElement.scale = width/markerWidth+" "+height/markerWidth+" "+1;
     console.log("arElement",arElement);
+  </script>
+
+  <script src='scripts/arjs-camera-select.js'></script>
+
+   <script>
+
+
+     /*
+  const cssText = (cssSelector, stylesArr = null) => {
+  const ele = cssSelector[0];
+  console.log("ele",ele);
+  console.log("computed styles",getComputedStyle(ele));
+
+  return Object.entries(getComputedStyle(ele));
+  
+  
+  return Object.entries(getComputedStyle(ele))
+    .filter(([k]) => stylesArr?.includes(k) ?? true)
+    .map(([k, v]) => `${k}:${v}`)
+    .join(";");
+};
+
+const navbar = document.getElementsByTagName("nav");
+console.log("navbar",navbar);
+const allCssText = cssText(navbar);
+console.log({allCssText});
+
+/* let elementName = "navbar-brand"
+let newElement = document.getElementsByClassName(elementName);
+let cssObj1 = window.getComputedStyle(newElement[0], null);
+
+let cssStylesText = elementName+"{";
+for (x in cssObj1) {
+  cssObjProp = cssObj1.item(x)
+  cssStylesText += cssObjProp + ":" + cssObj1.getPropertyValue(cssObjProp) + ";";
+}
+cssStylesText += "}";
+console.log(cssStylesText); */
   </script>
   </body>
 
