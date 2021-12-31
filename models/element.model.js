@@ -23,6 +23,12 @@ const elementSchema = new Schema({
         type: Number,
         required: true
     },
+    position: {
+        type: String,
+    },
+    rotation: {
+        type: String,
+    },
     imageUrl: {
         type: String,
         required: true

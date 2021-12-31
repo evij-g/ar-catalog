@@ -58,8 +58,10 @@
         <a-image
           src='#image'
           scale='1.0325 1.4035 1'
-          rotation='-90 0 0'
-          position='0 1 0'
+          rotation='{{element.rotation}}'
+          position='{{element.position}}'
+          {{!-- rotation='-90 0 0'  --}}
+          {{!-- position='0 0 0' --}}
         ></a-image>
 
       </a-marker>

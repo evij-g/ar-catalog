@@ -3,15 +3,19 @@
   <img src="{{element.imageUrl}}" alt="">
 <form action="/edit-element{{element._id}}" method="POST" enctype="multipart/form-data">
     <label for="image"></label>
-    <input type="file" name="image" />
+      <input type="file" name="image" />
     <label for="title">title</label>
-    <input type="text" name="title" id="element-title" value='{{element.title}}' required />
+      <input type="text" name="title" id="element-title" value='{{element.title}}' required />
     <label for="width">width</label>
-    <input type="number" name="width" id="element-width" value="{{element.width}}" required />
+      <input type="number" name="width" id="element-width" value="{{element.width}}" required />
     <label for="width">height</label>
-    <input type="number" name="height" id="element-height" value="{{element.height}}" required />
+      <input type="number" name="height" id="element-height" value="{{element.height}}" required />
+    <label for="position">position</label>
+      <input type="text" name="position" id="element-position" value="{{element.position}}" />
+    <label for="rotation">rotation</label>
+      <input type="text" name="rotation" id="element-rotation" value="{{element.rotation}}" />
     <label for="material">material</label>
-    <input type="text" name="material" id="element-material" value="{{element.material}}" />
+      <input type="text" name="material" id="element-material" value="{{element.material}}" />
     <button type="submit">update information</button>
   </form>
 </div>

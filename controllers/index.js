@@ -161,11 +161,13 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
-        const {title, height, width, material} = req.body;
+        const {title, height, width, position, rotation, material} = req.body;
         await Element.findByIdAndUpdate(elementId, {
             title: title,
             height: height,
             width: width,
+            position: position,
+            rotation: rotation,
             material: material,
             imageUrl: req.file.path
         });
@@ -334,6 +336,8 @@ async function createElement(req, res) {
             title,
             width,
             height,
+            position,
+            rotation,
             material,
             imageUrl: req.file.path,
             // markerUrl: req.file.path,
