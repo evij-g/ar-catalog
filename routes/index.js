@@ -17,6 +17,7 @@ const {
   getEditElement,
   editElement,
   deleteElement,
+  editImage,
   getARSingleElement
 } = require("../controllers");
 
@@ -30,23 +31,24 @@ router
   .get("/catalog", isLoggedIn, getCatalogElements)
   .get("/userlist", isAdmin, getAllUsers)
   .get("/signup", isAdmin, getSignup)
-  .get("/edit-element:id", isAdmin, getEditElement)
+  .get("/edit-element:id", isLoggedIn, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
-  .get("/single-element:id", getSingleElement)
-  .get("/ar-view:id", getARSingleElement)
+  .get("/single-element:id", isAnon, getSingleElement)
+  .get("/ar-view:id", isAnon, getARSingleElement)
 
   
 
-  .post("/edit-element:id", isAdmin, fileUploader.single("image"), editElement)
+  .post("/edit-element:id", isAdmin, editElement)
+  .post("/edit-image:id", isAdmin, fileUploader.single('imageUrl'), editImage)
   .post("/delete-element:id", isAdmin, deleteElement)
   .post("/login", isAnon, login)
   .post("/signup", isAdmin, signup)
   .post("/userlist", isAdmin, getAllUsers)
   //.post("/private", isLoggedIn, getCatalogElements)
-  .post("/catalog", isLoggedIn, getCatalogElements)
-  .post("/create", isLoggedIn, fileUploader.single("image"), createElement)
+  .post("/catalog", isAnon, getCatalogElements)
+  .post("/create", isAdmin, fileUploader.single("imageUrl"), createElement)
   .post("/logout", isLoggedIn, logout)
   .post("/delete-user:id", isAdmin, deleteUser)
-  .post("/single-element:id", isAdmin, getSingleElement)
+  .post("/single-element:id", isAnon, getSingleElement)
 
 module.exports = router;

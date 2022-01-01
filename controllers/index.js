@@ -3,6 +3,7 @@ const User = require("../models/user.model");
 const Marker = require("../models/markers.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
+const fileUploader = require("../config/cloudinary.config");
 
 const Cloud = require('cloudinary').v2;
 
@@ -24,7 +25,6 @@ function getLogin(req, res) {
 function getSignup(req, res) {
     res.render("signup");
 }
-
 
 async function getAllUsers(req, res) {
     try {
@@ -94,6 +94,7 @@ async function signup(req, res, next) {
         }
     }
 }
+
 async function login(req, res) {
     try {
         const {email, password} = req.body;
@@ -122,13 +123,6 @@ async function private(req, res) {
         console.error(`An error occured while getting all elements from DB: ${error}`);
     }
 }
-
-
-
-
-
-
-
 
 async function logout(req, res) {
     try {
@@ -161,20 +155,38 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
+        console.log("elementId",elementId);
+        console.log("req.body",req.body);
         const {title, height, width, position, rotation, material} = req.body;
-        await Element.findByIdAndUpdate(elementId, {
+        const editElement = await Element.findByIdAndUpdate(elementId, {
             title: title,
             height: height,
             width: width,
-            position: position,
-            rotation: rotation,
-            material: material,
-            imageUrl: req.file.path
+            // position: position,
+            // rotation: rotation,
+            material: material
         });
+        console.log("editElement",editElement);
+        console.log("title",title);
+        console.log("material",material);
+
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while trying to edit element: ${error}`);
     }
+}
+
+async function editImage(req, res) {
+  try {
+    const imageId = req.params.id;
+
+    await Element.findByIdAndUpdate(imageId, {
+      imageUrl: req.file.path,
+    });
+    res.redirect('/catalog')
+  } catch (error) {
+    console.error(`An error occured while trying to edit image: ${error}`);
+  }
 }
 
 async function resetMarker(markerId){
@@ -191,7 +203,6 @@ async function resetMarker(markerId){
     }
 
 }
-
 
 async function deleteElement(req, res) {
     try {
@@ -316,7 +327,7 @@ async function createElement(req, res) {
 
     try {
         //console.log('reg.file.path', req.file.path);
-        const {title, width, height, material} = req.body;
+        const {title, width, height, material, position, rotation} = req.body;
         //console.log(req.body);
         
        
@@ -380,5 +391,6 @@ module.exports = {
     deleteUser,
     getEditElement,
     editElement,
+    editImage,
     deleteElement
 };
