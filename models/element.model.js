@@ -24,10 +24,10 @@ const elementSchema = new Schema({
         required: true
     },
     position: {
-        type: String,
+        type: String
     },
     rotation: {
-        type: String,
+        type: String
     },
     imageUrl: {
         type: String,

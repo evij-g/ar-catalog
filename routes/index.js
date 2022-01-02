@@ -16,6 +16,7 @@ const {
   deleteUser,
   getEditElement,
   editElement,
+  editImage,
   deleteElement,
   getARSingleElement
 } = require("../controllers");
@@ -37,14 +38,14 @@ router
 
   
 
-  .post("/edit-element:id", isAdmin, fileUploader.single("image"), editElement)
+  .post("/edit-element:id", isAdmin, fileUploader.single("imageUrl"), editElement)
+  .post("/edit-image:id", isAdmin, fileUploader.single("imageUrl"), editImage)
   .post("/delete-element:id", isAdmin, deleteElement)
   .post("/login", isAnon, login)
   .post("/signup", isAdmin, signup)
   .post("/userlist", isAdmin, getAllUsers)
-  //.post("/private", isLoggedIn, getCatalogElements)
   .post("/catalog", isLoggedIn, getCatalogElements)
-  .post("/create", isLoggedIn, fileUploader.single("image"), createElement)
+  .post("/create", isLoggedIn, fileUploader.single("imageUrl"), createElement)
   .post("/logout", isLoggedIn, logout)
   .post("/delete-user:id", isAdmin, deleteUser)
   .post("/single-element:id", isAdmin, getSingleElement)
