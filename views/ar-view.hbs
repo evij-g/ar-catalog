@@ -84,10 +84,12 @@
 
   <script>
     const markerWidth = 172; //in mm
-    const width = {{element.width}}*100; //cm * 10 = mm
-    const height = {{element.height}}*100;//cm * 10 = mm
+    const width = {{element.width}}*10; //cm * 10 = mm
+    const height = {{element.height}}*10;//cm * 10 = mm
     const arElement = document.getElementsByTagName("a-image");
     arElement.scale = width/markerWidth+" "+height/markerWidth+" "+1;
+    const newScale = width/markerWidth+" "+height/markerWidth+" "+1;
+    arElement.setAttribute("scale",newScale);
     console.log("arElement",arElement);
     console.log("arElement Scale", arElement.scale);
   </script>
