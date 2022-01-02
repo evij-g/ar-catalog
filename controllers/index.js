@@ -162,14 +162,14 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
-        const {title, height, width, position, rotation, material} = req.body;
+        const {title, height, width, material} = req.body; // position, rotation,
         console.log("req.body",req.body);
         await Element.findByIdAndUpdate(elementId, {
             title: title,
             height: height,
             width: width,
-            position: position,
-            rotation: rotation,
+           // position: position,
+           // rotation: rotation,
             material: material
         });
         res.redirect("/catalog");

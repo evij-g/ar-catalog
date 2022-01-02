@@ -44,7 +44,6 @@ router
   .post("/login", isAnon, login)
   .post("/signup", isAdmin, signup)
   .post("/userlist", isAdmin, getAllUsers)
-  //.post("/private", isLoggedIn, getCatalogElements)
   .post("/catalog", isLoggedIn, getCatalogElements)
   .post("/create", isLoggedIn, fileUploader.single("imageUrl"), createElement)
   .post("/logout", isLoggedIn, logout)
