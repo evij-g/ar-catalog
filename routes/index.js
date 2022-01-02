@@ -31,7 +31,7 @@ router
   .get("/catalog", isLoggedIn, getCatalogElements)
   .get("/userlist", isAdmin, getAllUsers)
   .get("/signup", isAdmin, getSignup)
-  .get("/edit-element:id", isLoggedIn, getEditElement)
+  .get("/edit-element:id", isAdmin, getEditElement)
   .get("/upload", isLoggedIn, getCreateForm)
   .get("/single-element:id", getSingleElement)
   .get("/ar-view:id", getARSingleElement)

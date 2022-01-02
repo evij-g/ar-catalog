@@ -3,7 +3,7 @@ const User = require("../models/user.model");
 const Marker = require("../models/markers.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
-const fileUploader = require("../config/cloudinary.config");
+//const fileUploader = require("../config/cloudinary.config");
 
 const Cloud = require('cloudinary').v2;
 
@@ -162,7 +162,6 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
-        console.log("request",req);
         const {title, height, width, position, rotation, material} = req.body;
         console.log("req.body",req.body);
         await Element.findByIdAndUpdate(elementId, {
@@ -171,8 +170,7 @@ async function editElement(req, res) {
             width: width,
             position: position,
             rotation: rotation,
-            material: material,
-            //imageUrl: req.file.path
+            material: material
         });
         res.redirect("/catalog");
     } catch (error) {
