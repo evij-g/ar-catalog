@@ -38,7 +38,7 @@ router
 
   
 
-  .post("/edit-element:id", isAdmin, editElement)
+  .post("/edit-element:id", isAdmin, fileUploader.single("imageUrl"), editElement)
   .post("/edit-image:id", isAdmin, fileUploader.single("imageUrl"), editImage)
   .post("/delete-element:id", isAdmin, deleteElement)
   .post("/login", isAnon, login)
