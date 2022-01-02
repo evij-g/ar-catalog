@@ -3,6 +3,7 @@ const User = require("../models/user.model");
 const Marker = require("../models/markers.model");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
+const fileUploader = require("../config/cloudinary.config");
 
 const Cloud = require('cloudinary').v2;
 
@@ -161,7 +162,9 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
+        console.log("request",req);
         const {title, height, width, position, rotation, material} = req.body;
+        console.log("req.body",req.body);
         await Element.findByIdAndUpdate(elementId, {
             title: title,
             height: height,
@@ -169,13 +172,28 @@ async function editElement(req, res) {
             position: position,
             rotation: rotation,
             material: material,
-            imageUrl: req.file.path
+            //imageUrl: req.file.path
         });
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while trying to edit element: ${error}`);
     }
 }
+
+async function editImage(req, res) {
+    try {
+      const imageId = req.params.id;
+      console.log("imageId",imageId);
+      console.log("filepath",req.file.path);
+  
+      await Element.findByIdAndUpdate(imageId, {
+        imageUrl: req.file.path,
+      });
+      res.redirect('/catalog')
+    } catch (error) {
+      console.error(`An error occured while trying to edit image: ${error}`);
+    }
+  }
 
 async function resetMarker(markerId){
     try {
@@ -316,7 +334,7 @@ async function createElement(req, res) {
 
     try {
         //console.log('reg.file.path', req.file.path);
-        const {title, width, height, material} = req.body;
+        const {title, width, height, material, position, rotation} = req.body;
         //console.log(req.body);
         
        
@@ -380,5 +398,6 @@ module.exports = {
     deleteUser,
     getEditElement,
     editElement,
+    editImage,
     deleteElement
 };
