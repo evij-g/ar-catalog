@@ -6553,7 +6553,7 @@ Size of AR-Marker = 15cm
 
 .preview-img {
   max-height: 200px;
-  width: 100%;
+  width: auto;
 }
 
 .print-info {
