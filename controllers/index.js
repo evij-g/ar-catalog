@@ -154,9 +154,11 @@ async function deleteUser(req, res) {
 }
 
 async function getEditElement(req, res) {
+    const admin = "info@evij.de";
+    const isAdmin = req.session.currentUser === admin;
     const elementId = req.params.id;
     const element = await Element.findById(elementId);
-    res.render("edit-element", {element});
+    res.render("edit-element", {element, isAdmin});
 }
 
 async function editElement(req, res) {
@@ -168,8 +170,8 @@ async function editElement(req, res) {
             title: title,
             height: height,
             width: width,
-           // position: position,
-           // rotation: rotation,
+            position: position,
+            rotation: rotation,
             material: material
         });
         res.redirect("/catalog");
