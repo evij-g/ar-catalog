@@ -177,6 +177,7 @@ async function editElement(req, res) {
             material: material
         });
        // res.redirect("/catalog"); do not redirect!
+       res.redirect("/edit-element:"+elementId);
     } catch (error) {
         console.error(`An error occured while trying to edit element: ${error}`);
     }
