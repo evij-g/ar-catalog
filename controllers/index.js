@@ -176,7 +176,7 @@ async function editElement(req, res) {
             resizefactor: resizefactor,
             material: material
         });
-        res.redirect("/catalog");
+       // res.redirect("/catalog"); do not redirect!
     } catch (error) {
         console.error(`An error occured while trying to edit element: ${error}`);
     }
