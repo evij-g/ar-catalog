@@ -163,6 +163,8 @@ async function getEditElement(req, res) {
 
 async function editElement(req, res) {
     try {
+        const admin = "info@evij.de";
+    const isAdmin = req.session.currentUser === admin;
         const elementId = req.params.id;
         const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
         console.log("req.body",req.body);
@@ -176,8 +178,9 @@ async function editElement(req, res) {
             resizefactor: resizefactor,
             material: material
         });
-       // res.redirect("/catalog"); do not redirect!
-       res.redirect("/edit-element:"+elementId);
+       
+        const element = await Element.findById(elementId);
+       res.render("edit-element", {element, isAdmin});
     } catch (error) {
         console.error(`An error occured while trying to edit element: ${error}`);
     }
