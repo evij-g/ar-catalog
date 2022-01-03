@@ -29,6 +29,12 @@ const elementSchema = new Schema({
     rotation: {
         type: String
     },
+    scale:{
+        type: String
+    },
+    resizefactor:{
+        type: String
+    },
     imageUrl: {
         type: String,
         required: true

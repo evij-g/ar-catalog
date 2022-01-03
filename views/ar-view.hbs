@@ -17,6 +17,7 @@
       src='scripts/aframe-ar.js'
     ></script>
     
+    
 
 
 
@@ -57,9 +58,11 @@
 
         <a-image
           src='#image'
-          scale='1.0325 1.4035 1'
+          scale='{{element.scale}}' 
+          {{!-- 1.0325 1.4035 1 --}}
           rotation='{{element.rotation}}'
           position='{{element.position}}'
+          id="element"
         ></a-image>
 
       </a-marker>
@@ -76,22 +79,46 @@
 
 
 
-  <script>
-      AFRAME.registerComponent('markerhandler', { init: function () {
+  
+  </body>
+
+</html>
+
+<script>
+    /*  AFRAME.registerComponent('markerhandler', { init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
       console.log("marker found!"); }) } });
-    </script>
+  
 
-  <script>
+    var scene = document.querySelector('a-scene');
+
+if (scene.hasLoaded) {
+  run();
+} else {
+  scene.addEventListener('loaded', run);
+}
+
+function run () {
+  console.log("run");
+   // var entity = scene.querySelector('a-image');
+
     const markerWidth = 172; //in mm
     const width = {{element.width}}*10; //cm * 10 = mm
+    console.log("width",width);
     const height = {{element.height}}*10;//cm * 10 = mm
-    const arElement = document.getElementsByTagName("a-image");
-    arElement.scale = width/markerWidth+" "+height/markerWidth+" "+1;
-    const newScale = width/markerWidth+" "+height/markerWidth+" "+1;
-    arElement.setAttribute("scale",newScale);
-    console.log("arElement",arElement);
-    console.log("arElement Scale", arElement.scale);
+    //const arElement = document.getElementById("element");
+    //arElement.scale = width/markerWidth+" "+height/markerWidth+" "+1;
+  //  var newScale = toString(width/markerWidth)+" "+toString(height/markerWidth)+" 1";
+    //newScale = "4 4 1";
+   // console.log("entity",entity);
+   // arElement.setAttribute("scale","4 4 4");
+  //  console.log("arElement",arElement);
+
+  //entity.setAttribute('scale', {x: (width/markerWidth), y: (height/markerWidth), z:1});
+  //entity.object3D.scale.set(2, 2, 2);
+}
+    
+    */
   </script>
 
   <script src='scripts/arjs-camera-select.js'></script>
@@ -131,6 +158,3 @@ for (x in cssObj1) {
 cssStylesText += "}";
 console.log(cssStylesText); */
   </script>
-  </body>
-
-</html>

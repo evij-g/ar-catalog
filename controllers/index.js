@@ -164,7 +164,7 @@ async function getEditElement(req, res) {
 async function editElement(req, res) {
     try {
         const elementId = req.params.id;
-        const {title, height, width, position, rotation, material} = req.body; // position, rotation,
+        const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
         console.log("req.body",req.body);
         await Element.findByIdAndUpdate(elementId, {
             title: title,
@@ -172,6 +172,8 @@ async function editElement(req, res) {
             width: width,
             position: position,
             rotation: rotation,
+            scale: scale,
+            resizefactor: resizefactor,
             material: material
         });
         res.redirect("/catalog");
@@ -334,7 +336,7 @@ async function createElement(req, res) {
 
     try {
         //console.log('reg.file.path', req.file.path);
-        const {title, width, height, material, position, rotation} = req.body;
+        const {title, width, height, material, position, scale, resizefactor, rotation} = req.body;
         //console.log(req.body);
         
        
@@ -356,6 +358,8 @@ async function createElement(req, res) {
             height,
             position,
             rotation,
+            scale,
+            resizefactor,
             material,
             imageUrl: req.file.path,
             // markerUrl: req.file.path,
