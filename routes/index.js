@@ -26,7 +26,7 @@ const fileUploader = require("../config/cloudinary.config");
 const { isAnon, isLoggedIn, isAdmin } = require("../middlewares/index");
 
 router
-  .get("/", isAnon, getHome)
+  .get("/", isAnon, getCatalogElements)
   .get("/login", isAnon, getLogin)
   .get("/catalog", isLoggedIn, getCatalogElements)
   .get("/userlist", isAdmin, getAllUsers)
