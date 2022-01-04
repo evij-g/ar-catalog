@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
 @import "../bulma/sass/utilities/initial-variables.sass";
+@import "../css-vars/css-vars";
+
 
 
 $title: "Poller One", sans-serif;
@@ -30,19 +32,59 @@ $hero-minheight: 180px;
 // Update Bulma's global variables
 //$family-sans-serif: "Syncopate", sans-serif;
 //$family-serif: "Syncopate", sans-serif;
-$primary: #D1C4E9;
-$secondary: #9ea7aa;
+
+
+//  $primary: #D1C4E9;
+//  $secondary: #9ea7aa;
+
+ @include css-vars((
+    --primary: #a094b7,
+    --secondary: #8c7b75,
+    --background-color: #F5F5F6,
+    --success: #efdcd5
+  ));
+
+// :root {
+//     --primary: #1f8fff;
+//     --secondary: #5c2e81;
+//     --background-color: #eeeeee;
+    
+//   }
+
+  
+ $primary: var(--primary);
+ $secondary: var(--secondary);
+ $background-color: var(--background-color);
+ $success: var(--success);
+
 //$link: $pink;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
 // Update some of Bulma's component variables
-$body-background-color: #EEEEEE;
+$body-background-color: $background-color;
 $control-border-width: 1px;
 $input-border-color: $grey-light;
 $input-shadow: true;
 
-$navbar-background-color:$primary;
+$navbar-background-color:$secondary;
+
+// Import only what you need from Bulma
+@import "../bulma/sass/utilities/_all.sass";
+@import "../bulma/sass/base/_all.sass";
+@import "../bulma/sass/elements/button.sass";
+@import "../bulma/sass/elements/container.sass";
+@import "../bulma/sass/elements/table.sass";
+@import "../bulma/sass/elements/title.sass";
+@import "../bulma/sass/elements/icon.sass";
+@import "../bulma/sass/form/_all.sass";
+@import "../bulma/sass/components/navbar.sass";
+@import "../bulma/sass/components/card.sass";
+@import "../bulma/sass/layout/hero.sass";
+@import "../bulma/sass/layout/section.sass";
+@import "../bulma/sass/grid/tiles.sass";
+@import "../bulma/sass/helpers/typography.sass";
+@import "../bulma/sass/helpers/color.sass";
 
 
 /*.upload .card-content{
@@ -67,29 +109,27 @@ $table-cell-border-width: 0 0 0px;
 
 
 
-// Import only what you need from Bulma
-@import "../bulma/sass/utilities/_all.sass";
-@import "../bulma/sass/base/_all.sass";
-@import "../bulma/sass/elements/button.sass";
-@import "../bulma/sass/elements/container.sass";
-@import "../bulma/sass/elements/table.sass";
-@import "../bulma/sass/elements/title.sass";
-@import "../bulma/sass/elements/icon.sass";
-@import "../bulma/sass/form/_all.sass";
-@import "../bulma/sass/components/navbar.sass";
-@import "../bulma/sass/components/card.sass";
-@import "../bulma/sass/layout/hero.sass";
-@import "../bulma/sass/layout/section.sass";
-@import "../bulma/sass/grid/tiles.sass";
-@import "../bulma/sass/helpers/typography.sass";
-@import "../bulma/sass/helpers/color.sass";
 
 
 
+.navbar-burger{
+    color:$background-color;
+}
 
 //custom css styles by evij
 .title, .navbar-item > h1{
     font-family: $title;
+}
+
+.navbar-item, .navbar-link, .navbar-link:not(.is-arrowless)::after, .navbar-link:not(.is-arrowless)::after,
+.is-active .navbar-dropdown > .navbar-item, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link
+{
+    color:$background-color;
+    border-color: $background-color;
+}
+
+.navbar-dropdown > .navbar-item, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link{
+    color:hsl(0, 0%, 7%);
 }
 
 
@@ -123,6 +163,10 @@ $table-cell-border-width: 0 0 0px;
 	padding-top: 1rem;
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
+}
+
+.title a{
+    color:$secondary;
 }
 
 .tile.is-ancestor {
