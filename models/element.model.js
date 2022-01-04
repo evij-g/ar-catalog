@@ -24,16 +24,20 @@ const elementSchema = new Schema({
         required: true
     },
     position: {
-        type: String
+        type: String,
+        default: "0 0 0"
     },
     rotation: {
-        type: String
+        type: String,
+        default: "-90 0 0"
     },
     scale:{
-        type: String
+        type: String,
+        default: "1 1 1"
     },
     resizefactor:{
-        type: String
+        type: String,
+        default: "1"
     },
     imageUrl: {
         type: String,
