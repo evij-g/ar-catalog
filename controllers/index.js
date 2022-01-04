@@ -44,20 +44,6 @@ async function getAllUsers(req, res) {
     }
 }
 
-async function getCatalogElements(req, res) {
-    try {
-        const admin = "info@evij.de";
-        const isAdmin = req.session.currentUser === admin;
-        const {
-            ...allElements
-        } = await Element.find();
-        res.render("catalog", {allElements, isAdmin});
-
-    } catch (error) {
-        console.error(error);
-    }
-}
-
 async function signup(req, res, next) {
     try {
         const {email, password} = req.body;
@@ -230,13 +216,16 @@ async function deleteElement(req, res) {
     }
 }
 
+
 async function getCatalogElements(req, res) {
     try {
         const admin = "info@evij.de";
         const isAdmin = req.session.currentUser === admin;
         const {
             ...allElements
-        } = await Element.find();
+        } = await Element.find().sort({ _id: -1});
+        
+        console.log(allElements);
         res.render("catalog", {allElements, isAdmin});
 
     } catch (error) {

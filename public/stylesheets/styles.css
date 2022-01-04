@@ -6517,8 +6517,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .catalog.content {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
 }
 
 .catalog.content > section {
