@@ -6,58 +6,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
-@import "../bulma/sass/utilities/initial-variables.sass";
-@import "../css-vars/css-vars";
+@import '../bulma/sass/utilities/initial-variables.sass';
+@import '../css-vars/css-vars';
 
-
-
-$title: "Poller One", sans-serif;
-$family-sans-serif: "Nunito", sans-serif;
+$title: 'Poller One', sans-serif;
+$family-sans-serif: 'Nunito', sans-serif;
 $family-monospace: 'Nunito', sans-serif;
-$family-serif: "Nunito", serif;
+$family-serif: 'Nunito', serif;
 $family-primary: $family-serif;
 
-
 // Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$black-bis: hsl(0, 0%, 7%);
-$black-ter: hsl(0, 0%, 14%);
-$grey-light:  hsl(0, 0%, 71%) ;
-$hero-minheight: 180px;
-
-// Update Bulma's global variables
-//$family-sans-serif: "Syncopate", sans-serif;
-//$family-serif: "Syncopate", sans-serif;
-
-
-//  $primary: #D1C4E9;
-//  $secondary: #9ea7aa;
-
- @include css-vars((
+@include css-vars(
+  (
     --primary: #a094b7,
     --secondary: #8c7b75,
-    --background-color: #F5F5F6,
-    --success: #efdcd5
-  ));
+    --background-color: #f5f5f6,
+    --success: #efdcd5,
+    --button: #d0c2e8,
+  )
+);
 
-// :root {
-//     --primary: #1f8fff;
-//     --secondary: #5c2e81;
-//     --background-color: #eeeeee;
-    
-//   }
+$primary: var(--primary);
+$secondary: var(--secondary);
+$background-color: var(--background-color);
+$success: var(--success);
+$card-footer-background-color:var(--secondary);
+$link: var(--success);
+//$link-hover:#e7825d;
+$hero-minheight: 180px;
 
-  
- $primary: var(--primary);
- $secondary: var(--secondary);
- $background-color: var(--background-color);
- $success: var(--success);
-
-//$link: $pink;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
@@ -67,25 +44,25 @@ $control-border-width: 1px;
 $input-border-color: $grey-light;
 $input-shadow: true;
 
-$navbar-background-color:$secondary;
+$navbar-background-color: $secondary;
+$navbar-burger-color: $background-color;
 
 // Import only what you need from Bulma
-@import "../bulma/sass/utilities/_all.sass";
-@import "../bulma/sass/base/_all.sass";
-@import "../bulma/sass/elements/button.sass";
-@import "../bulma/sass/elements/container.sass";
-@import "../bulma/sass/elements/table.sass";
-@import "../bulma/sass/elements/title.sass";
-@import "../bulma/sass/elements/icon.sass";
-@import "../bulma/sass/form/_all.sass";
-@import "../bulma/sass/components/navbar.sass";
-@import "../bulma/sass/components/card.sass";
-@import "../bulma/sass/layout/hero.sass";
-@import "../bulma/sass/layout/section.sass";
-@import "../bulma/sass/grid/tiles.sass";
-@import "../bulma/sass/helpers/typography.sass";
-@import "../bulma/sass/helpers/color.sass";
-
+@import '../bulma/sass/utilities/_all.sass';
+@import '../bulma/sass/base/_all.sass';
+@import '../bulma/sass/elements/button.sass';
+@import '../bulma/sass/elements/container.sass';
+@import '../bulma/sass/elements/table.sass';
+@import '../bulma/sass/elements/title.sass';
+@import '../bulma/sass/elements/icon.sass';
+@import '../bulma/sass/form/_all.sass';
+@import '../bulma/sass/components/navbar.sass';
+@import '../bulma/sass/components/card.sass';
+@import '../bulma/sass/layout/hero.sass';
+@import '../bulma/sass/layout/section.sass';
+@import '../bulma/sass/grid/tiles.sass';
+@import '../bulma/sass/helpers/typography.sass';
+@import '../bulma/sass/helpers/color.sass';
 
 /*.upload .card-content{
     position:relative;
@@ -94,141 +71,133 @@ $navbar-background-color:$secondary;
     border-radius: 0.25rem;
 }*/
 
-
-.file-name{
-    background-color: $white;
+.file-name {
+  background-color: $white;
 }
-
-
 
 $table-cell-padding: 1em 1em 0em 0em;
 $table-cell-border: 2px 3px 0px;
 $table-cell-border-width: 0 0 0px;
 
-
-
-
-
-
-
-
-.navbar-burger{
-    color:$background-color;
-}
-
 //custom css styles by evij
-.title, .navbar-item > h1{
-    font-family: $title;
+.title,
+.navbar-item > h1 {
+  font-family: $title;
 }
 
-.navbar-item, .navbar-link, .navbar-link:not(.is-arrowless)::after, .navbar-link:not(.is-arrowless)::after,
-.is-active .navbar-dropdown > .navbar-item, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link
-{
-    color:$background-color;
-    border-color: $background-color;
+.navbar-item,
+.navbar-link,
+.navbar-link:not(.is-arrowless)::after,
+.navbar-link:not(.is-arrowless)::after,
+.is-active .navbar-dropdown > .navbar-item,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link,
+.navbar-item.has-dropdown.is-active .navbar-link,
+a.navbar-burger:hover {
+  color: $background-color;
+  border-color: $background-color;
 }
 
-.navbar-dropdown > .navbar-item, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link{
-    color:hsl(0, 0%, 7%);
+.navbar-dropdown > .navbar-item,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link,
+.navbar-item.has-dropdown.is-active .navbar-link {
+  color: hsl(0, 0%, 7%);
 }
-
-
 
 .hero {
-    min-height:$hero-minheight;
-    position:fixed;
-    top: 0;
-    left: 0;
-    right:0;
-    //background-color:$black-bis;
-    background-color:$primary;
-    
-    z-index: -1;
+  min-height: $hero-minheight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  //background-color:$black-bis;
+  background-color: $primary;
+
+  z-index: -1;
 }
 
-.hero *{
-    color:$black-ter;
+.hero * {
+  color: $success;
 }
 
-.catalog, section.content{
-    margin-top:calc(3rem + #{$hero-minheight});
-
+.catalog,
+section.content {
+  margin-top: calc(3rem + #{$hero-minheight});
 }
 
 .card > .title {
-	background-color: $secondary;
-	padding-left: 1.5rem;
-	margin-bottom: 0;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
-	border-top-left-radius: 0.25rem;
-	border-top-right-radius: 0.25rem;
+  background-color: $secondary;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
-.title a{
-    color:$secondary;
+.title a {
+  color: $secondary;
 }
 
 .tile.is-ancestor {
-    margin-left: 0rem;
-    margin-right: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
-.card{
-    max-width: 800px;
-    height: fit-content;
-    
+.card {
+  max-width: 800px;
+  height: fit-content;
 }
 
-.card img{
-    width:100%;
+.card img {
+  width: 100%;
 }
 
-#markerImage{
-    max-width: 100px;
+#markerImage {
+  max-width: 100px;
 }
 
 #img-preview {
-    background-color:$secondary;
-    min-height:100px;
-    line-height: 0;
+  background-color: $secondary;
+  min-height: 100px;
+  line-height: 0;
 }
 
 #img-preview img {
-	width: 100%;
+  width: 100%;
 }
 
-.admin button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    width:100%;
+.admin button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
 }
 
-.card-footer-item:hover{
-    background-color: $primary-light;
-}
+// .card-footer-item:hover {
+//   background-color: $primary-light;
+// }
 
 .catalog.content {
-	display: flex;
-	flex-wrap: wrap;
-	// flex-direction: row-reverse;
-	// justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: row-reverse;
+  // justify-content: flex-end;
 }
 
-.catalog.content > section{
-    width: 500px;
+.catalog.content > section {
+  width: 500px;
 }
 
-#canvas{
-    width:100%;
-    background-color: $secondary;
+#canvas {
+  width: 100%;
+  background-color: $secondary;
 }
-
 
 /* style sheet for "A4" printing */
 /*
@@ -241,75 +210,75 @@ Size of AR-Marker = 15cm
 */
 
 #singleElementPrint {
-    display:none;
+  display: none;
 }
-#qrCodePrintContainer{
-    
+#qrCodePrintContainer {
 }
-#qrcode-image{
-    width:100%;
+#qrcode-image {
+  width: 100%;
 }
-.ar-marker{
-    width:100%;
+.ar-marker {
+  width: 100%;
 }
-.preview-img{
-    max-height:200px;
-    width:auto;
+.preview-img {
+  max-height: 200px;
+  width: auto;
 }
-.print-info{
-    padding-top:10px;
-    
+.print-info {
+  padding-top: 10px;
 }
-.hero-print{
-    display:none;
+.hero-print {
+  display: none;
 }
 
-.markerImage, .ar-marker{
-   // border: 80px black solid;
+.markerImage,
+.ar-marker {
+  // border: 80px black solid;
 }
-.ar-marker{
+.ar-marker {
   //  border-color: white;
 }
-#singleElementPrint > section{
-    padding-top:0;
-    padding-bottom:0;
+#singleElementPrint > section {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-@media print{
-    body{
-        padding-bottom:0!important;
-    }
-    #singleElement, .navbar, .hero, #backbutton{
-        display:none;
-    }
+@media print {
+  body {
+    padding-bottom: 0 !important;
+  }
+  #singleElement,
+  .navbar,
+  .hero,
+  #backbutton {
+    display: none;
+  }
 
-    #singleElementPrint{display: block;}
+  #singleElementPrint {
+    display: block;
+  }
 
-    .hero-print{
-        display: block;
-        padding-left:20px;
-    }
+  .hero-print {
+    display: block;
+    padding-left: 20px;
+  }
 
-    
-    .section{
-        padding-bottom:0px;
-    }
+  .section {
+    padding-bottom: 0px;
+  }
 
-    .markerImage, .ar-marker{
-       // border: 80px black solid;
-    }
-    .ar-marker{
-     //   border-color: white;
-    }
+  .markerImage,
+  .ar-marker {
+    // border: 80px black solid;
+  }
+  .ar-marker {
+    //   border-color: white;
+  }
 }
 @media print and (width: 21cm) and (height: 29.7cm) {
-
-    @page {
-       margin: 3cm;
-        margin-bottom:0cm;
-       /* hide regular layout and display print layout */
-       
-    }
-    
-    
-   }
+  @page {
+    margin: 3cm;
+    margin-bottom: 0cm;
+    /* hide regular layout and display print layout */
+  }
+}
