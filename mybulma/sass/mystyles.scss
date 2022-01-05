@@ -44,6 +44,10 @@ $control-border-width: 1px;
 $input-border-color: $grey-light;
 $input-shadow: true;
 
+$navbar-brand:$success;
+$navbar-item-color: $success;
+$navbar-item-hover-color:$secondary;
+$navbar-dropdown-item-hover-color:$secondary;
 $navbar-background-color: $secondary;
 $navbar-burger-color: $background-color;
 
@@ -71,6 +75,14 @@ $navbar-burger-color: $background-color;
     border-radius: 0.25rem;
 }*/
 
+.navbar-brand a.navbar-item:hover{
+    color:$success;
+}
+
+.navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a{
+	color: $secondary;
+}
+
 .file-name {
   background-color: $white;
 }
@@ -85,25 +97,31 @@ $table-cell-border-width: 0 0 0px;
   font-family: $title;
 }
 
-.navbar-item,
-.navbar-link,
-.navbar-link:not(.is-arrowless)::after,
-.navbar-link:not(.is-arrowless)::after,
-.is-active .navbar-dropdown > .navbar-item,
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link,
-.navbar-item.has-dropdown.is-active .navbar-link,
-a.navbar-burger:hover {
-  color: $background-color;
-  border-color: $background-color;
+h1.title{
+    text-shadow: $secondary 3px 0px 0px;
 }
 
-.navbar-dropdown > .navbar-item,
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link,
-.navbar-item.has-dropdown.is-active .navbar-link {
-  color: hsl(0, 0%, 7%);
-}
+// .navbar-item,
+// .navbar-link,
+// .navbar-link:not(.is-arrowless)::after,
+// .navbar-link:not(.is-arrowless)::after,
+// .is-active .navbar-dropdown > .navbar-item,
+// .navbar-item.has-dropdown:focus .navbar-link,
+// .navbar-item.has-dropdown:hover .navbar-link,
+// .navbar-item.has-dropdown.is-active .navbar-link,
+// a.navbar-burger:hover {
+//   color: $background-color;
+//   border-color: $background-color;
+// }
+
+
+
+// .navbar-dropdown > .navbar-item,
+// .navbar-item.has-dropdown:focus .navbar-link,
+// .navbar-item.has-dropdown:hover .navbar-link,
+// .navbar-item.has-dropdown.is-active .navbar-link {
+//   color: hsl(0, 0%, 7%);
+// }
 
 .hero {
   min-height: $hero-minheight;

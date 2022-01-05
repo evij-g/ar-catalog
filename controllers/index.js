@@ -26,6 +26,21 @@ function getSignup(req, res) {
     res.render("signup");
 }
 
+function getContact(req, res) {
+    res.render("contact");
+}
+
+function getAbout(req, res) {
+    res.render("about");
+}
+
+function getHowTo(req, res) {
+    res.render("how-to");
+}
+
+function getIssue(req, res) {
+    res.render("issue");
+}
 
 async function getAllUsers(req, res) {
     try {
@@ -382,6 +397,10 @@ module.exports = {
     getHome,
     getLogin,
     getSignup,
+    getContact,
+    getIssue,
+    getHowTo,
+    getAbout,
     getCatalogElements,
     getAllUsers,
     getCreateForm,

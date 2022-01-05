@@ -4181,7 +4181,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #efdcd5;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -4205,7 +4205,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: #fafafa;
-  color: #efdcd5;
+  color: #8c7b75;
 }
 
 .navbar-item {
@@ -4363,7 +4363,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
     background-color: whitesmoke;
-    color: #0a0a0a;
+    color: #8c7b75;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
@@ -4434,7 +4434,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item:hover {
     background-color: whitesmoke;
-    color: #0a0a0a;
+    color: #8c7b75;
   }
   .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
@@ -6435,6 +6435,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     background-color: $grey-light;
     border-radius: 0.25rem;
 }*/
+.navbar-brand a.navbar-item:hover {
+  color: #efdcd5;
+}
+
+.navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a {
+  color: #8c7b75;
+}
+
 .file-name {
   background-color: white;
 }
@@ -6444,24 +6452,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Poller One", sans-serif;
 }
 
-.navbar-item,
-.navbar-link,
-.navbar-link:not(.is-arrowless)::after,
-.navbar-link:not(.is-arrowless)::after,
-.is-active .navbar-dropdown > .navbar-item,
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link,
-.navbar-item.has-dropdown.is-active .navbar-link,
-a.navbar-burger:hover {
-  color: #f5f5f6;
-  border-color: #f5f5f6;
-}
-
-.navbar-dropdown > .navbar-item,
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link,
-.navbar-item.has-dropdown.is-active .navbar-link {
-  color: #121212;
+h1.title {
+  text-shadow: #8c7b75 3px 0px 0px;
 }
 
 .hero {

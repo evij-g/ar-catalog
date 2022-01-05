@@ -5,6 +5,10 @@ const {
   getHome,
   getLogin,
   getSignup,
+  getContact,
+  getIssue,
+  getHowTo,
+  getAbout,
   getAllUsers,
   getCatalogElements,
   getSingleElement,
@@ -35,6 +39,10 @@ router
   .get("/upload", isLoggedIn, getCreateForm)
   .get("/single-element:id", getSingleElement)
   .get("/ar-view:id", getARSingleElement)
+  .get("/about", isAnon, getAbout)
+  .get("/contact", isAnon, getContact)
+  .get("/issue", isAnon, getIssue)
+  .get("/how-to", isAnon, getHowTo)
 
   
 
