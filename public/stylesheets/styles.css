@@ -6551,6 +6551,16 @@ Size of AR-Marker = 15cm
   display: none;
 }
 
+td.print-image {
+  padding-left: 0px;
+}
+
+#qrCodePrintContainer {
+  display: flex;
+  justify-content: end;
+  padding-right: 0px;
+}
+
 #qrcode-image {
   width: 100%;
 }
@@ -6566,6 +6576,10 @@ Size of AR-Marker = 15cm
 
 .print-info {
   padding-top: 10px;
+}
+
+.print-info .table {
+  width: 100%;
 }
 
 .hero-print {
