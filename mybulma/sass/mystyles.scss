@@ -49,7 +49,7 @@ $navbar-item-color: $success;
 $navbar-item-hover-color:$secondary;
 $navbar-dropdown-item-hover-color:$secondary;
 $navbar-background-color: $secondary;
-$navbar-burger-color: $background-color;
+$navbar-burger-color: $success;
 
 // Import only what you need from Bulma
 @import '../bulma/sass/utilities/_all.sass';
@@ -75,12 +75,13 @@ $navbar-burger-color: $background-color;
     border-radius: 0.25rem;
 }*/
 
-.navbar-brand a.navbar-item:hover{
+.navbar-brand a.navbar-item:hover, a.navbar-burger:hover span{
     color:$success;
 }
 
 .navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a{
-	color: $secondary;
+    // background-color: $success;
+	// color: $secondary;
 }
 
 .file-name {

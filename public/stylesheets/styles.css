@@ -4125,7 +4125,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #f5f5f6;
+  color: #efdcd5;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -6435,12 +6435,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     background-color: $grey-light;
     border-radius: 0.25rem;
 }*/
-.navbar-brand a.navbar-item:hover {
+.navbar-brand a.navbar-item:hover, a.navbar-burger:hover span {
   color: #efdcd5;
-}
-
-.navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a {
-  color: #8c7b75;
 }
 
 .file-name {
