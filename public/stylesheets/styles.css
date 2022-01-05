@@ -6492,6 +6492,7 @@ section.content {
 
 .card {
   max-width: 800px;
+  max-width: 370px;
   height: fit-content;
 }
 
