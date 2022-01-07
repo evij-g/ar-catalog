@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "61c4b1ebc0a116647e2f9594"
+  },
+  "markerId": 0,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/0.png",
+  "title": "DAEDOS WAVER",
+  "width": 21,
+  "height": 30,
+  "imageUrl": "https://res.cloudinary.com/drjenyidb/image/upload/v1640280554/ar-catalog/bnjexpsczwb8horfau5f.png",
+  "material": "Digital Sketch / Siebdruck",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b230c0a116647e2f959c"
+  },
+  "markerId": 1,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/1.png",
+  "title": "DAEDOS TETRIS",
+  "width": 21,
+  "height": 30,
+  "imageUrl": "https://res.cloudinary.com/drjenyidb/image/upload/v1640280623/ar-catalog/aeqy2m2iqwztbwnmnwje.png",
+  "material": "Digital Sketch / Siebdruck",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b91d8202561b89d3e76b"
+  },
+  "markerId": 2,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/2.png",
+  "title": "DAEDOS STARFIELD",
+  "width": 21,
+  "height": 30,
+  "imageUrl": "https://res.cloudinary.com/drjenyidb/image/upload/v1641137451/ar-catalog/rivssteuxjfpp60um0zy.png",
+  "material": "Digital Sketch / Siebdruck",
+  "__v": 0,
+  "position": "",
+  "rotation": ""
+},{
+  "_id": {
+    "$oid": "61d1c58b1ecf245bd55f2157"
+  },
+  "markerId": 3,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/3.png",
+  "title": "VerbrecherEvij",
+  "width": 70,
+  "height": 170,
+  "position": "0 3 -1",
+  "rotation": "0 0 0",
+  "imageUrl": "https://res.cloudinary.com/drjenyidb/image/upload/v1641137546/ar-catalog/pu5bwxyb4r5efh4lur6y.png",
+  "material": "photo",
+  "__v": 0,
+  "resizefactor": "",
+  "scale": "5 12.5 1"
+},{
+  "_id": {
+    "$oid": "61d40b9ee2e665937d6d9738"
+  },
+  "markerId": 20,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/20.png",
+  "title": "170x170mm TEST",
+  "width": 17,
+  "height": 17,
+  "position": "0 0 0",
+  "rotation": "-90 0 0",
+  "scale": "1 1 1",
+  "resizefactor": "1",
+  "imageUrl": "https://res.cloudinary.com/drjenyidb/image/upload/v1641286558/ar-catalog/iblz0y1qjnrezezqpcuq.png",
+  "material": "photo",
+  "__v": 0
+}]

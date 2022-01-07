@@ -4,29 +4,31 @@
   },
   "markerId": 0,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/0.png",
-  "inUse": false,
-  "patternFileLink": "http://res.cloudinary.com/drjenyidb/raw/upload/v1640190432/zfolwrqtmmugtvy14toq.patt"
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280555/cq2dpvq4zfezwv2gjrpv.patt"
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e892"
   },
   "markerId": 1,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/1.png",
-  "inUse": false
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280624/eolkvlil8gm0p5yu4p5v.patt"
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e893"
   },
   "markerId": 2,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/2.png",
-  "inUse": false
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640282397/xf3zzzmkotjrg5rmlefn.patt"
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e894"
   },
   "markerId": 3,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/3.png",
-  "inUse": false
+  "inUse": true
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e895"
@@ -145,7 +147,7 @@
   },
   "markerId": 20,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/20.png",
-  "inUse": false
+  "inUse": true
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e8a6"
