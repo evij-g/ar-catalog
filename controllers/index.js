@@ -154,54 +154,7 @@ async function deleteUser(req, res) {
     }
 }
 
-async function getEditElement(req, res) {
-    const admin = "info@evij.de";
-    const isAdmin = req.session.currentUser === admin;
-    const elementId = req.params.id;
-    const element = await Element.findById(elementId);
-    res.render("edit-element", {element, isAdmin});
-}
 
-async function editElement(req, res) {
-    try {
-        const admin = "info@evij.de";
-    const isAdmin = req.session.currentUser === admin;
-        const elementId = req.params.id;
-        const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
-        console.log("req.body",req.body);
-        const reScale = rescale(width,height);
-        await Element.findByIdAndUpdate(elementId, {
-            title: title,
-            height: height,
-            width: width,
-            position: position,
-            rotation: rotation,
-            scale: reScale,
-            resizefactor: resizefactor,
-            material: material
-        });
-       
-        const element = await Element.findById(elementId);
-       res.render("edit-element", {element, isAdmin});
-    } catch (error) {
-        console.error(`An error occured while trying to edit element: ${error}`);
-    }
-}
-
-async function editImage(req, res) {
-    try {
-      const imageId = req.params.id;
-      console.log("imageId",imageId);
-      console.log("filepath",req.file.path);
-  
-      await Element.findByIdAndUpdate(imageId, {
-        imageUrl: req.file.path,
-      });
-      res.redirect('/catalog')
-    } catch (error) {
-      console.error(`An error occured while trying to edit image: ${error}`);
-    }
-  }
 
 async function resetMarker(markerId){
     try {
@@ -338,7 +291,19 @@ async function uploadMarkerImage(base64){
 }
 
 
- 
+async function getCreateForm(req, res) {
+    try {
+        const admin = "info@evij.de";
+        const isAdmin = req.session.currentUser === admin;
+
+        const markerElement = await setMarker(false);
+        
+
+        res.render("upload", {isAdmin, markerElement});
+    } catch (error) {
+        console.error(error);
+    }
+}
   
 
 async function createElement(req, res) {
@@ -358,7 +323,6 @@ async function createElement(req, res) {
        //const markerElement = await setMarker(true,patternFileLink);
        const markerElement = await setMarker(true);
 
-       const reScale = rescale(width,height);
 
         await Element.create({
             markerId: markerElement.markerId,
@@ -369,7 +333,7 @@ async function createElement(req, res) {
             height,
             position,
             rotation,
-            reScale,
+            scale,
             resizefactor,
             material,
             imageUrl: req.file.path,
@@ -381,27 +345,53 @@ async function createElement(req, res) {
     }
 }
 
-function reScale(width,height){
-    const markerSize = 19; //in cm
-    const reScale = width/markerSize+" "+height/markerSize+" "+"1";
-    
-    return reScale;
+async function getEditElement(req, res) {
+    const admin = "info@evij.de";
+    const isAdmin = req.session.currentUser === admin;
+    const elementId = req.params.id;
+    const element = await Element.findById(elementId);
+    res.render("edit-element", {element, isAdmin});
 }
 
-
-async function getCreateForm(req, res) {
+async function editElement(req, res) {
     try {
         const admin = "info@evij.de";
-        const isAdmin = req.session.currentUser === admin;
-
-        const markerElement = await setMarker(false);
-        
-
-        res.render("upload", {isAdmin, markerElement});
+    const isAdmin = req.session.currentUser === admin;
+        const elementId = req.params.id;
+        const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
+        console.log("req.body",req.body);
+        await Element.findByIdAndUpdate(elementId, {
+            title: title,
+            height: height,
+            width: width,
+            position: position,
+            rotation: rotation,
+            scale: scale,
+            resizefactor: resizefactor,
+            material: material
+        });
+       
+        const element = await Element.findById(elementId);
+       res.render("edit-element", {element, isAdmin});
     } catch (error) {
-        console.error(error);
+        console.error(`An error occured while trying to edit element: ${error}`);
     }
 }
+
+async function editImage(req, res) {
+    try {
+      const imageId = req.params.id;
+      console.log("imageId",imageId);
+      console.log("filepath",req.file.path);
+  
+      await Element.findByIdAndUpdate(imageId, {
+        imageUrl: req.file.path,
+      });
+      res.redirect('/catalog')
+    } catch (error) {
+      console.error(`An error occured while trying to edit image: ${error}`);
+    }
+  }
 
 module.exports = {
     getHome,

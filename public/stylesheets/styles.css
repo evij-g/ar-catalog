@@ -6632,6 +6632,10 @@ td.print-image {
 }
 
 @media print {
+  @page {
+    margin: 3cm;
+    margin-bottom: 0cm;
+  }
   body {
     padding-bottom: 0 !important;
   }
@@ -6657,7 +6661,6 @@ td.print-image {
   @page {
     margin: 3cm;
     margin-bottom: 0cm;
-    /* hide regular layout and display print layout */
   }
 }
 
