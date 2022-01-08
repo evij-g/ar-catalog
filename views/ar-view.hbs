@@ -46,7 +46,7 @@
               {{!-- <option></option> --}}
             </select>
         </div> 
-<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix;" light="defaultLightsEnabled: false" renderer="logarithmicDepthBuffer: false; antialias: true; physicallyCorrectLights: true;precision:high;" shadow="autoUpdate: true; type:pcf;" >
+<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix;" >
  
       <a-assets>
         <img id='image' crossorigin='anonymous' src='{{element.imageUrl}}' />
@@ -66,7 +66,7 @@
         ></a-image>
 
       </a-marker>
-      <a-entity camera near='0.001'></a-entity>
+      <a-entity camera></a-entity>
     </a-scene>
 
     
