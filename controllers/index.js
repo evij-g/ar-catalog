@@ -356,6 +356,7 @@ async function createElement(req, res) {
      //  console.log("patternFileLink", patternFileLink);
        //const markerElement = await setMarker(true,patternFileLink);
        const markerElement = await setMarker(true);
+       
 
         await Element.create({
             markerId: markerElement.markerId,
