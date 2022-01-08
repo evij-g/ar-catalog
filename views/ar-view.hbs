@@ -54,7 +54,9 @@
     
    
 
-      <a-marker markerhandler emitevents='true' smooth='true' type='barcode' value='{{marker.markerId}}'>
+      <a-marker markerhandler emitevents='true' smooth='true' type='barcode' value='{{marker.markerId}} ' smoothCount="10"
+   smoothTolerance=".01"
+   smoothThreshold="5">
 
         <a-image
           src='#image'
