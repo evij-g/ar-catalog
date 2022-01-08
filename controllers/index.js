@@ -169,13 +169,14 @@ async function editElement(req, res) {
         const elementId = req.params.id;
         const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
         console.log("req.body",req.body);
+        const reScale = rescale(width,height);
         await Element.findByIdAndUpdate(elementId, {
             title: title,
             height: height,
             width: width,
             position: position,
             rotation: rotation,
-            scale: scale,
+            scale: reScale,
             resizefactor: resizefactor,
             material: material
         });
@@ -356,7 +357,8 @@ async function createElement(req, res) {
      //  console.log("patternFileLink", patternFileLink);
        //const markerElement = await setMarker(true,patternFileLink);
        const markerElement = await setMarker(true);
-       
+
+       const reScale = rescale(width,height);
 
         await Element.create({
             markerId: markerElement.markerId,
@@ -367,7 +369,7 @@ async function createElement(req, res) {
             height,
             position,
             rotation,
-            scale,
+            reScale,
             resizefactor,
             material,
             imageUrl: req.file.path,
@@ -377,6 +379,13 @@ async function createElement(req, res) {
     } catch (error) {
         console.error(`An error occured while adding element to DB ${error}`);
     }
+}
+
+function reScale(width,height){
+    const markerSize = 19; //in cm
+    const reScale = width/markerSize+" "+height/markerSize+" "+"1";
+    
+    return reScale;
 }
 
 
