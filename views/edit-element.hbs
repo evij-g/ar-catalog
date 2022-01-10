@@ -1,11 +1,10 @@
 <section class="section content">
-    
-    <form action="/edit-image{{element._id}}" method="POST" class="upload" enctype="multipart/form-data">
+    <h2 class="title">
+        edit element
+   </h2>
 
-        <div class="card">
-            <h2 class="title has-background-secondary">
-        EDIT ELEMENT
-    </h2>
+    <form action="/edit-image{{element._id}}" method="POST" class="upload" enctype="multipart/form-data">
+    <div class="card">
             <div class="card-image">
                 <figure class="image">
                   <img src="{{element.imageUrl}}" alt="">
@@ -105,12 +104,13 @@
                                 />
                         </div>
                         <div class="field">
-                            <label for="markerSize" class="label">AR-Marker width in cm</label> 
+                            <label for="markerSize" class="label" >AR-Marker width in cm</label> 
                             <input
                                 class="input"
                                 type="text"
                                 name="markerSize"
                                 placeholder="17"
+                                value='{{element.markerSize}}'
                                 id="element-markerSize"
                                 />
                         </div>
