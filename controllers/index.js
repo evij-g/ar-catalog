@@ -309,35 +309,25 @@ async function getCreateForm(req, res) {
 async function createElement(req, res) {
 
     try {
-        //console.log('reg.file.path', req.file.path);
-        const {title, width, height, material, position, scale, resizefactor, rotation} = req.body;
-        //console.log(req.body);
-        
-       
-       // console.log('markerelement', markerElement);
 
-      // const markerPatternEncoded = markerPatternBase64;
-    // 
-      // const patternFileLink = await uploadMarkerImage(markerPatternEncoded);
-     //  console.log("patternFileLink", patternFileLink);
-       //const markerElement = await setMarker(true,patternFileLink);
-       const markerElement = await setMarker(true);
+    
+        const {title, width, height, material, position, scale, markerSize, rotation} = req.body;
+        const markerElement = await setMarker(true);
 
 
         await Element.create({
             markerId: markerElement.markerId,
             markerLink: markerElement.markerLink,
-            //patternLink: markerElement.patternLink,
+            markerSize,
             title,
             width,
             height,
             position,
             rotation,
             scale,
-            resizefactor,
+            
             material,
             imageUrl: req.file.path,
-            // markerUrl: req.file.path,
         });
         res.redirect("/catalog");
     } catch (error) {
@@ -358,7 +348,7 @@ async function editElement(req, res) {
         const admin = "info@evij.de";
     const isAdmin = req.session.currentUser === admin;
         const elementId = req.params.id;
-        const {title, height, width, position, rotation, scale, resizefactor, material} = req.body; // position, rotation,
+        const {title, height, width, position, rotation, scale, markerSize, material} = req.body; // position, rotation,
         console.log("req.body",req.body);
         await Element.findByIdAndUpdate(elementId, {
             title: title,
@@ -367,7 +357,7 @@ async function editElement(req, res) {
             position: position,
             rotation: rotation,
             scale: scale,
-            resizefactor: resizefactor,
+            markerSize: markerSize,
             material: material
         });
        

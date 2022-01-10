@@ -11,6 +11,10 @@ const elementSchema = new Schema({
     patternLink:{
         type:String
     },
+    markerSize:{
+        type:Number,
+        default:17
+    },
     title: {
         type: String,
         required: true
