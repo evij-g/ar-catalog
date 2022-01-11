@@ -5,6 +5,10 @@
     var markerSize=document.getElementById("element-markerSize");
     markerSize.addEventListener("input",setScale);
 
+    if(markerSize.value == ""){
+        markerSize.value="17";
+    }
+
     const width = document.getElementById("element-width");
     width.addEventListener("input",setScale);
 
