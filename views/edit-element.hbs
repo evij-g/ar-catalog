@@ -4,132 +4,17 @@
    </h2>
 
     <form action="/edit-image{{element._id}}" method="POST" class="upload" enctype="multipart/form-data">
-    <div class="card">
-            <div class="card-image">
-                <figure class="image">
-                  <img src="{{element.imageUrl}}" alt="">
-                </figure>
+            {{>elementFormHeadImage}}
+            <div class="control">
+                <button class="button is-primary" type="submit">update</button>
             </div>
-
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <div class="field">
-                            <div class="file has-name is-fullwidth">
-                                <label class="file-label">
-                                    <!-- <input class="file-input" type="file" name="file"> -->
-                                    <input name="imageUrl" type="file" class="file-input cloudinary-fileupload"/>
-                                    <span class="file-cta">
-                                        <span class="file-icon">
-                                            <i class="fas fa-upload"></i>
-                                        </span>
-                                        <span class="file-label">
-                                            select file…
-                                        </span>
-                                    </span>
-                                    <span class="file-name"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="control">
-                                <button class="button is-primary" type="submit">update</button>
-                            </div>
                         
 </form>
 <form action="/edit-element{{element._id}}" method="POST" enctype="multipart/form-data">
-                        <div class="field">
-                            <label for="title" class="label">Title</label> 
-                            <input
-                                class="input"
-                                type="text"
-                                name="title"
-                                placeholder="title"
-                                id="element-title"
-                                value='{{element.title}}'
-                                required="required"/>
-                        </div>
-                        <div class="field">
-                            <label for="width" class="label">Width in CM</label> 
-                            <input
-                                class="input"
-                                type="number"
-                                name="width"
-                                placeholder="real world width"
-                                id="element-width"
-                                value='{{element.width}}'
-                                required="required"/>
-                        </div>
-                        <div class="field">
-                            <label for="height" class="label">Height in CM</label> 
-                            <input
-                                class="input"
-                                type="number"
-                                name="height"
-                                placeholder="real world height"
-                                id="element-height"
-                                value='{{element.height}}'
-                                required="required"/>
-                        </div>
-                        <div class="field">
-                            <label for="position" class="label">Position (x y z)</label> 
-                            <input
-                                class="input"
-                                type="text"
-                                name="position"
-                                placeholder="0 0 0"
-                                id="element-position"
-                                value='{{element.position}}'
-                                />
-                        </div>
-                        <div class="field">
-                            <label for="rotation" class="label">Rotation (x y z)</label> 
-                            <input
-                                class="input"
-                                type="text"
-                                name="rotation"
-                                placeholder="-90 0 0"
-                                id="element-rotation"
-                                value='{{element.rotation}}'
-                                />
-                        </div>
-                        <div class="field">
-                            <label for="scale" class="label">Scale (x y z)</label> 
-                            <input
-                                class="input"
-                                type="text"
-                                name="scale"
-                                placeholder="1 1 1"
-                                id="element-scale"
-                                value='{{element.scale}}'
-                                />
-                        </div>
-                        <div class="field">
-                            <label for="markerSize" class="label" >AR-Marker width in cm</label> 
-                            <input
-                                class="input"
-                                type="text"
-                                name="markerSize"
-                                placeholder="17"
-                                value='{{element.markerSize}}'
-                                id="element-markerSize"
-                                />
-                        </div>
-                        <div class="field">
-                            <label for="material" class="label">Material</label> 
-                            <input
-                                class="input"
-                                placeholder="material"
-                                type="text"
-                                name="material"
-                                value='{{element.material}}'
-                                id="element-material"/>
-                        </div>               
-
+                       {{>elementFormBody}}            
                             <div class="control">
                                 <button class="button is-primary" type="submit">update</button>
                             </div>
-                            
-
                         </div>
                     </div>
                 </div>
@@ -137,48 +22,7 @@
         </div>
 
     </form>
-
-    {{!-- {{#each allElements}}
-        {{element}}
-    {{/each}} --}}
-
 </section>
-
-
-{{!-- <section class="section">
-  <div class="card">
-<div class="card-image">
-    <figure class="image">
-        <img src="{{element.imageUrl}}" alt="">
-    </figure>
-</div>
-<div class="card-content">
-
-  
-  <form
-    action="/edit-image{{element._id}}" method="POST" enctype="multipart/form-data">
-    <label for="imageUrl">New Image</label>
-    <input type="file" name="imageUrl" />
-    <button type="submit">update image</button>
-  </form>
-<form action="/edit-element{{element._id}}" method="POST" enctype="multipart/form-data">
-    <label for="title">title</label>
-      <input type="text" name="title" id="element-title" value='{{element.title}}' required />
-    <label for="width">width</label>
-      <input type="number" name="width" id="element-width" value="{{element.width}}" required />
-    <label for="width">height</label>
-      <input type="number" name="height" id="element-height" value="{{element.height}}" required />
-    <label for="position">position</label>
-      <input type="text" name="position" id="element-position" value="{{element.position}}" />
-    <label for="rotation">rotation</label>
-      <input type="text" name="rotation" id="element-rotation" value="{{element.rotation}}" />
-    <label for="material">material</label>
-      <input type="text" name="material" id="element-material" value="{{element.material}}" />
-    <button type="submit">update information</button>
-  </form>
-</div>
-
-</section> --}}
 
 <script>
     const fileInput = document.querySelector('.file input[type=file]');
