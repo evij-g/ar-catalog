@@ -1,26 +1,29 @@
 //script from: https://coolcssanimation.com/element-fade-out-on-scroll/
 
 var header = document.getElementById('header');
-console.log("header",header);
-
+var opacity = 1;
 function fadeOutOnScroll(element) {
   if (!element) {
     return;
   }
-  var opacity = 1;
-  var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-
+ 
+  
   var elementHeight = element.offsetHeight;
   var scrollTop = document.documentElement.scrollTop;
   
-  let sT="scrollTop= "+scrollTop;
  
   if (scrollTop <= elementHeight) {
 
-    opacity = (elementHeight-distanceToTop) / elementHeight;
-    console.log("test",opacity);
-    element.style.opacity = opacity;
+    opacity = (elementHeight-scrollTop) / elementHeight;
+    
+    
   }
+
+  if(opacity <= 0.04){
+    opacity = 0;
+    
+  }
+  element.style.opacity = opacity;
   
 }
 
