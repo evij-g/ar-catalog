@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is about an easy to use experiment for true scaled images or 2D-sculptures in augmented reality. The goal is to create acatalog for true scaled images or
+This project is about an easy to use experiment for true scaled images or 2D-sculptures in augmented reality.
             
 ### Git
 
@@ -13,8 +13,6 @@ The url to your repository and to your deployed project
 [Deploy Link](https://arcat.evij.de)
 
 ### Documentation
-
-
 
 
 
