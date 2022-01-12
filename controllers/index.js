@@ -253,10 +253,10 @@ async function setMarker(update){
     //console.log("setMarker -> patternFileLink", patternFileLink);
     let markerElement ="";
     try {
-     
+        Marker.find().sort({markerId:1});    
         if(update){
 
-        Marker.find().sort({markerId:1});    
+        
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
