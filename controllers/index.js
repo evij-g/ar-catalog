@@ -344,7 +344,13 @@ async function createElement(req, res) {
     
         const {title, width, height, material, position, scale, markerSize, rotation} = req.body;
         const markerElement = await setMarker(true);
-
+        let newRotation = rotation;
+        if(newRotation == (null || "")){
+            newRotation = undefined;
+        }
+        else{
+            newRotation = rotation;
+        }
 
         await Element.create({
             markerId: markerElement.markerId,
@@ -354,7 +360,7 @@ async function createElement(req, res) {
             width,
             height,
             position,
-            rotation,
+            rotation:newRotation,
             scale,
             
             material,
