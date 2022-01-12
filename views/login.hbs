@@ -1,14 +1,40 @@
-<h1>login</h1>
-<form action="/login" method="POST">
-  <label for="email">email</label>
-  <input type="email" name="email" />
-  <label for="password">password</label>
-  <input type="password" name="password" autocomplete="on" />
-  <button type="submit">login</button>
-</form>
+<section class="section content">
+    <h2 class="title">
+        LOGIN
+    </h2>
+    <form action="/login" method='POST' class="field">
 
-{{#if errorMessage}}
-  <p class="error">
-    {{errorMessage}}
-  </p>
-{{/if}}
+        <div class="field">
+            <label class="label">EMAIL</label>
+            <div class="control">
+                <input
+                    class="input is-success"
+                    type="email"
+                    name="email"
+                    placeholder="your email"
+                    value="">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">PASSWORD</label>
+            <div class="control">
+                <input
+                    class="input is-danger"
+                    type="password"
+                    name="password"
+                    placeholder="your password"
+                    value="">
+
+            </div>
+        </div>
+        <div class="field">
+            <button type="submit" class="button">LOGIN</button>
+        </div>
+
+    </form>
+    {{#if errorMessage}}
+        <p class="error">{{errorMessage}}</p>
+    {{/if}}
+
+</section>

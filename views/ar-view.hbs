@@ -1,0 +1,183 @@
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+    <script src='scripts/aframe.min.js'></script>
+    <script
+      src='scripts/aframe-extras.loaders.min.js'
+    ></script>
+    <script
+      src='scripts/aframe-ar.js'
+    ></script>
+    
+    
+
+
+
+<script defer="defer" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<link rel="stylesheet" href="stylesheets/navbar.css">
+{{!-- <link rel="stylesheet" href="stylesheets/navbar-ar-styles.css"> --}}
+<script src="scripts/navbar-burger.js"></script>
+
+<style type="text/css">
+
+      .hero{ min-height: auto; } .hero-body{ padding-top:0.5rem;
+      padding-bottom:0.5rem; } .hero-body > h1.title{ margin-bottom: 0; }
+      .subtitle{ display:none; } body{ style="margin: 0; overflow: hidden; }
+
+</style>
+
+
+  </head>
+  <body class="has-navbar-fixed-bottom" style='margin : 0px; overflow: hidden;' id='scene'>
+
+    
+
+    
+<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix; trackingMethod: best;" >
+ 
+      <a-assets>
+        <img id='image' crossorigin='anonymous' src='{{element.imageUrl}}' />
+      </a-assets>
+    
+   
+
+      <a-marker markerhandler emitevents='true' smooth='true' type='barcode' value='{{marker.markerId}} ' smoothCount="10"
+   smoothTolerance=".01"
+   smoothThreshold="5">
+
+        <a-image
+          src='#image'
+          scale='{{element.scale}}' 
+          {{!-- 1.0325 1.4035 1 --}}
+          rotation='{{element.rotation}}'
+          position='{{element.position}}'
+          id="element"
+        ></a-image>
+
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+
+    
+
+    
+
+ 
+
+  {{> navbar }}
+
+
+
+  
+  </body>
+
+</html>
+
+<script>
+
+  let controls = '<div id=\"camera-select\" class=\"controls\" style=\"z-index: 999;">';
+      controls += '<button id=\"button\">select camera</button>';
+      controls += '<select id=\"select\" style=\"width:70px;\">';
+      controls += '</select>';
+      controls += '</div>';
+
+      console.log(controls);
+
+      let placeholder = document.createElement('div');
+placeholder.innerHTML = controls;
+let cam = placeholder.firstElementChild;
+
+// Get the reference element
+//let sp2 = document.getElementById("camera-select");
+console.log("document.getElementsByClassName('navbar-brand')",document.querySelector('.navbar-brand').lastElementChild);
+let parentNode = document.querySelector('.navbar-brand').lastElementChild;
+console.log(parentNode);
+// Get the parent element
+let parentDiv = parentNode.parentElement;
+
+// Insert the new element into before sp2
+parentDiv.insertBefore(cam, parentNode);
+
+  //document.getElementsByClassName('navbar-brand').appendChild(controls);
+  
+    /*  AFRAME.registerComponent('markerhandler', { init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
+      console.log("marker found!"); }) } });
+  
+
+    var scene = document.querySelector('a-scene');
+
+if (scene.hasLoaded) {
+  run();
+} else {
+  scene.addEventListener('loaded', run);
+}
+
+function run () {
+  console.log("run");
+   // var entity = scene.querySelector('a-image');
+
+    const markerWidth = 172; //in mm
+    const width = {{element.width}}*10; //cm * 10 = mm
+    console.log("width",width);
+    const height = {{element.height}}*10;//cm * 10 = mm
+    //const arElement = document.getElementById("element");
+    //arElement.scale = width/markerWidth+" "+height/markerWidth+" "+1;
+  //  var newScale = toString(width/markerWidth)+" "+toString(height/markerWidth)+" 1";
+    //newScale = "4 4 1";
+   // console.log("entity",entity);
+   // arElement.setAttribute("scale","4 4 4");
+  //  console.log("arElement",arElement);
+
+  //entity.setAttribute('scale', {x: (width/markerWidth), y: (height/markerWidth), z:1});
+  //entity.object3D.scale.set(2, 2, 2);
+}
+    
+    */
+  </script>
+
+  <script src='scripts/arjs-camera-select.js'></script>
+
+   <script>
+
+
+     /*
+  const cssText = (cssSelector, stylesArr = null) => {
+  const ele = cssSelector[0];
+  console.log("ele",ele);
+  console.log("computed styles",getComputedStyle(ele));
+
+  return Object.entries(getComputedStyle(ele));
+  
+  
+  return Object.entries(getComputedStyle(ele))
+    .filter(([k]) => stylesArr?.includes(k) ?? true)
+    .map(([k, v]) => `${k}:${v}`)
+    .join(";");
+};
+
+const navbar = document.getElementsByTagName("nav");
+console.log("navbar",navbar);
+const allCssText = cssText(navbar);
+console.log({allCssText});
+
+/* let elementName = "navbar-brand"
+let newElement = document.getElementsByClassName(elementName);
+let cssObj1 = window.getComputedStyle(newElement[0], null);
+
+let cssStylesText = elementName+"{";
+for (x in cssObj1) {
+  cssObjProp = cssObj1.item(x)
+  cssStylesText += cssObjProp + ":" + cssObj1.getPropertyValue(cssObjProp) + ";";
+}
+cssStylesText += "}";
+console.log(cssStylesText); */
+  </script>

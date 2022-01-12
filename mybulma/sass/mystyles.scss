@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import '../bulma/sass/utilities/initial-variables.sass';
+
+
+    $primary: #a094b7;
+    $secondary: #8c7b75;
+    $background-color: #f5f5f6;
+    $success: #efdcd5;
+    $button: #d0c2e8;
+
+
+
+$title: 'Poller One', sans-serif;
+$family-sans-serif: 'Nunito', sans-serif;
+$family-monospace: 'Nunito', sans-serif;
+$family-serif: 'Nunito', serif;
+$family-primary: $family-serif;
+
+//$link-hover:#e7825d;
+$hero-minheight: 150px;
+
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $background-color;
+$control-border-width: 1px;
+$input-border-color: $grey-light;
+$input-shadow: true;
+
+$navbar-brand:$success;
+$navbar-item-color: $success;
+$navbar-item-hover-color:$secondary;
+//$navbar-dropdown-item: $secondary;
+//$navbar-dropdown-item-hover-color:$secondary;
+$navbar-background-color: $secondary;
+$navbar-burger-color: $success;
+
+
+
+// Import only what you need from Bulma
+@import '../bulma/sass/utilities/_all.sass';
+@import '../bulma/sass/base/_all.sass';
+@import '../bulma/sass/elements/button.sass';
+@import '../bulma/sass/elements/container.sass';
+@import '../bulma/sass/elements/table.sass';
+@import '../bulma/sass/elements/title.sass';
+@import '../bulma/sass/elements/icon.sass';
+@import '../bulma/sass/form/_all.sass';
+@import '../bulma/sass/components/navbar.sass';
+@import '../bulma/sass/components/card.sass';
+@import '../bulma/sass/layout/hero.sass';
+@import '../bulma/sass/layout/section.sass';
+@import '../bulma/sass/grid/tiles.sass';
+@import '../bulma/sass/helpers/typography.sass';
+@import '../bulma/sass/helpers/color.sass';
+
+/*.upload .card-content{
+    position:relative;
+    margin:1.5rem;
+    background-color: $grey-light;
+    border-radius: 0.25rem;
+}*/
+
+li{
+  padding-bottom: 1rem;
+}
+
+.navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item:focus, a.navbar-burger:hover span{
+    color:$success;
+}
+
+.has-dropdown-up .navbar-link:not(.is-arrowless)::after {
+  border-color: $success;
+}
+// a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active,
+// .navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover:focus:focus-visible:focus-within,
+// ,
+// .navbar-item.has-dropdown:hover *,
+// .navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover *
+// {
+//   border-color: $secondary!important;
+// }
+
+.navbar-dropdown, .has-dropdown-up .navbar-link:hover:not(.is-arrowless)::after{
+  color:$secondary;
+  border-color: $secondary!important;
+}
+
+.navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a{
+	 color: $secondary;
+}
+
+@media screen and (max-width:1024px) {
+  .navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a{
+    
+    color: $success;
+ }
+
+ .navbar-item.has-dropdown.has-dropdown-up.is-hoverable:hover a.navbar-item:hover{
+   color:$secondary;
+ }
+}
+
+.file-name {
+  background-color: $white;
+}
+
+$table-cell-padding: 1em 1em 0em 0em;
+$table-cell-border: 2px 3px 0px;
+$table-cell-border-width: 0 0 0px;
+
+//custom css styles by evij
+.title,
+.navbar-item > h1 {
+  font-family: $title;
+}
+
+h1.title{
+    text-shadow: $secondary 3px 0px 0px;
+}
+
+// .navbar-item,
+// .navbar-link,
+// .navbar-link:not(.is-arrowless)::after,
+// .navbar-link:not(.is-arrowless)::after,
+// .is-active .navbar-dropdown > .navbar-item,
+// .navbar-item.has-dropdown:focus .navbar-link,
+// .navbar-item.has-dropdown:hover .navbar-link,
+// .navbar-item.has-dropdown.is-active .navbar-link,
+// a.navbar-burger:hover {
+//   color: $background-color;
+//   border-color: $background-color;
+// }
+
+
+
+// .navbar-dropdown > .navbar-item,
+// .navbar-item.has-dropdown:focus .navbar-link,
+// .navbar-item.has-dropdown:hover .navbar-link,
+// .navbar-item.has-dropdown.is-active .navbar-link {
+//   color: hsl(0, 0%, 7%);
+// }
+
+.hero {
+  min-height: $hero-minheight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  //background-color:$black-bis;
+  background-color: $primary;
+
+  z-index: -1;
+}
+
+.hero * {
+  color: $success;
+}
+
+.catalog,
+section.content {
+  margin-top: calc(3rem + #{$hero-minheight});
+}
+
+.container{
+  margin-left:0px;
+}
+
+.section.content{
+    background-color:$background-color;
+}
+
+.content p{
+  padding-bottom:1em;
+}
+
+.card > .title {
+  background-color: $secondary;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color:$success;
+}
+
+.title a {
+  color: $secondary;
+}
+
+.tile.is-ancestor {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.card {
+  max-width: 800px;
+  max-width:370px;
+  height: fit-content;
+}
+
+.card img {
+  width: 100%;
+  //max-height: 90vh;
+}
+
+#markerImage {
+  max-width: 100px;
+}
+
+#img-preview {
+  //background-color: $secondary;
+  min-height: 100px;
+  line-height: 0;
+}
+
+#img-preview img {
+  width: 100%;
+}
+
+.admin button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+}
+
+.card-footer-item{
+  background-color: $secondary;
+}
+.card-footer-item:hover, .card-footer-item .button:hover > a{
+  background-color: $button;
+  color: $secondary!important;
+}
+ .card-footer-item a{
+   color:$success;
+ }
+
+.catalog.content {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: row-reverse;
+  // justify-content: flex-end;
+}
+
+.catalog.content > section {
+  width: 500px;
+}
+
+#canvas {
+  width: 100%;
+  background-color: $secondary;
+}
+
+/* style sheet for "A4" printing */
+/*
+
+3cm frame = margin
+=> 21cm - 6cm = 15cm 
+
+Size of AR-Marker = 15cm
+
+*/
+
+#singleElementPrint {
+  display: none;
+}
+td.print-image{
+    padding-left:0px;
+}
+#qrCodePrintContainer {
+    display: flex;
+    justify-content: end;
+    padding-right: 0px;
+}
+#qrcode-image {
+  width: 100%;
+}
+.ar-marker {
+  width: 100%;
+}
+.preview-img {
+  max-height: 200px;
+  width: auto;
+}
+.print-info {
+  padding-top: 30px;
+}
+.print-info .table{
+    width:100%;
+}
+.hero-print {
+  display: none;
+}
+
+.markerImage,
+.ar-marker {
+  // border: 80px black solid;
+}
+.ar-marker {
+  //  border-color: white;
+}
+#singleElementPrint > section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media print {
+  @page{
+    margin: 1cm;
+    margin-bottom: 0cm;
+  }
+  body {
+    padding-bottom: 0 !important;
+  }
+  #singleElement,
+  .navbar,
+  .hero,
+  #backbutton {
+    display: none;
+  }
+
+  #singleElementPrint {
+    display: block;
+  }
+
+  .hero-print {
+    display: block;
+    padding-left: 20px;
+  }
+
+  .section {
+    padding-bottom: 0px;
+  }
+
+  .markerImage,
+  .ar-marker {
+    // border: 80px black solid;
+  }
+  .ar-marker {
+    //   border-color: white;
+  }
+}
+@media print and (width: 21cm) and (height: 29.7cm) {
+  @page {
+    margin: 1cm;
+    margin-bottom: 0cm;
+    
+  }
+}

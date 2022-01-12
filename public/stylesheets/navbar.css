@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+:root{
+	--primary: #a094b7;
+    --navbar-background-color: #8c7b75;
+    --background-color: #f5f5f6;
+    --success: #efdcd5;
+    --button: #d0c2e8;
+}
+
+#camera-select {
+	display: flex;
+	align-self: center;
+	height: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+}
+body {
+	color: var(--success);
+	font-size: 1em; 
+	font-weight: 400;
+	line-height: 1.5;
+}
+body, button, input, optgroup, select, textarea {
+	font-family: "Nunito", serif;
+}
+
+html.has-navbar-fixed-bottom, body.has-navbar-fixed-bottom {
+	padding-bottom: 3.25rem;
+}
+
+.title, .navbar-item > h1 {
+	font-family: "Poller One", sans-serif;
+}
+
+h1{
+    margin:0;
+}
+
+.navbar {
+	background-color: var(--navbar-background-color);
+	min-height: 3.25rem;
+	position: relative;
+	z-index: 30;
+}
+
+
+.navbar.is-fixed-bottom, .navbar.is-fixed-top {
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 30;
+}
+
+.navbar.is-fixed-bottom {
+	bottom: 0;
+}
+
+.navbar-menu {
+	background-color: var(--navbar-background-color);
+	box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+	padding: 0.5rem 0;
+}
+
+.navbar-menu {
+	display: none;
+}
+
+.navbar-menu.is-active {
+    display: block;
+  }
+
+  
+
+.navbar-brand, .navbar-tabs {
+	align-items: stretch;
+	display: flex;
+	flex-shrink: 0;
+	min-height: 3.25rem;
+}
+
+.navbar-brand .navbar-item, .navbar-tabs .navbar-item {
+	align-items: center;
+	display: flex;
+}
+
+.navbar-item, .navbar-link {
+	color: var(--success);
+	display: block;
+	line-height: 1.5;
+	padding: 0.5rem 0.75rem;
+	position: relative;
+    text-decoration: none;
+}
+
+a.navbar-item, .navbar-link {
+	cursor: pointer;
+}
+
+.navbar-item.has-dropdown {
+	padding: 0;
+}
+
+.navbar-item {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+	border-color: var(--success);
+	margin-top: -0.375em;
+	right: 1.125em;
+}
+
+
+.navbar-dropdown {
+	font-size: 0.875rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.navbar-dropdown .navbar-item {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.navbar-divider {
+	background-color: whitesmoke;
+	border: none;
+	display: none;
+	height: 2px;
+	margin: 0.5rem 0;
+}
+
+
+.navbar-burger {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: none;
+	color: currentColor;
+	font-family: inherit;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-burger {
+	color: var(--success);
+	cursor: pointer;
+	display: block;
+	height: 3.25rem;
+	position: relative;
+	width: 3.25rem;
+	margin-left: auto;
+}
+
+span {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+.navbar-burger:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-burger span {
+	background-color: currentColor;
+	display: block;
+	height: 1px;
+	left: calc(50% - 8px);
+	position: absolute;
+	transform-origin: center;
+	transition-duration: 86ms;
+	transition-property: background-color, opacity, transform;
+	transition-timing-function: ease-out;
+	width: 16px;
+}
+
+.navbar-burger span:nth-child(1) {
+	top: calc(50% - 6px);
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+	transform: translateY(5px) rotate(45deg);
+}
+
+.navbar-burger span:nth-child(2) {
+	top: calc(50% - 1px);
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+	opacity: 0;
+}
+
+
+.navbar-burger span:nth-child(3) {
+	top: calc(50% + 4px);
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+	transform: translateY(-5px) rotate(-45deg);
+}
+
+a {
+	color: var(--success);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.button, .input, .textarea, .select select, .file-cta, .file-name {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	align-items: center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: none;
+	display: inline-flex;
+	font-size: 1rem;
+	height: 2.5em;
+	justify-content: flex-start;
+	line-height: 1.5;
+	padding-bottom: calc(0.5em - 1px);
+	padding-left: calc(0.75em - 1px);
+	padding-right: calc(0.75em - 1px);
+	padding-top: calc(0.5em - 1px);
+	position: relative;
+	vertical-align: top;
+}
+
+.button, .file {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button {
+	background-color: white;
+	border-color: #dbdbdb;
+	border-width: 1px;
+	/*color: #363636;*/
+	cursor: pointer;
+	justify-content: center;
+	padding-bottom: calc(0.5em - 1px);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: calc(0.5em - 1px);
+	text-align: center;
+	white-space: nowrap;
+}
+
+.button.is-success {
+	background-color: var(--button);
+	border-color: transparent;
+	color: #fff;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.buttons .button {
+	margin-bottom: 0;
+}
+
+.navbar-item.has-dropdown {
+	padding: 0;
+}
+
+.navbar-dropdown {
+	font-size: 0.875rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after, .navbar-link:not(.is-arrowless)::after {
+	border: 3px solid transparent;
+	border-radius: 2px;
+	border-right: 0;
+	border-top: 0;
+	content: " ";
+	display: block;
+	height: 0.625em;
+	margin-top: -0.4375em;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: rotate(-45deg);
+	transform-origin: center;
+	width: 0.625em;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+	border-color: var(--success);
+	margin-top: -0.375em;
+	right: 1.125em;
+}
+
+/* -------------------------------------------- */
+
+.navbar-brand, .navbar-tabs {
+	align-items: stretch;
+	display: flex;
+	flex-shrink: 0;
+	min-height: 3.25rem;
+}
+
+
+/* -------------------------------------------- */
+
+html {
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+}
+
+body, button, input, optgroup, select, textarea {
+	font-family: "Nunito", serif;
+}
+
+body {
+	color: var(--success);
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+a {
+	color: var(--success);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.navbar-item, .navbar-link {
+	color: var(--success);
+	display: block;
+	line-height: 1.5;
+	padding: 0.5rem 0.75rem;
+	position: relative;
+}
+
+.navbar-item {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+a.navbar-item, .navbar-link {
+	cursor: pointer;
+}
+
+.navbar-brand .navbar-item, .navbar-tabs .navbar-item {
+	align-items: center;
+	display: flex;
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+	background-color: var(--navbar-background-color);
+	color: var(--success);
+}
+
+.navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
+	background-color: transparent;
+}
+
+/* ------------------------ */
+
+a {
+	color: var(--success);
+	cursor: pointer;
+}
+
+.navbar-item, .navbar-link {
+	color: var(--success);
+	line-height: 1.5;
+}
+
+a.navbar-item, .navbar-link {
+	cursor: pointer;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.title, .navbar-item > h1 {
+	font-family: "Poller One", sans-serif;
+}

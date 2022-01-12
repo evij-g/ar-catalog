@@ -1,8 +1,44 @@
-<div class="ctn-element">
-  <p>title: {{title}}</p>
-  <img src="{{imageUrl}}" alt="`picture" of {{title}} ` />
-  <p>height: {{height}}</p>
-  <p>width: {{width}}</p>
-  <p>material: {{material}}</p>
-  <br />
+<div class="card-image">
+    <figure class="image is-4by3">
+        <a href="/single-element{{id}}"><img src="{{imageUrl}}" alt="picture of={{title}}"/></a>
+    </figure>
 </div>
+<div class="card-content">
+    <div class="media">
+        <div class="media-content">
+            <p class="title is-4"><a href="/single-element{{id}}">{{title}}</a></p>
+        </div>
+    </div>
+    <div class="content">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>HEIGHT:</td>
+                    <td>{{height}}</td>
+                </tr>
+                <tr>
+                    <td>WIDTH:</td>
+                    <td>{{width}}</td>
+                </tr>
+                <tr>
+                    <td>MATERIAL:</td>
+                    <td>{{material}}</td>
+                </tr>
+
+                
+                
+                {{#if @root.isAdmin}}
+                
+                
+                    <tr>
+                        <td>markerid:</td>
+                        <td>{{markerId}}</td>
+                    </tr>
+                    <tr>
+                        <td>markerimage:</td>
+                        <td><img src="{{markerLink}}"/></td>
+                    </tr>
+                {{/if}}
+            </table>
+        </div>
+    </div>

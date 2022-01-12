@@ -1,0 +1,3511 @@
+[{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e891"
+  },
+  "markerId": 0,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/0.png",
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280555/cq2dpvq4zfezwv2gjrpv.patt"
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e892"
+  },
+  "markerId": 1,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/1.png",
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280624/eolkvlil8gm0p5yu4p5v.patt"
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e893"
+  },
+  "markerId": 2,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/2.png",
+  "inUse": true,
+  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640282397/xf3zzzmkotjrg5rmlefn.patt"
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e894"
+  },
+  "markerId": 3,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/3.png",
+  "inUse": true
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e895"
+  },
+  "markerId": 4,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/4.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e896"
+  },
+  "markerId": 5,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/5.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e897"
+  },
+  "markerId": 6,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/6.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e898"
+  },
+  "markerId": 7,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/7.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e899"
+  },
+  "markerId": 8,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/8.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89a"
+  },
+  "markerId": 9,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/9.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89b"
+  },
+  "markerId": 10,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/10.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89c"
+  },
+  "markerId": 11,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/11.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89d"
+  },
+  "markerId": 12,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/12.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89e"
+  },
+  "markerId": 13,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/13.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e89f"
+  },
+  "markerId": 14,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/14.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a0"
+  },
+  "markerId": 15,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/15.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a1"
+  },
+  "markerId": 16,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/16.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a2"
+  },
+  "markerId": 17,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/17.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a3"
+  },
+  "markerId": 18,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/18.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a4"
+  },
+  "markerId": 19,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/19.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a5"
+  },
+  "markerId": 20,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/20.png",
+  "inUse": true
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a6"
+  },
+  "markerId": 21,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/21.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a7"
+  },
+  "markerId": 22,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/22.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a8"
+  },
+  "markerId": 23,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/23.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8a9"
+  },
+  "markerId": 24,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/24.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8aa"
+  },
+  "markerId": 25,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/25.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ab"
+  },
+  "markerId": 26,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/26.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ac"
+  },
+  "markerId": 27,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/27.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ad"
+  },
+  "markerId": 28,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/28.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ae"
+  },
+  "markerId": 29,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/29.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8af"
+  },
+  "markerId": 30,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/30.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b0"
+  },
+  "markerId": 31,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/31.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b1"
+  },
+  "markerId": 32,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/32.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b2"
+  },
+  "markerId": 33,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/33.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b3"
+  },
+  "markerId": 34,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/34.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b4"
+  },
+  "markerId": 35,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/35.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b5"
+  },
+  "markerId": 36,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/36.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b6"
+  },
+  "markerId": 37,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/37.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b7"
+  },
+  "markerId": 38,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/38.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b8"
+  },
+  "markerId": 39,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/39.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8b9"
+  },
+  "markerId": 40,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/40.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ba"
+  },
+  "markerId": 41,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/41.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8bb"
+  },
+  "markerId": 42,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/42.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8bc"
+  },
+  "markerId": 43,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/43.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8bd"
+  },
+  "markerId": 44,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/44.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8be"
+  },
+  "markerId": 45,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/45.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8bf"
+  },
+  "markerId": 46,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/46.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c0"
+  },
+  "markerId": 47,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/47.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c1"
+  },
+  "markerId": 48,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/48.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c2"
+  },
+  "markerId": 49,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/49.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c3"
+  },
+  "markerId": 50,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/50.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c4"
+  },
+  "markerId": 51,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/51.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c5"
+  },
+  "markerId": 52,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/52.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c6"
+  },
+  "markerId": 53,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/53.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c7"
+  },
+  "markerId": 54,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/54.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c8"
+  },
+  "markerId": 55,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/55.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8c9"
+  },
+  "markerId": 56,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/56.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ca"
+  },
+  "markerId": 57,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/57.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8cb"
+  },
+  "markerId": 58,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/58.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8cc"
+  },
+  "markerId": 59,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/59.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8cd"
+  },
+  "markerId": 60,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/60.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ce"
+  },
+  "markerId": 61,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/61.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8cf"
+  },
+  "markerId": 62,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/62.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d0"
+  },
+  "markerId": 63,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/63.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d1"
+  },
+  "markerId": 64,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/64.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d2"
+  },
+  "markerId": 65,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/65.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d3"
+  },
+  "markerId": 66,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/66.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d4"
+  },
+  "markerId": 67,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/67.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d5"
+  },
+  "markerId": 68,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/68.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d6"
+  },
+  "markerId": 69,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/69.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d7"
+  },
+  "markerId": 70,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/70.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d8"
+  },
+  "markerId": 71,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/71.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8d9"
+  },
+  "markerId": 72,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/72.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8da"
+  },
+  "markerId": 73,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/73.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8db"
+  },
+  "markerId": 74,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/74.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8dc"
+  },
+  "markerId": 75,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/75.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8dd"
+  },
+  "markerId": 76,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/76.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8de"
+  },
+  "markerId": 77,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/77.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8df"
+  },
+  "markerId": 78,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/78.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e0"
+  },
+  "markerId": 79,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/79.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e1"
+  },
+  "markerId": 80,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/80.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e2"
+  },
+  "markerId": 81,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/81.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e3"
+  },
+  "markerId": 82,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/82.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e4"
+  },
+  "markerId": 83,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/83.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e5"
+  },
+  "markerId": 84,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/84.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e6"
+  },
+  "markerId": 85,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/85.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e7"
+  },
+  "markerId": 86,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/86.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e8"
+  },
+  "markerId": 87,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/87.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8e9"
+  },
+  "markerId": 88,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/88.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ea"
+  },
+  "markerId": 89,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/89.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8eb"
+  },
+  "markerId": 90,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/90.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ec"
+  },
+  "markerId": 91,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/91.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ed"
+  },
+  "markerId": 92,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/92.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ee"
+  },
+  "markerId": 93,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/93.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ef"
+  },
+  "markerId": 94,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/94.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f0"
+  },
+  "markerId": 95,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/95.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f1"
+  },
+  "markerId": 96,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/96.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f2"
+  },
+  "markerId": 97,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/97.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f3"
+  },
+  "markerId": 98,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/98.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f4"
+  },
+  "markerId": 99,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/99.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f5"
+  },
+  "markerId": 100,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/100.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f6"
+  },
+  "markerId": 101,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/101.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f7"
+  },
+  "markerId": 102,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/102.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f8"
+  },
+  "markerId": 103,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/103.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8f9"
+  },
+  "markerId": 104,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/104.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8fa"
+  },
+  "markerId": 105,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/105.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8fb"
+  },
+  "markerId": 106,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/106.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8fc"
+  },
+  "markerId": 107,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/107.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8fd"
+  },
+  "markerId": 108,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/108.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8fe"
+  },
+  "markerId": 109,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/109.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e8ff"
+  },
+  "markerId": 110,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/110.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e900"
+  },
+  "markerId": 111,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/111.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e901"
+  },
+  "markerId": 112,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/112.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e902"
+  },
+  "markerId": 113,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/113.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e903"
+  },
+  "markerId": 114,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/114.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e904"
+  },
+  "markerId": 115,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/115.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e905"
+  },
+  "markerId": 116,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/116.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e906"
+  },
+  "markerId": 117,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/117.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e907"
+  },
+  "markerId": 118,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/118.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e908"
+  },
+  "markerId": 119,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/119.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e909"
+  },
+  "markerId": 120,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/120.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90a"
+  },
+  "markerId": 121,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/121.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90b"
+  },
+  "markerId": 122,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/122.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90c"
+  },
+  "markerId": 123,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/123.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90d"
+  },
+  "markerId": 124,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/124.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90e"
+  },
+  "markerId": 125,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/125.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e90f"
+  },
+  "markerId": 126,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/126.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e910"
+  },
+  "markerId": 127,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/127.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e911"
+  },
+  "markerId": 128,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/128.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e912"
+  },
+  "markerId": 129,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/129.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e913"
+  },
+  "markerId": 130,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/130.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e914"
+  },
+  "markerId": 131,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/131.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e915"
+  },
+  "markerId": 132,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/132.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e916"
+  },
+  "markerId": 133,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/133.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e917"
+  },
+  "markerId": 134,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/134.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e918"
+  },
+  "markerId": 135,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/135.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e919"
+  },
+  "markerId": 136,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/136.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91a"
+  },
+  "markerId": 137,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/137.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91b"
+  },
+  "markerId": 138,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/138.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91c"
+  },
+  "markerId": 139,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/139.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91d"
+  },
+  "markerId": 140,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/140.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91e"
+  },
+  "markerId": 141,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/141.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e91f"
+  },
+  "markerId": 142,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/142.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e920"
+  },
+  "markerId": 143,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/143.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e921"
+  },
+  "markerId": 144,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/144.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e922"
+  },
+  "markerId": 145,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/145.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e923"
+  },
+  "markerId": 146,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/146.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e924"
+  },
+  "markerId": 147,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/147.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e925"
+  },
+  "markerId": 148,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/148.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e926"
+  },
+  "markerId": 149,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/149.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e927"
+  },
+  "markerId": 150,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/150.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e928"
+  },
+  "markerId": 151,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/151.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e929"
+  },
+  "markerId": 152,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/152.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92a"
+  },
+  "markerId": 153,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/153.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92b"
+  },
+  "markerId": 154,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/154.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92c"
+  },
+  "markerId": 155,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/155.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92d"
+  },
+  "markerId": 156,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/156.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92e"
+  },
+  "markerId": 157,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/157.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e92f"
+  },
+  "markerId": 158,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/158.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e930"
+  },
+  "markerId": 159,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/159.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e931"
+  },
+  "markerId": 160,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/160.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e932"
+  },
+  "markerId": 161,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/161.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e933"
+  },
+  "markerId": 162,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/162.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e934"
+  },
+  "markerId": 163,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/163.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e935"
+  },
+  "markerId": 164,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/164.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e936"
+  },
+  "markerId": 165,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/165.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e937"
+  },
+  "markerId": 166,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/166.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e938"
+  },
+  "markerId": 167,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/167.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e939"
+  },
+  "markerId": 168,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/168.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93a"
+  },
+  "markerId": 169,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/169.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93b"
+  },
+  "markerId": 170,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/170.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93c"
+  },
+  "markerId": 171,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/171.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93d"
+  },
+  "markerId": 172,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/172.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93e"
+  },
+  "markerId": 173,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/173.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e93f"
+  },
+  "markerId": 174,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/174.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e940"
+  },
+  "markerId": 175,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/175.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e941"
+  },
+  "markerId": 176,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/176.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e942"
+  },
+  "markerId": 177,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/177.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e943"
+  },
+  "markerId": 178,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/178.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e944"
+  },
+  "markerId": 179,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/179.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e945"
+  },
+  "markerId": 180,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/180.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e946"
+  },
+  "markerId": 181,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/181.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e947"
+  },
+  "markerId": 182,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/182.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e948"
+  },
+  "markerId": 183,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/183.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e949"
+  },
+  "markerId": 184,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/184.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94a"
+  },
+  "markerId": 185,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/185.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94b"
+  },
+  "markerId": 186,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/186.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94c"
+  },
+  "markerId": 187,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/187.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94d"
+  },
+  "markerId": 188,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/188.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94e"
+  },
+  "markerId": 189,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/189.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e94f"
+  },
+  "markerId": 190,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/190.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e950"
+  },
+  "markerId": 191,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/191.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e951"
+  },
+  "markerId": 192,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/192.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e952"
+  },
+  "markerId": 193,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/193.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e953"
+  },
+  "markerId": 194,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/194.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e954"
+  },
+  "markerId": 195,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/195.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e955"
+  },
+  "markerId": 196,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/196.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e956"
+  },
+  "markerId": 197,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/197.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e957"
+  },
+  "markerId": 198,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/198.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e958"
+  },
+  "markerId": 199,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/199.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e959"
+  },
+  "markerId": 200,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/200.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95a"
+  },
+  "markerId": 201,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/201.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95b"
+  },
+  "markerId": 202,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/202.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95c"
+  },
+  "markerId": 203,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/203.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95d"
+  },
+  "markerId": 204,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/204.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95e"
+  },
+  "markerId": 205,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/205.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e95f"
+  },
+  "markerId": 206,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/206.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e960"
+  },
+  "markerId": 207,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/207.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e961"
+  },
+  "markerId": 208,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/208.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e962"
+  },
+  "markerId": 209,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/209.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e963"
+  },
+  "markerId": 210,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/210.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e964"
+  },
+  "markerId": 211,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/211.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e965"
+  },
+  "markerId": 212,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/212.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e966"
+  },
+  "markerId": 213,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/213.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e967"
+  },
+  "markerId": 214,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/214.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e968"
+  },
+  "markerId": 215,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/215.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e969"
+  },
+  "markerId": 216,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/216.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96a"
+  },
+  "markerId": 217,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/217.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96b"
+  },
+  "markerId": 218,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/218.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96c"
+  },
+  "markerId": 219,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/219.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96d"
+  },
+  "markerId": 220,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/220.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96e"
+  },
+  "markerId": 221,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/221.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e96f"
+  },
+  "markerId": 222,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/222.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e970"
+  },
+  "markerId": 223,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/223.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e971"
+  },
+  "markerId": 224,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/224.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e972"
+  },
+  "markerId": 225,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/225.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e973"
+  },
+  "markerId": 226,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/226.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e974"
+  },
+  "markerId": 227,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/227.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e975"
+  },
+  "markerId": 228,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/228.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e976"
+  },
+  "markerId": 229,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/229.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e977"
+  },
+  "markerId": 230,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/230.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e978"
+  },
+  "markerId": 231,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/231.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e979"
+  },
+  "markerId": 232,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/232.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97a"
+  },
+  "markerId": 233,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/233.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97b"
+  },
+  "markerId": 234,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/234.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97c"
+  },
+  "markerId": 235,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/235.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97d"
+  },
+  "markerId": 236,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/236.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97e"
+  },
+  "markerId": 237,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/237.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e97f"
+  },
+  "markerId": 238,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/238.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e980"
+  },
+  "markerId": 239,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/239.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e981"
+  },
+  "markerId": 240,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/240.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e982"
+  },
+  "markerId": 241,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/241.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e983"
+  },
+  "markerId": 242,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/242.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e984"
+  },
+  "markerId": 243,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/243.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e985"
+  },
+  "markerId": 244,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/244.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e986"
+  },
+  "markerId": 245,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/245.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e987"
+  },
+  "markerId": 246,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/246.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e988"
+  },
+  "markerId": 247,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/247.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e989"
+  },
+  "markerId": 248,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/248.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98a"
+  },
+  "markerId": 249,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/249.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98b"
+  },
+  "markerId": 250,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/250.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98c"
+  },
+  "markerId": 251,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/251.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98d"
+  },
+  "markerId": 252,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/252.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98e"
+  },
+  "markerId": 253,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/253.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e98f"
+  },
+  "markerId": 254,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/254.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e990"
+  },
+  "markerId": 255,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/255.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e991"
+  },
+  "markerId": 256,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/256.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e992"
+  },
+  "markerId": 257,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/257.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e993"
+  },
+  "markerId": 258,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/258.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e994"
+  },
+  "markerId": 259,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/259.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e995"
+  },
+  "markerId": 260,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/260.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e996"
+  },
+  "markerId": 261,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/261.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e997"
+  },
+  "markerId": 262,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/262.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e998"
+  },
+  "markerId": 263,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/263.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e999"
+  },
+  "markerId": 264,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/264.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99a"
+  },
+  "markerId": 265,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/265.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99b"
+  },
+  "markerId": 266,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/266.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99c"
+  },
+  "markerId": 267,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/267.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99d"
+  },
+  "markerId": 268,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/268.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99e"
+  },
+  "markerId": 269,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/269.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e99f"
+  },
+  "markerId": 270,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/270.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a0"
+  },
+  "markerId": 271,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/271.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a1"
+  },
+  "markerId": 272,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/272.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a2"
+  },
+  "markerId": 273,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/273.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a3"
+  },
+  "markerId": 274,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/274.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a4"
+  },
+  "markerId": 275,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/275.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a5"
+  },
+  "markerId": 276,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/276.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a6"
+  },
+  "markerId": 277,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/277.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a7"
+  },
+  "markerId": 278,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/278.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a8"
+  },
+  "markerId": 279,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/279.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9a9"
+  },
+  "markerId": 280,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/280.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9aa"
+  },
+  "markerId": 281,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/281.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ab"
+  },
+  "markerId": 282,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/282.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ac"
+  },
+  "markerId": 283,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/283.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ad"
+  },
+  "markerId": 284,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/284.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ae"
+  },
+  "markerId": 285,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/285.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9af"
+  },
+  "markerId": 286,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/286.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b0"
+  },
+  "markerId": 287,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/287.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b1"
+  },
+  "markerId": 288,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/288.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b2"
+  },
+  "markerId": 289,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/289.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b3"
+  },
+  "markerId": 290,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/290.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b4"
+  },
+  "markerId": 291,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/291.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b5"
+  },
+  "markerId": 292,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/292.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b6"
+  },
+  "markerId": 293,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/293.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b7"
+  },
+  "markerId": 294,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/294.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b8"
+  },
+  "markerId": 295,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/295.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9b9"
+  },
+  "markerId": 296,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/296.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ba"
+  },
+  "markerId": 297,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/297.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9bb"
+  },
+  "markerId": 298,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/298.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9bc"
+  },
+  "markerId": 299,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/299.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9bd"
+  },
+  "markerId": 300,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/300.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9be"
+  },
+  "markerId": 301,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/301.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9bf"
+  },
+  "markerId": 302,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/302.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c0"
+  },
+  "markerId": 303,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/303.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c1"
+  },
+  "markerId": 304,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/304.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c2"
+  },
+  "markerId": 305,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/305.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c3"
+  },
+  "markerId": 306,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/306.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c4"
+  },
+  "markerId": 307,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/307.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c5"
+  },
+  "markerId": 308,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/308.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c6"
+  },
+  "markerId": 309,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/309.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c7"
+  },
+  "markerId": 310,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/310.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c8"
+  },
+  "markerId": 311,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/311.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9c9"
+  },
+  "markerId": 312,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/312.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ca"
+  },
+  "markerId": 313,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/313.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9cb"
+  },
+  "markerId": 314,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/314.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9cc"
+  },
+  "markerId": 315,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/315.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9cd"
+  },
+  "markerId": 316,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/316.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ce"
+  },
+  "markerId": 317,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/317.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9cf"
+  },
+  "markerId": 318,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/318.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d0"
+  },
+  "markerId": 319,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/319.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d1"
+  },
+  "markerId": 320,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/320.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d2"
+  },
+  "markerId": 321,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/321.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d3"
+  },
+  "markerId": 322,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/322.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d4"
+  },
+  "markerId": 323,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/323.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d5"
+  },
+  "markerId": 324,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/324.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d6"
+  },
+  "markerId": 325,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/325.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d7"
+  },
+  "markerId": 326,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/326.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d8"
+  },
+  "markerId": 327,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/327.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9d9"
+  },
+  "markerId": 328,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/328.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9da"
+  },
+  "markerId": 329,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/329.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9db"
+  },
+  "markerId": 330,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/330.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9dc"
+  },
+  "markerId": 331,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/331.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9dd"
+  },
+  "markerId": 332,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/332.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9de"
+  },
+  "markerId": 333,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/333.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9df"
+  },
+  "markerId": 334,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/334.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e0"
+  },
+  "markerId": 335,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/335.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e1"
+  },
+  "markerId": 336,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/336.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e2"
+  },
+  "markerId": 337,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/337.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e3"
+  },
+  "markerId": 338,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/338.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e4"
+  },
+  "markerId": 339,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/339.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e5"
+  },
+  "markerId": 340,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/340.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e6"
+  },
+  "markerId": 341,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/341.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e7"
+  },
+  "markerId": 342,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/342.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e8"
+  },
+  "markerId": 343,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/343.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9e9"
+  },
+  "markerId": 344,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/344.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ea"
+  },
+  "markerId": 345,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/345.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9eb"
+  },
+  "markerId": 346,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/346.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ec"
+  },
+  "markerId": 347,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/347.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ed"
+  },
+  "markerId": 348,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/348.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ee"
+  },
+  "markerId": 349,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/349.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ef"
+  },
+  "markerId": 350,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/350.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f0"
+  },
+  "markerId": 351,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/351.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f1"
+  },
+  "markerId": 352,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/352.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f2"
+  },
+  "markerId": 353,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/353.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f3"
+  },
+  "markerId": 354,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/354.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f4"
+  },
+  "markerId": 355,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/355.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f5"
+  },
+  "markerId": 356,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/356.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f6"
+  },
+  "markerId": 357,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/357.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f7"
+  },
+  "markerId": 358,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/358.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f8"
+  },
+  "markerId": 359,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/359.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9f9"
+  },
+  "markerId": 360,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/360.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9fa"
+  },
+  "markerId": 361,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/361.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9fb"
+  },
+  "markerId": 362,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/362.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9fc"
+  },
+  "markerId": 363,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/363.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9fd"
+  },
+  "markerId": 364,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/364.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9fe"
+  },
+  "markerId": 365,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/365.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515e9ff"
+  },
+  "markerId": 366,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/366.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea00"
+  },
+  "markerId": 367,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/367.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea01"
+  },
+  "markerId": 368,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/368.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea02"
+  },
+  "markerId": 369,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/369.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea03"
+  },
+  "markerId": 370,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/370.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea04"
+  },
+  "markerId": 371,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/371.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea05"
+  },
+  "markerId": 372,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/372.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea06"
+  },
+  "markerId": 373,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/373.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea07"
+  },
+  "markerId": 374,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/374.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea08"
+  },
+  "markerId": 375,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/375.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea09"
+  },
+  "markerId": 376,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/376.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0a"
+  },
+  "markerId": 377,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/377.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0b"
+  },
+  "markerId": 378,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/378.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0c"
+  },
+  "markerId": 379,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/379.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0d"
+  },
+  "markerId": 380,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/380.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0e"
+  },
+  "markerId": 381,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/381.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea0f"
+  },
+  "markerId": 382,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/382.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea10"
+  },
+  "markerId": 383,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/383.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea11"
+  },
+  "markerId": 384,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/384.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea12"
+  },
+  "markerId": 385,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/385.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea13"
+  },
+  "markerId": 386,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/386.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea14"
+  },
+  "markerId": 387,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/387.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea15"
+  },
+  "markerId": 388,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/388.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea16"
+  },
+  "markerId": 389,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/389.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea17"
+  },
+  "markerId": 390,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/390.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea18"
+  },
+  "markerId": 391,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/391.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea19"
+  },
+  "markerId": 392,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/392.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1a"
+  },
+  "markerId": 393,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/393.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1b"
+  },
+  "markerId": 394,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/394.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1c"
+  },
+  "markerId": 395,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/395.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1d"
+  },
+  "markerId": 396,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/396.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1e"
+  },
+  "markerId": 397,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/397.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea1f"
+  },
+  "markerId": 398,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/398.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea20"
+  },
+  "markerId": 399,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/399.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea21"
+  },
+  "markerId": 400,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/400.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea22"
+  },
+  "markerId": 401,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/401.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea23"
+  },
+  "markerId": 402,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/402.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea24"
+  },
+  "markerId": 403,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/403.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea25"
+  },
+  "markerId": 404,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/404.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea26"
+  },
+  "markerId": 405,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/405.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea27"
+  },
+  "markerId": 406,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/406.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea28"
+  },
+  "markerId": 407,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/407.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea29"
+  },
+  "markerId": 408,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/408.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2a"
+  },
+  "markerId": 409,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/409.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2b"
+  },
+  "markerId": 410,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/410.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2c"
+  },
+  "markerId": 411,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/411.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2d"
+  },
+  "markerId": 412,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/412.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2e"
+  },
+  "markerId": 413,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/413.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea2f"
+  },
+  "markerId": 414,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/414.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea30"
+  },
+  "markerId": 415,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/415.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea31"
+  },
+  "markerId": 416,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/416.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea32"
+  },
+  "markerId": 417,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/417.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea33"
+  },
+  "markerId": 418,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/418.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea34"
+  },
+  "markerId": 419,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/419.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea35"
+  },
+  "markerId": 420,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/420.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea36"
+  },
+  "markerId": 421,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/421.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea37"
+  },
+  "markerId": 422,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/422.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea38"
+  },
+  "markerId": 423,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/423.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea39"
+  },
+  "markerId": 424,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/424.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3a"
+  },
+  "markerId": 425,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/425.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3b"
+  },
+  "markerId": 426,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/426.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3c"
+  },
+  "markerId": 427,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/427.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3d"
+  },
+  "markerId": 428,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/428.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3e"
+  },
+  "markerId": 429,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/429.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea3f"
+  },
+  "markerId": 430,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/430.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea40"
+  },
+  "markerId": 431,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/431.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea41"
+  },
+  "markerId": 432,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/432.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea42"
+  },
+  "markerId": 433,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/433.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea43"
+  },
+  "markerId": 434,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/434.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea44"
+  },
+  "markerId": 435,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/435.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea45"
+  },
+  "markerId": 436,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/436.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea46"
+  },
+  "markerId": 437,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/437.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea47"
+  },
+  "markerId": 438,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/438.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea48"
+  },
+  "markerId": 439,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/439.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea49"
+  },
+  "markerId": 440,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/440.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4a"
+  },
+  "markerId": 441,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/441.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4b"
+  },
+  "markerId": 442,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/442.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4c"
+  },
+  "markerId": 443,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/443.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4d"
+  },
+  "markerId": 444,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/444.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4e"
+  },
+  "markerId": 445,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/445.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea4f"
+  },
+  "markerId": 446,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/446.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea50"
+  },
+  "markerId": 447,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/447.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea51"
+  },
+  "markerId": 448,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/448.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea52"
+  },
+  "markerId": 449,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/449.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea53"
+  },
+  "markerId": 450,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/450.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea54"
+  },
+  "markerId": 451,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/451.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea55"
+  },
+  "markerId": 452,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/452.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea56"
+  },
+  "markerId": 453,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/453.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea57"
+  },
+  "markerId": 454,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/454.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea58"
+  },
+  "markerId": 455,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/455.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea59"
+  },
+  "markerId": 456,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/456.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5a"
+  },
+  "markerId": 457,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/457.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5b"
+  },
+  "markerId": 458,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/458.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5c"
+  },
+  "markerId": 459,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/459.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5d"
+  },
+  "markerId": 460,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/460.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5e"
+  },
+  "markerId": 461,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/461.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea5f"
+  },
+  "markerId": 462,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/462.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea60"
+  },
+  "markerId": 463,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/463.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea61"
+  },
+  "markerId": 464,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/464.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea62"
+  },
+  "markerId": 465,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/465.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea63"
+  },
+  "markerId": 466,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/466.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea64"
+  },
+  "markerId": 467,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/467.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea65"
+  },
+  "markerId": 468,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/468.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea66"
+  },
+  "markerId": 469,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/469.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea67"
+  },
+  "markerId": 470,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/470.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea68"
+  },
+  "markerId": 471,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/471.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea69"
+  },
+  "markerId": 472,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/472.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6a"
+  },
+  "markerId": 473,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/473.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6b"
+  },
+  "markerId": 474,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/474.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6c"
+  },
+  "markerId": 475,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/475.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6d"
+  },
+  "markerId": 476,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/476.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6e"
+  },
+  "markerId": 477,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/477.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea6f"
+  },
+  "markerId": 478,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/478.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea70"
+  },
+  "markerId": 479,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/479.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea71"
+  },
+  "markerId": 480,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/480.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea72"
+  },
+  "markerId": 481,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/481.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea73"
+  },
+  "markerId": 482,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/482.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea74"
+  },
+  "markerId": 483,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/483.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea75"
+  },
+  "markerId": 484,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/484.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea76"
+  },
+  "markerId": 485,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/485.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea77"
+  },
+  "markerId": 486,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/486.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea78"
+  },
+  "markerId": 487,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/487.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea79"
+  },
+  "markerId": 488,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/488.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7a"
+  },
+  "markerId": 489,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/489.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7b"
+  },
+  "markerId": 490,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/490.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7c"
+  },
+  "markerId": 491,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/491.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7d"
+  },
+  "markerId": 492,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/492.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7e"
+  },
+  "markerId": 493,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/493.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea7f"
+  },
+  "markerId": 494,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/494.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea80"
+  },
+  "markerId": 495,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/495.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea81"
+  },
+  "markerId": 496,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/496.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea82"
+  },
+  "markerId": 497,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/497.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea83"
+  },
+  "markerId": 498,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/498.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea84"
+  },
+  "markerId": 499,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/499.png",
+  "inUse": false
+},{
+  "_id": {
+    "$oid": "61c1c8447fb5b888f515ea85"
+  },
+  "markerId": 500,
+  "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/500.png",
+  "inUse": false
+}]

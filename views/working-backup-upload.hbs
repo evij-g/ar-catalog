@@ -1,0 +1,245 @@
+<section class="section content">
+    <h2 class="title">
+        ADD NEW ELEMENT TO CATALOG
+    </h2>
+    <form
+        action="/create"
+        method="POST"
+        class="upload"
+        enctype="multipart/form-data">
+
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3" id="img-preview">
+                    <img src="">
+
+                </figure>
+                <figure>
+                    <img src="{{markerElement.markerLink}}" id="markerImage"/>
+                    </figure>
+            </div>
+
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <div class="field">
+                            <div class="file has-name is-fullwidth">
+                                <label class="file-label">
+                                    <!-- <input class="file-input" type="file" name="file"> -->
+                                    <input name="image" type="file" class="file-input cloudinary-fileupload" multiple="multiple" />
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            select file…
+                                        </span>
+                                    </span>
+                                    <span class="file-name"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+
+                        <div class="field">
+                            <input
+                                class="input"
+                                type="text"
+                                name="title"
+                                placeholder="title"
+                                id="element-title"
+                                required="required"/>
+                        </div>
+                        <div class="field">
+                            <input
+                                class="input"
+                                type="number"
+                                name="width"
+                                placeholder="real world width"
+                                id="element-width"
+                                required="required"/>
+                        </div>
+                        <div class="field">
+                            <input
+                                class="input"
+                                type="number"
+                                name="height"
+                                placeholder="real world height"
+                                id="element-height"
+                                required="required"/>
+                        </div>
+                        <div class="field">
+                            <input
+                                class="input"
+                                placeholder="material"
+                                type="text"
+                                name="material"
+                                id="element-material"/>
+                        </div>
+
+                        <div class="field">
+                            <input
+                                class="input"
+                                placeholder="material"
+                                type="text"
+                                name="markerPatternBase64"
+                                id="markerPatternBase64"/>
+                        </div>
+<div class="control">
+                            <a href="" id="markerPatternFile">create marker</a>
+                        </div>
+                        <div class="control">
+                            <button class="button is-primary" type="submit">upload</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    {{#each allElements}}
+        {{element}}
+    {{/each}}
+
+</section>
+
+
+
+<script>
+    const fileInput = document.querySelector('.file input[type=file]');
+    //const chooseFile = document.getElementById("choose-file");
+    const imgPreview = document.getElementById("img-preview");
+    //console.log(fileInput);
+    fileInput.onchange = () => {
+        if (fileInput.files.length > 0) {
+            getImgData();
+            const fileName = document.querySelector('.file .file-name');
+            fileName.textContent = fileInput
+                .files[0]
+                .name;
+        }
+    }
+
+    function getImgData() {
+        const files = fileInput.files[0];
+        if (files) {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(files);
+            fileReader.addEventListener("load", function () {
+                imgPreview.style.display = "block";
+                imgPreview.innerHTML = '<img src="' + this.result + '" />';
+            });
+        }
+    }
+</script>
+
+<!-- <script src="/scripts/arjs-studio-backend.min.js"></script> -->
+
+<script>
+
+    const image = new Image(); // Using optional size for image
+
+    image.src = document
+        .getElementById('markerImage')
+        .src;
+ 
+
+    var link = image.src;
+    
+
+      function toDataURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+          var reader = new FileReader();
+          reader.onloadend = function () {
+            callback(reader.result);
+            createMarker(reader.result);
+            
+
+          };
+          reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+      }
+     
+     const base64 = toDataURL(link, function (dataUrl) {
+        //console.log('RESULT:', dataUrl.replace("data:image/png;base64,", "")) // Clean up data tag);
+      });
+      
+</script>
+<script src="scripts/arjs-studio-backend.min.js"></script>
+<script>
+
+
+  async function createMarker(base64){
+        
+
+    const {MarkerModule, MATRIX_4x4_BCH_13_9_3} = ARjsStudioBackend;
+    /* //const MarkerModule; const MATRIX_4x4_BCH_13_9_3; / generate an SVG data URI
+    MarkerModule.getBarcodeMarkerSVGDataURI(MATRIX_3X3_HAMMING_63, 7)
+ 
+ */
+
+    // ----
+
+    // draw the image on an off-screen canvas and use `.toDataURL()` to get a data
+    // URI console.log("getMarker: " + setMarker(false)); const markerElement =
+    // setMarker(false); console.log(markerElement);
+
+    // use the image 'load' event to know when image is ready
+
+   
+
+    //console.log("makePattern base64",base64);
+    const imageDataURI = base64;
+
+    const getfullMarker = MarkerModule.getFullMarkerImage(
+        imageDataURI,
+        1.0,
+        500,
+        'white'
+    );
+
+    const getpattFile = await MarkerModule.getMarkerPattern(imageDataURI);
+
+    const patternImage = new Image();
+    patternImage.src = getfullMarker;
+    
+
+    //const pattFileDownload = document.createElement('a');
+    const pattFileDownload = document.getElementById('markerPatternFile');
+
+
+            pattFileDownload.href = `data:text/plain;charset=utf-8,${getpattFile}`;
+            pattFileDownload.download = 'marker.patt'; 
+            
+            
+            var str = `data:text/plain;charset=utf-8,${getpattFile}`;
+            str = `${getpattFile}`;
+           console.log(str);
+           
+            var value = "data:text/plain;charset=UTF-8;base64," + btoa(unescape(encodeURIComponent(str)));
+            //value= btoa(unescape(encodeURIComponent(str)));
+            console.log(value);
+
+            
+            const pattFileInput = document.getElementById('markerPatternBase64');    
+            pattFileInput.setAttribute("value", value);
+            
+
+  //  console.log("------------------/createMarkerPattern--------------");
+
+
+
+  }
+</script>
+
+
+
+
+

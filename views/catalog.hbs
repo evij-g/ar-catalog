@@ -1,0 +1,27 @@
+<div class="catalog content">
+    {{#if isAdmin}}
+        {{#each allElements}}
+            <section class="section" marker={{markerId}}>
+                
+                <div class="card">
+                    
+                    {{> element }}
+                    
+                    {{> elementAdmin}}
+                </div>
+            </section>
+        {{/each}}
+
+    {{else}}
+        {{#each allElements}}
+            <section class="section" marker="{{markerId}}">
+                <div class="card">
+                    {{> element }}
+                    {{> catalogCardFooter}}
+                    
+                </div>
+            </section>
+
+        {{/each}}
+    {{/if}}
+</div>

@@ -1,17 +1,43 @@
+<section class="section content">
+    <h2 class="title">
+        edit element
+   </h2>
 
-
-  <img src="{{element.imageUrl}}" alt="">
+    <form action="/edit-image{{element._id}}" method="POST" class="upload" enctype="multipart/form-data">
+            {{>elementFormHeadImage}}
+            <div class="control">
+                <button class="button is-primary" type="submit">update</button>
+            </div>
+                        
+</form>
 <form action="/edit-element{{element._id}}" method="POST" enctype="multipart/form-data">
-    <label for="image"></label>
-    <input type="file" name="image" />
-    <label for="title">title</label>
-    <input type="text" name="title" id="element-title" value='{{element.title}}' required />
-    <label for="width">width</label>
-    <input type="number" name="width" id="element-width" value="{{element.width}}" required />
-    <label for="width">height</label>
-    <input type="number" name="height" id="element-height" value="{{element.height}}" required />
-    <label for="material">material</label>
-    <input type="text" name="material" id="element-material" value="{{element.material}}" />
-    <button type="submit">update information</button>
-  </form>
-</div>
+                       {{>elementFormBody}}            
+                            <div class="control">
+                                <button class="button is-primary" type="submit">update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</section>
+
+<script>
+    const fileInput = document.querySelector('.file input[type=file]');
+    //const chooseFile = document.getElementById("choose-file");
+    //const imgPreview = document.getElementById("img-preview");
+    //console.log(fileInput);
+    fileInput.onchange = () => {
+        if (fileInput.files.length > 0) {
+            //getImgData();
+            const fileName = document.querySelector('.file .file-name');
+            fileName.textContent = fileInput
+                .files[0]
+                .name;
+        }
+    }
+    </script>
+
+    <script src="/scripts/rescale.js"></script> 

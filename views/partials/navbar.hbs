@@ -1,0 +1,88 @@
+<nav
+  id='navbar'
+  class='navbar is-fixed-bottom has-shadow'
+  role='navigation'
+  aria-label='main navigation'
+>
+  <div class='navbar-brand'>
+    <a class='navbar-item' href='../'>
+      <h1>AR-CAT </h1>
+    </a>
+    <a
+      role='button'
+      class='navbar-burger'
+      aria-label='menu'
+      aria-expanded='false'
+      data-target='navbarBasicExample'
+    >
+      <span aria-hidden='true'></span>
+      <span aria-hidden='true'></span>
+      <span aria-hidden='true'></span>
+    </a>
+  </div>
+
+  <div id='navbarBasicExample' class='navbar-menu'>
+    <div class='navbar-start'>
+      <a class='navbar-item' href='/catalog'>
+        CATALOG
+      </a>
+
+      <a class='navbar-item' href='/about'>
+            ABOUT
+    </a>
+
+      <a class='navbar-item' href='/how-to'>
+        HOW TO
+      </a>
+
+      {{#if isAdmin}}
+        <a class='navbar-item' href='/upload'>
+          UPLOAD
+        </a>
+
+        <a class='navbar-item' href='/userlist'>
+          USERS
+        </a>
+      {{/if}}
+
+      <div class='navbar-item has-dropdown has-dropdown-up is-hoverable'>
+        <a class='navbar-link'>
+          More
+        </a>
+
+        <div class='navbar-dropdown'>
+          <a class='navbar-item' href="https://github.com/evij-g/ar-catalog#readme" target="_blank">
+            Documentation
+          </a>
+          <a class='navbar-item' href='/contact'>
+            Contact
+          </a>
+          <hr class='navbar-divider' />
+          <a class='navbar-item' href='/issue'>
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class='navbar-end'>
+      <div class='navbar-item'>
+        <div class='buttons'>
+
+          {{#if isAdmin}}
+
+            <form action='/logout' method='post'>
+              <button class='button is-warning'>Log out</button>
+            </form>
+          {{else}}
+
+            <a class='button is-success' href='/login'>
+              Log in
+            </a>
+          {{/if}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

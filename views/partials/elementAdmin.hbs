@@ -1,13 +1,19 @@
-<div class="ctn-element">
-  <p>title: {{title}}</p>
-  <img src="{{imageUrl}}" alt="`picture" of {{title}} ` />
-  <p>height: {{height}}</p>
-  <p>width: {{width}}</p>
-  <p>material: {{material}}</p>
-  <form action="/delete-element{{id}}" method="post">
-  <br />
-    <button>delete</button></form>
-  <form action="/edit-element{{id}}" method="get">
-    <button>edit</button></form>
-    <hr>
-</div>
+<footer class="card-footer admin">
+    <!-- <a href="#" class="card-footer-item" onclick="window.print()">PRINT</a> -->
+    <form class="card-footer-item">
+        <button class="button" >
+            <a href="#" onclick="window.print()" >PRINT PAGE <br>FOR AR-VIEW</a>
+        </button>
+    </form>
+    <form action="/edit-element{{id}}" method="get" class="card-footer-item">
+        <button class="">
+            <a>EDIT</a>
+        </button>
+    </form>
+    <form action="/delete-element{{id}}" method="post" class="card-footer-item">
+        <button class="">
+            <a>DELETE</a>
+        </button>
+    </form>
+
+</footer>

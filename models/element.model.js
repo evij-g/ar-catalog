@@ -1,23 +1,53 @@
-const { Schema, model } = require("mongoose");
+const {Schema, model} = require("mongoose");
 
 const elementSchema = new Schema({
-  title: {
-    type: String,
-    required: true,
-  },
-  width: {
-    type: Number,
-    required: true,
-  },
-  height: {
-    type: Number,
-    required: true,
-  },
-  imageUrl: {
-    type: String,
-    required: true,
-  },
-  material: String,
+    markerId: {
+        type: Number
+    },
+    markerLink: {
+        type: String,
+        required: true
+    },
+    patternLink:{
+        type:String
+    },
+    markerSize:{
+        type:Number,
+        default:17
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    width: {
+        type: Number,
+        required: true
+    },
+    height: {
+        type: Number,
+        required: true
+    },
+    position: {
+        type: String,
+        default: "0 0 0"
+    },
+    rotation: {
+        type: String,
+        default: "-90 0 0"
+    },
+    scale:{
+        type: String,
+        default: "1 1 1"
+    },
+    resizefactor:{
+        type: String,
+        default: "1"
+    },
+    imageUrl: {
+        type: String,
+        required: true
+    },
+    material: {type: String}
 });
 
 module.exports = model("Element", elementSchema);

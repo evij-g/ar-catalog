@@ -14,8 +14,10 @@ const storage = new CloudinaryStorage({
     params: {
         allowed_formats: ['jpg', 'png'],
         folder: 'ar-catalog',
-        // resource_type: 'raw'
+        //resource_type: 'raw'
     }
 })
 
-module.exports = multer({ storage })
+
+
+module.exports = multer({ storage });

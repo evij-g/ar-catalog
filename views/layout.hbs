@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <script
+            defer="defer"
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="scripts/navbar-burger.js"></script>
+        
+        
+        
 
-    <title>AR Catalog</title>
-</head>
-<body>
+        <title>AR-CAT</title>
+    </head>
+    <body class="has-navbar-fixed-bottom">
 
-    {{{body}}}
-    <script src="scripts/index.js"></script>
-</body>
+        {{>navbar}}
+        {{>hero}}
+
+        {{{body}}}
+
+        <script src="scripts/fade-header.js"></script>
+    </body>
 </html>
