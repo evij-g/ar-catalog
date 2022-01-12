@@ -256,7 +256,7 @@ async function setMarker(update){
      
         if(update){
 
-            
+        Marker.sort({markerId:1});    
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
