@@ -163,7 +163,7 @@ async function resetMarker(markerId){
             markerId: markerId,
         }, {inUse: "false"});
         
-        console.log("markerElement updated" + markerElement);
+        //console.log("markerElement updated" + markerElement);
         
     } catch (error) {
         console.error(`An error occured while getting element from DB ${error}`);
@@ -175,10 +175,22 @@ async function resetMarker(markerId){
 async function deleteElement(req, res) {
     try {
         const elementId = req.params.id;
+        const foundElement = await Element.findById(elementId);
+        //console.log("element to delete", foundElement);
         
-        const foundElement = await Element.findByIdAndDelete(elementId);
-        console.log(foundElement);
+        const filepath = foundElement.imageUrl;
+        console.log("filepath",filepath);
+        let filename = filepath;
+       
+        let folderAndFilename = filename.replace(/.*\d\//,'');
+        folderAndFilename = folderAndFilename.replace('.png','');
+        folderAndFilename = folderAndFilename.replace('.jpg','');
+        console.log("filename",folderAndFilename);
+
+        await Cloud.uploader.destroy(folderAndFilename, function(result) { console.log("delete element:", result) });
+        await Element.findByIdAndDelete(elementId);
         resetMarker(foundElement.markerId);
+
         res.redirect("/catalog");
     } catch (error) {
         console.error(`An error occured while trying to delete element: ${error}`);
@@ -194,7 +206,7 @@ async function getCatalogElements(req, res) {
             ...allElements
         } = await Element.find().sort({ _id: -1});
         
-        console.log(allElements);
+        //console.log(allElements);
         res.render("catalog", {allElements, isAdmin});
 
     } catch (error) {
