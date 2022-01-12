@@ -4,24 +4,21 @@
   },
   "markerId": 0,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/0.png",
-  "inUse": true,
-  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280555/cq2dpvq4zfezwv2gjrpv.patt"
+  "inUse": false
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e892"
   },
   "markerId": 1,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/1.png",
-  "inUse": true,
-  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640280624/eolkvlil8gm0p5yu4p5v.patt"
+  "inUse": false
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e893"
   },
   "markerId": 2,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/2.png",
-  "inUse": true,
-  "patternFileLink": "https://res.cloudinary.com/drjenyidb/raw/upload/v1640282397/xf3zzzmkotjrg5rmlefn.patt"
+  "inUse": false
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e894"
@@ -35,7 +32,7 @@
   },
   "markerId": 4,
   "markerLink": "https://raw.githubusercontent.com/evij-g/artoolkit-barcode-markers-collection/master/4x4_bch_13_9_3/4.png",
-  "inUse": false
+  "inUse": true
 },{
   "_id": {
     "$oid": "61c1c8447fb5b888f515e896"
