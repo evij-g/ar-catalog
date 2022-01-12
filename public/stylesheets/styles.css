@@ -6572,6 +6572,7 @@ section.content {
 
 .card-footer-item a {
   color: #efdcd5;
+  width: 100%;
 }
 
 .catalog.content {
