@@ -6433,6 +6433,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     background-color: $grey-light;
     border-radius: 0.25rem;
 }*/
+li {
+  padding-bottom: 1rem;
+}
+
 .navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item:focus, a.navbar-burger:hover span {
   color: #efdcd5;
 }

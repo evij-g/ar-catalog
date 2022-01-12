@@ -39,10 +39,10 @@ router
   .get("/upload", isLoggedIn, getCreateForm)
   .get("/single-element:id", getSingleElement)
   .get("/ar-view:id", getARSingleElement)
-  .get("/about", isAnon, getAbout)
-  .get("/contact", isAnon, getContact)
-  .get("/issue", isAnon, getIssue)
-  .get("/how-to", isAnon, getHowTo)
+  .get("/about",  getAbout)
+  .get("/contact", getContact)
+  .get("/issue", getIssue)
+  .get("/how-to", getHowTo)
 
   
 

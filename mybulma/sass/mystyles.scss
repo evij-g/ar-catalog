@@ -68,6 +68,10 @@ $navbar-burger-color: $success;
     border-radius: 0.25rem;
 }*/
 
+li{
+  padding-bottom: 1rem;
+}
+
 .navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item:focus, a.navbar-burger:hover span{
     color:$success;
 }
