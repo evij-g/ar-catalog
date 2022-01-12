@@ -3,12 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
+:root{
+	--primary: #a094b7;
+    --navbar-background-color: #8c7b75;
+    --background-color: #f5f5f6;
+    --success: #efdcd5;
+    --button: #d0c2e8;
+}
+
+#camera-select {
+	display: flex;
+	align-self: center;
+	height: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 html {
 	font-size: 16px;
 	text-rendering: optimizeLegibility;
 }
 body {
-	color: #4a4a4a;
+	color: var(--success);
 	font-size: 1em; 
 	font-weight: 400;
 	line-height: 1.5;
@@ -30,7 +46,7 @@ h1{
 }
 
 .navbar {
-	background-color: #D1C4E9;
+	background-color: var(--navbar-background-color);
 	min-height: 3.25rem;
 	position: relative;
 	z-index: 30;
@@ -49,7 +65,7 @@ h1{
 }
 
 .navbar-menu {
-	background-color: #D1C4E9;
+	background-color: var(--navbar-background-color);
 	box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
 	padding: 0.5rem 0;
 }
@@ -77,7 +93,7 @@ h1{
 }
 
 .navbar-item, .navbar-link {
-	color: #4a4a4a;
+	color: var(--success);
 	display: block;
 	line-height: 1.5;
 	padding: 0.5rem 0.75rem;
@@ -99,7 +115,7 @@ a.navbar-item, .navbar-link {
 }
 
 .navbar-link:not(.is-arrowless)::after {
-	border-color: #485fc7;
+	border-color: var(--success);
 	margin-top: -0.375em;
 	right: 1.125em;
 }
@@ -139,7 +155,7 @@ a.navbar-item, .navbar-link {
 }
 
 .navbar-burger {
-	color: #4a4a4a;
+	color: var(--success);
 	cursor: pointer;
 	display: block;
 	height: 3.25rem;
@@ -196,7 +212,7 @@ span {
 }
 
 a {
-	color: #485fc7;
+	color: var(--success);
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -233,7 +249,7 @@ a {
 	background-color: white;
 	border-color: #dbdbdb;
 	border-width: 1px;
-	color: #363636;
+	/*color: #363636;*/
 	cursor: pointer;
 	justify-content: center;
 	padding-bottom: calc(0.5em - 1px);
@@ -245,7 +261,7 @@ a {
 }
 
 .button.is-success {
-	background-color: #48c78e;
+	background-color: var(--button);
 	border-color: transparent;
 	color: #fff;
     padding-top:0;
@@ -284,7 +300,7 @@ a {
 }
 
 .navbar-link:not(.is-arrowless)::after {
-	border-color: #485fc7;
+	border-color: var(--success);
 	margin-top: -0.375em;
 	right: 1.125em;
 }
@@ -311,20 +327,20 @@ body, button, input, optgroup, select, textarea {
 }
 
 body {
-	color: #4a4a4a;
+	color: var(--success);
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.5;
 }
 
 a {
-	color: #485fc7;
+	color: var(--success);
 	cursor: pointer;
 	text-decoration: none;
 }
 
 .navbar-item, .navbar-link {
-	color: #4a4a4a;
+	color: var(--success);
 	display: block;
 	line-height: 1.5;
 	padding: 0.5rem 0.75rem;
@@ -346,8 +362,8 @@ a.navbar-item, .navbar-link {
 }
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
-	background-color: #fafafa;
-	color: #485fc7;
+	background-color: var(--navbar-background-color);
+	color: var(--success);
 }
 
 .navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
@@ -357,12 +373,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 /* ------------------------ */
 
 a {
-	color: #485fc7;
+	color: var(--success);
 	cursor: pointer;
 }
 
 .navbar-item, .navbar-link {
-	color: #4a4a4a;
+	color: var(--success);
 	line-height: 1.5;
 }
 

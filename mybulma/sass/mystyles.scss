@@ -2,12 +2,19 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 @import '../bulma/sass/utilities/initial-variables.sass';
-@import '../css-vars/css-vars';
+
+
+    $primary: #a094b7;
+    $secondary: #8c7b75;
+    $background-color: #f5f5f6;
+    $success: #efdcd5;
+    $button: #d0c2e8;
+
+
 
 $title: 'Poller One', sans-serif;
 $family-sans-serif: 'Nunito', sans-serif;
@@ -15,23 +22,6 @@ $family-monospace: 'Nunito', sans-serif;
 $family-serif: 'Nunito', serif;
 $family-primary: $family-serif;
 
-// Set your brand colors
-@include css-vars(
-  (
-    --primary: #a094b7,
-    --secondary: #8c7b75,
-    --background-color: #f5f5f6,
-    --success: #efdcd5,
-    --button: #d0c2e8,
-  )
-);
-
-$primary: var(--primary);
-$secondary: var(--secondary);
-$background-color: var(--background-color);
-$success: var(--success);
-$card-footer-background-color:var(--secondary);
-$link: var(--primary);
 //$link-hover:#e7825d;
 $hero-minheight: 150px;
 
@@ -78,7 +68,7 @@ $navbar-burger-color: $success;
     border-radius: 0.25rem;
 }*/
 
-.navbar-brand a.navbar-item:hover, a.navbar-burger:hover span{
+.navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item:focus, a.navbar-burger:hover span{
     color:$success;
 }
 
@@ -243,6 +233,13 @@ section.content {
   width: 100%;
 }
 
+.card-footer-item{
+  background-color: $secondary;
+}
+.card-footer-item:hover, .card-footer-item .button:hover > a{
+  background-color: $button;
+  color: $secondary!important;
+}
  .card-footer-item a{
    color:$success;
  }
@@ -295,7 +292,7 @@ td.print-image{
   width: auto;
 }
 .print-info {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .print-info .table{
     width:100%;
@@ -318,7 +315,7 @@ td.print-image{
 
 @media print {
   @page{
-    margin: 3cm;
+    margin: 1cm;
     margin-bottom: 0cm;
   }
   body {
@@ -354,7 +351,7 @@ td.print-image{
 }
 @media print and (width: 21cm) and (height: 29.7cm) {
   @page {
-    margin: 3cm;
+    margin: 1cm;
     margin-bottom: 0cm;
     
   }

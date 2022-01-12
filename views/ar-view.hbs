@@ -40,12 +40,7 @@
 
     
 
-    <div class="controls" style="z-index: 999; position:absolute; right: 60px; bottom:14px;">
-            <button id="button">select camera</button>
-            <select id="select" style="width:70px;">
-              {{!-- <option></option> --}}
-            </select>
-        </div> 
+    
 <a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix; trackingMethod: best;" >
  
       <a-assets>
@@ -87,6 +82,32 @@
 </html>
 
 <script>
+
+  let controls = '<div id=\"camera-select\" class=\"controls\" style=\"z-index: 999;">';
+      controls += '<button id=\"button\">select camera</button>';
+      controls += '<select id=\"select\" style=\"width:70px;\">';
+      controls += '</select>';
+      controls += '</div>';
+
+      console.log(controls);
+
+      let placeholder = document.createElement('div');
+placeholder.innerHTML = controls;
+let cam = placeholder.firstElementChild;
+
+// Get the reference element
+//let sp2 = document.getElementById("camera-select");
+console.log("document.getElementsByClassName('navbar-brand')",document.querySelector('.navbar-brand').lastElementChild);
+let parentNode = document.querySelector('.navbar-brand').lastElementChild;
+console.log(parentNode);
+// Get the parent element
+let parentDiv = parentNode.parentElement;
+
+// Insert the new element into before sp2
+parentDiv.insertBefore(cam, parentNode);
+
+  //document.getElementsByClassName('navbar-brand').appendChild(controls);
+  
     /*  AFRAME.registerComponent('markerhandler', { init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => { // redirect to custom URL e.g. google.com //window.location = 'https://www.google.com/';
       console.log("marker found!"); }) } });
