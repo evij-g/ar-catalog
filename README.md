@@ -14,5 +14,11 @@ The url to your repository and to your deployed project
 
 ### Documentation
 
+If you want to set up your own "AR-CAT" do this:
 
-
+1. clone this project
+2. create an cloudinary account
+ 1. go to: https://cloudinary.com/users/register/free
+ 2. select: Programmable Media for image and video API
+ 3. after your account is ready login on cloudinary
+ 4. <img style="width:auto;"src="images/cloudinary-01.png">
