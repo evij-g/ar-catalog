@@ -41,7 +41,7 @@
     
 
     
-<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix; trackingMethod: best; sourceType: webcam" renderer="logarithmicDepthBuffer: true;sourceWidth:1920; sourceHeight:1080;">
+<a-scene embedded arjs="matrixCodeType: 4x4_BCH_13_9_3; detectionMode: mono_and_matrix; trackingMethod: best; sourceType: webcam; sourceWidth:1920; sourceHeight:1080;" renderer="logarithmicDepthBuffer: true;">
  
       <a-assets>
         <img id='image' crossorigin='anonymous' src='{{element.imageUrl}}' />
@@ -49,8 +49,8 @@
     
    
 
-      <a-marker markerhandler emitevents='false' type='barcode' value='{{marker.markerId}} ' smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
-        {{!-- <a-marker markerhandler emitevents='true' smooth='true' type='barcode' value='{{marker.markerId}} ' smoothCount="10" smoothTolerance=".01" smoothThreshold="5"></a-marker> --}}
+      <a-marker markerhandler emitevents='false' type='barcode' value='{{marker.markerId}} ' smooth="true" smoothCount="20" smoothTolerance="0.01" smoothThreshold="5">
+
 
         <a-image
           src='#image'
