@@ -6,8 +6,6 @@ This project is about an easy to use experiment for true scaled images or 2D-scu
             
 ### Git
 
-The url to your repository and to your deployed project
-
 [Repository Link](https://github.com/evij-g/ar-catalog)
 
 [Deploy Link](https://arcat.evij.de)
@@ -51,3 +49,10 @@ I'm using VSCode.
     2. select: Programmable Media for image and video API
     3. after your account is ready login on heroku
     4. ![](https://github.com/evij-g/ar-catalog/blob/ar_js-integration-barcode-version/public/images/heroku-settings.png?raw=true)
+
+### missing features
+
+1. public space integration => exhibition in public space
+-  show a map (open street map) and mark all located artworks nearby
+- - the user has to allow the location detection
+- - admin should be able to set current location (GPS - coordinates) for each artwork
