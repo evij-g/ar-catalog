@@ -44,7 +44,7 @@ I'm using VSCode.
     1. go to: https://www.mongodb.com/cloud/atlas/register
     ![](images/mongodb-signup.png)
     2. after your account is ready, login on mongodb
-    3.  ![](images/mongodb-02-welcome.png)
+    3.  ![](public/images/mongodb-02-welcome.png)
         ![](images/mongodb-03-create-free-db.png)
         ![](images/mongodb-04-create-free-db.png)
         ![](images/mongodb-05-create-db-user.png)
