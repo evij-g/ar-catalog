@@ -29,11 +29,11 @@ const elementSchema = new Schema({
     },
     position: {
         type: String,
-        default: "0 0 0"
+        default: '0 0 0'
     },
     rotation: {
         type: String,
-        default: "-90 0 0"
+        default: '-90 0 0'
     },
     scale:{
         type: String,

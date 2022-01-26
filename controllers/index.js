@@ -171,13 +171,9 @@ async function resetMarker(markerId){
 
 }
 
-
-async function deleteElement(req, res) {
+async function deleteImage(elementId){
     try {
-        const elementId = req.params.id;
         const foundElement = await Element.findById(elementId);
-        //console.log("element to delete", foundElement);
-        
         const filepath = foundElement.imageUrl;
         console.log("filepath",filepath);
         let filename = filepath;
@@ -188,6 +184,28 @@ async function deleteElement(req, res) {
         console.log("filename",folderAndFilename);
 
         await Cloud.uploader.destroy(folderAndFilename, function(result) { console.log("delete element:", result) });
+    } catch (error) {
+        console.error(`An error occured while trying to delete element: ${error}`);
+    }
+}
+
+async function deleteElement(req, res) {
+    try {
+        const elementId = req.params.id;
+        const foundElement = await Element.findById(elementId);
+        await deleteImage(elementId);
+        //console.log("element to delete", foundElement);
+        
+        // const filepath = foundElement.imageUrl;
+        // console.log("filepath",filepath);
+        // let filename = filepath;
+       
+        // let folderAndFilename = filename.replace(/.*\d\//,'');
+        // folderAndFilename = folderAndFilename.replace('.png','');
+        // folderAndFilename = folderAndFilename.replace('.jpg','');
+        // console.log("filename",folderAndFilename);
+
+        // await Cloud.uploader.destroy(folderAndFilename, function(result) { console.log("delete element:", result) });
         await Element.findByIdAndDelete(elementId);
         resetMarker(foundElement.markerId);
 
@@ -253,10 +271,11 @@ async function setMarker(update){
     //console.log("setMarker -> patternFileLink", patternFileLink);
     let markerElement ="";
     try {
-     
+       // Marker.find().sort({markerId:1});    
+       
         if(update){
 
-            
+        
         markerElement = await Marker.findOneAndUpdate({
             inUse: "false"
         }, {inUse: "true", 
@@ -325,7 +344,13 @@ async function createElement(req, res) {
     
         const {title, width, height, material, position, scale, markerSize, rotation} = req.body;
         const markerElement = await setMarker(true);
-
+        let newRotation = rotation;
+        if(newRotation == (null || "")){
+            newRotation = undefined;
+        }
+        else{
+            newRotation = rotation;
+        }
 
         await Element.create({
             markerId: markerElement.markerId,
@@ -335,7 +360,7 @@ async function createElement(req, res) {
             width,
             height,
             position,
-            rotation,
+            rotation:newRotation,
             scale,
             
             material,
@@ -385,6 +410,7 @@ async function editImage(req, res) {
       const imageId = req.params.id;
       console.log("imageId",imageId);
       console.log("filepath",req.file.path);
+      await deleteImage(imageId);
   
       await Element.findByIdAndUpdate(imageId, {
         imageUrl: req.file.path,

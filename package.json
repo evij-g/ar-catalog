@@ -5,7 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon -e * server.js --trace-warnings"
+    "all": "npm-run-all -p dev bulma2",
+    "dev": "nodemon -e * server.js",
+    "dev2": "nodemon server.js -V",
+    "bulma": "cd node_modules/bulma && npm run start",
+    "bulma2": "cd node_modules/bulma && node-sass --output-style expanded --source-map true ../../mybulma/sass/mystyles.scss --watch ../../public/stylesheets/styles.css"
   },
   "repository": {
     "type": "git",
@@ -34,6 +38,7 @@
     "multer": "^1.4.3",
     "multer-storage-cloudinary": "^4.0.0",
     "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
     "qrcode": "^1.5.0"
   },
   "devDependencies": {
