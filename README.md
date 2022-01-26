@@ -3,12 +3,13 @@
 ## Description
 
 This project is about an easy to use experiment for true scaled images or 2D-sculptures in augmented reality.
+AR-CAT was realized with a grant from the Leipzig Cultural Office. Thanks a lot for this great opportunity!
             
 ### Git
 
 [Repository Link](https://github.com/evij-g/ar-catalog)
 
-[Deploy Link](https://arcat.evij.de)
+[try my AR-CAT here](https://arcat.evij.de)
 
 ### Documentation
 
@@ -41,9 +42,21 @@ I'm using VSCode.
     4. ![](https://github.com/evij-g/ar-catalog/blob/ar_js-integration-barcode-version/public/images/cloudinary-01.png?raw=true)
 3. create a mongodb account:
     1. go to: https://www.mongodb.com/cloud/atlas/register
-    2. select: Programmable Media for image and video API
-    3. after your account is ready, login on mongodb
-    4. ![](images/cloudinary-01.png)
+    ![](images/mongodb-signup.png)
+    2. after your account is ready, login on mongodb
+    3.  ![](images/mongodb-02-welcome.png)
+        ![](images/mongodb-03-create-free-db.png)
+        ![](images/mongodb-04-create-free-db.png)
+        ![](images/mongodb-05-create-db-user.png)
+        ![](images/mongodb-connect-db-00.png)
+        ![](images/mongodb-connect-db-01.png)
+        ![](images/mongodb-connect-db-02.png)
+        ![](images/mongodb-connect-db-03.png)
+        ![](images/mongodb-connect-db-04.png)
+        ![](images/mongodb-heroku-settings.png)
+        ![](images/.png)
+        ![](images/.png)
+        ![](images/.png)
 4. create a heroku account:
     1. go to: https://cloudinary.com/users/register/free
     2. select: Programmable Media for image and video API
