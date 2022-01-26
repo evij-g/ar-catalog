@@ -1,9 +1,11 @@
-# ar-catalog
+# AR-CATalog
 
 ## Description
 
 This project is about an easy to use experiment for true scaled images or 2D-sculptures in augmented reality.
 AR-CAT was realized with a grant from the Leipzig Cultural Office. Thanks a lot for this great opportunity!
+
+If you have some questions or need help, just write me a message.
             
 ### Git
 
@@ -82,9 +84,12 @@ CLOUDINARY_SECRET=
     ![](public/images/heroku-create-new-app-deploy.png)
     5. connection settings  
     - you have to add your own data and create these variables by clicking on "Add"
-    - fill in your settings (cloudinary, mongodb) like in your .env file
     ![](public/images/heroku-settings-add.png)
+    - fill in your settings (cloudinary, mongodb) like in your .env file
     ![](public/images/heroku-settings.png)
+5. if you now commit some changes to your github repository, heroku will rebuild the app
+6. have fun
+
 
 ### missing features
 
