@@ -1,4 +1,5 @@
 function isLoggedIn(req, res, next){
+
 if(req.session.currentUser){
     return next();
 }  
@@ -7,6 +8,7 @@ if(req.session.currentUser){
 
 
 function isAnon(req, res, next){
+
     if(!req.session.currentUser){
        return next();
     } 
@@ -16,13 +18,13 @@ function isAnon(req, res, next){
 
 
 function isAdmin(req, res, next){
-    if(req.session.currentUser === 'info@evij.de'){
-       return next();
-    }
-       return res.redirect('/catalog')
-    }
 
 
+    if(req.session.currentUser != undefined){
+        return next();
+     }
+        return res.redirect('/catalog')
+     }
 
 module.exports = { isLoggedIn, isAnon, isAdmin }
 
