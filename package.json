@@ -13,7 +13,7 @@
     "client": "npm start",
     "clientinstall": "npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "render-postbuild": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
