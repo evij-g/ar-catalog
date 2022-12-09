@@ -6,10 +6,14 @@
   "scripts": {
     "start": "node server.js",
     "all": "npm-run-all -p dev bulma2",
-    "dev": "nodemon -e * server.js",
     "dev2": "nodemon server.js -V",
     "bulma": "cd node_modules/bulma && npm run start",
-    "bulma2": "cd node_modules/bulma && node-sass --output-style expanded --source-map true ../../mybulma/sass/mystyles.scss --watch ../../public/stylesheets/styles.css"
+    "bulma2": "cd node_modules/bulma && node-sass --output-style expanded --source-map true ../../mybulma/sass/mystyles.scss --watch ../../public/stylesheets/styles.css",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
