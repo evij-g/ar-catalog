@@ -4,8 +4,8 @@ const hbs = require('hbs')
 
 
 function config(app){
-    app.use(express.json());
-    app.use(express.urlencoded({extended: true}));
+    app.use(express.json())
+    app.use(express.urlencoded({extended: true}))
     app.use(express.static(path.join(__dirname, '..', 'public')))
 
     app.set('view engine', 'hbs');
